@@ -311,5 +311,14 @@ footer p {
 
 footer li {
     display: inline-block;
-    padding: 1em 1 0 1;
+
+}
+
+footer .contact-info a {
+  display: block;
+  min-height: 40px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding: 0 0 0 50px;
+  margin: 0 0 10px;
 }
