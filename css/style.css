@@ -63,7 +63,7 @@ h1 {
 
 h2 {
     color: #576366;
-    font-size: 0.75em;
+    font-size: 1em;
     margin: -5px 0 0;
 }
 
@@ -191,8 +191,8 @@ PAGE: WORK EX
     max-width: 335px;
     max-height: 350px;
     display: block;
-    padding: 3% 0 0 0;
-    margin: 1em;
+    padding: 3% 2% 0 0;
+    margin: 2%;
 }
 
 .illustration-right {
@@ -279,13 +279,20 @@ PAGE: CONTACT
 }
 
 /**********************************
-PAGE: CONTACT
+PAGE: ABOUT
 ***********************************/
 
 .img-round {
     max-height: 150px;
     border-radius: 100%;
     display: block;
+    float: left;
+    padding: 1%;
+    margin: 0 2em 0 0;
+}
+
+.aboutme {
+
 }
 
 /**********************************
