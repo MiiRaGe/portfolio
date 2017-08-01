@@ -4,7 +4,7 @@ GENERAL
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #576366;
+    color: #667578;
     background-color: #f8f8f8;
     margin: 0;
     font-weight: lighter;
@@ -20,6 +20,7 @@ body {
 a {
   text-decoration: none;
   color: #29a4d7;
+  line-height: 160%;
 }
 
 a:hover {
@@ -62,34 +63,30 @@ h1 {
 }
 
 h2 {
-    color: #576366;
+    color: #384142;
     font-size: 1em;
-    margin: -5px 0 0;
 }
 
 h3 {
     margin: 0 0 1em 0;
     font-size: 1.75em;
-    color: #cf254d;
-    font-weight: lighter;
+    color: #384142;
+    font-weight: 300;
+    line-height: 1.2em;
 }
-
-/**.HeadingHome {
-    text-transform: none;
-    font-size: 1.15em;
-    margin: 0 0 0 2.5%;
-    color: #576366;
-}**/
 
 h4 {
     text-transform: uppercase;
     font-size: 1.20em;
-    color: #cf254d;
+    margin: 2em 0 1em 0;
+    color: #384142;
     font-weight: lighter;
 }
 
 h5 {
     font-size: 1em;
+    font-weight: lighter;
+    text-transform: uppercase;
 }
 
 /**********************************
@@ -117,13 +114,13 @@ nav a {
 }
 
 .selected {
-    color: #576366;
+    color: #384142;
 }
 
 #breadcrumbs {
     list-style: none;
     font-size: 0.75em;
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
     padding: 0%;
     color: #868685;
 }
@@ -151,7 +148,7 @@ PAGE: INDEX
 }
 
 #gallery li {
-  float: left;
+    float: left;
   width: 45%;
   margin: 2% 2.5% 1% 2.5%;
   background-color: #ffffff;
@@ -191,8 +188,8 @@ PAGE: WORK EX
     max-width: 335px;
     max-height: 350px;
     display: block;
-    padding: 3% 2% 0 0;
-    margin: 2%;
+    padding: 4% 2% 0 0;
+    margin: 3em 0 0 0;
 }
 
 .illustration-right {
@@ -211,18 +208,21 @@ PAGE: WORK EX
     max-height: 250px;
     margin: auto;
     display: block;
+    padding: 1% 0 0 0;
 }
 
 .illustration-m {
     max-width: 50%;
     margin: auto;
     display: block;
+    padding: 1% 0 0 0;
   }
 
 .illustration-l {
     max-width: 100%;
     margin: auto;
     display: block;
+    padding: 1% 0 0 0;
   }
 
 /**.illustration-two {
@@ -238,6 +238,7 @@ figcaption {
     font-style: italic;
     text-align: center;
     margin: auto;
+    padding: 0.5em 0 1em 0;
     display: block;
     color: #868685;
   }
