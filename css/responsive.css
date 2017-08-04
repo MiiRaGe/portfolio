@@ -1,27 +1,13 @@
 @media screen and (min-width: 480px) {
 
-  /**********************************
-  TWO COLUMN LAYOUT
-  ***********************************/
-
-  #primary {
-    width: 50%;
-    float: left;
-  }
-
-  #secondary {
-    width: 40%;
-    float: right;
-  }
-
-
 
   /**********************************
-  PAGE: PORTFOLIO
+  PAGE: INDEX
   ***********************************/
 
   #gallery li {
     width: 28.3333%;
+    min-height: 261px;
   }
 
   #gallery li:nth-child(4n) {
@@ -34,8 +20,8 @@ PAGE: WORK EX
 
   .Illustration {
     float: left;
-    padding 0%;
-    margin: 0 2% 2% 0;
+    padding 1% 2% 0 0;
+    margin: 3% 3% 2% 0;
     max-width: 300px;
   }
 
@@ -52,12 +38,36 @@ PAGE: WORK EX
 
 @media screen and (min-width: 660px) {
 
+
   /**********************************
-  HEADER
+  PAGE: INDEX
   ***********************************/
 
+  #gallery li {
+    min-height: 248px;
+  }
+
+    /**********************************
+  PAGE: WORK EX
+  ***********************************/
+
+  .Illustration {
+    float: left;
+    padding 1% 2% 0 0;
+    margin: 2% 3% 2% 0;
+    max-width: 300px;
+  }
+
+}
+
+@media screen and (min-width: 730px) {
+
+
+  /**********************************
+  HEADER
+  *********************************/
+
   nav {
-    background: none;
     float: right;
     font-size: 1.125em;
     margin-right: 5%;
@@ -72,8 +82,13 @@ PAGE: WORK EX
     width: 45%;
   }
 
+  header {
+    float: left;
+}
+
   h1 {
     font-size: 2.5em;
+    line-height: 1em;
   }
 
   h2 {
@@ -81,8 +96,35 @@ PAGE: WORK EX
     margin-bottom: 20px;
   }
 
+    /**********************************
+  PAGE: INDEX
+  ***********************************/
+
+  #gallery li {
+    min-height: 252px;
+  }
 
 
+}
+
+@media screen and (min-width: 980px) {
+ /**********************************
+  PAGE: INDEX
+  ***********************************/
+
+  #gallery li {
+    min-height: 272px;
+  }
+}
+
+@media screen and (min-width: 1007px) {
+ /**********************************
+  PAGE: INDEX
+  ***********************************/
+
+  #gallery li {
+    min-height: 262px;
+  }
 }
 
 
