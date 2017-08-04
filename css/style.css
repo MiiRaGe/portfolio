@@ -45,7 +45,7 @@ header {
     border-color: #ffffff;
     /**float: left;**/
     margin: 0 0 30px 0;
-    padding: 5px 0 0 0;
+    padding: 10px 0 0 0;
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
 }
@@ -97,13 +97,19 @@ h4 {
 
 h5 {
     font-size: 1em;
-    font-weight: lighter;
     text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
 }
 
 /**********************************
 NAVIGATION
 ***********************************/
+
+.icon {
+    max-height:0.75em;
+    margin-right: 0.25em;
+}
 
 nav {
     text-align: center;
@@ -189,6 +195,51 @@ PAGE: INDEX
 /**********************************
 PAGE: WORK EX
 ***********************************/
+
+#research-steps, #overview {
+    margin: 0;
+    padding: 0;
+}
+
+#research-steps .steps {
+  width: 100%;
+  margin: 3% 0% 3% 0%;
+  background-color: #ffffff;
+  color: #bdc3c7;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+}
+
+.methodology {
+    background-color: #92044C;
+    height: 60px;
+}
+
+.methodology h5 {
+    display: block;
+    padding: 20px 0 20px 0;
+}
+
+.i-methodology {
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 10px 2% 10px 5%;
+}
+
+#research-steps p {
+    margin: 1% 0 1% 0;
+    padding: 0;
+}
+
+#research-steps h5 {
+    text-align: left;
+}
+
+.steps-details {
+    color: #667578;
+    padding: 1% 5% 1% 5%;
+    margin: 0;
+}
 
 .client {
     color: #868685;
@@ -303,10 +354,6 @@ PAGE: ABOUT
     float: left;
     padding: 1%;
     margin: 0 2em 0 0;
-}
-
-.aboutme {
-
 }
 
 /**********************************
