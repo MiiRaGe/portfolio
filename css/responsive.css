@@ -1,3 +1,18 @@
+@media screen and (min-width: 330px) {
+
+
+  /**********************************
+  PAGE: INDEX
+  ***********************************/
+
+  #gallery li {
+  width: 45%;
+  min-height: 230px;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+  }
+
+}
+
 @media screen and (min-width: 480px) {
 
 
@@ -7,7 +22,7 @@
 
   #gallery li {
     width: 28.3333%;
-    min-height: 261px;
+    min-height: 230px;
   }
 
   #gallery li:nth-child(4n) {
@@ -101,30 +116,10 @@ PAGE: WORK EX
   ***********************************/
 
   #gallery li {
-    min-height: 252px;
+    min-height: 230px;
   }
 
 
-}
-
-@media screen and (min-width: 980px) {
- /**********************************
-  PAGE: INDEX
-  ***********************************/
-
-  #gallery li {
-    min-height: 272px;
-  }
-}
-
-@media screen and (min-width: 1007px) {
- /**********************************
-  PAGE: INDEX
-  ***********************************/
-
-  #gallery li {
-    min-height: 262px;
-  }
 }
 
 
