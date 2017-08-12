@@ -74,7 +74,6 @@ h3 {
     font-weight: 300;
     line-height: 1.2em;
     text-transform: uppercase;
-
 }
 
 .HeadingHome {
@@ -252,12 +251,20 @@ PAGE: WORK EX
     margin: -1em 0 1em 0;
 }
 
+#role {
+    display: inline-block;
+}
+
 .Illustration {
     max-width: 100%;
     max-height: 350px;
     display: block;
-    padding: 2% 1% 0 0;
-    margin: 3em 0 0 0;
+    padding: 1% 1% 0 0;
+    margin: 2em 0 0 0;
+}
+
+#challenge ul {
+    overflow: hidden;
 }
 
 .illustration-right {
@@ -310,10 +317,6 @@ figcaption {
     display: block;
     color: #868685;
   }
-
-.list-top {
-    overflow: hidden;
-}
 
 /**********************************
 PAGE: CONTACT
