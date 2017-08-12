@@ -34,14 +34,15 @@ PAGE: WORK EX
 ***********************************/
 
   .Illustration {
-    float: left;
-    padding: 2% 4% 0 0;
-    margin: 0% 0 2% 0;
-    max-width: 46%;
+    float: right;
+    padding: 0 0 0 8%;
+    margin: 2em 0 2em 0;
+    max-width: 62%;
+    max-height: 250px;
   }
 
   #challenge {
-    max-width: 46%;
+    max-width: 30%;
     display: inline;
   }
 
@@ -69,7 +70,7 @@ PAGE: WORK EX
 
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 738px) {
 
 
   /**********************************
@@ -82,6 +83,14 @@ PAGE: WORK EX
     margin-right: 5%;
     text-align: right;
     width: 45%;
+  }
+
+  nav a {
+    padding: 0 0 0 20px;
+  }
+
+  nav ul {
+    margin: 0;
   }
 
   #logo {
