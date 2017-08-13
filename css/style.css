@@ -4,7 +4,6 @@ GENERAL
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: #667578;
     background-color: #f8f8f8;
     margin: 0;
     font-weight: lighter;
@@ -19,15 +18,46 @@ body {
 
 a {
     text-decoration: none;
-    color: #29a4d7;
-}
-
-a:hover {
-    color: #19769c;
 }
 
 img {
     max-width: 100%;
+}
+
+/**********************************
+TEXT COLOURS
+***********************************/
+
+body, .steps-details {
+    color: #667578;
+}
+
+a, h1 {
+    color: #29a4d7;
+}
+
+a:visited {
+    color: #2085b1;
+}
+
+a:hover, #breadcrumbs li a:hover {
+    color: #92044C;
+}
+
+.selected, h2, h3, h4, h5 {
+    color: #384142;
+}
+
+#breadcrumbs li, #breadcrumbs li a, footer, figcaption, .client {
+    color: #868685;
+}
+
+#research-steps h5 {
+    color: #fff;
+}
+
+.cardClient {
+    color: #bdc3c7;
 }
 
 /**********************************
@@ -54,12 +84,7 @@ h1, h3, h4, h5 {
     text-transform: uppercase;
 }
 
-h2, h3, h4, h5 {
-    color: #384142;
-}
-
 h1 {
-    color: #29a4d7;
     margin: 15px 0;
     font-size: 1.5em;
     line-height: 0.8em;
@@ -119,10 +144,6 @@ nav a {
     padding: 0 10px;
 }
 
-.selected {
-    color: #384142;
-}
-
 #breadcrumbs {
     list-style: none;
     font-size: 0.75em;
@@ -132,15 +153,6 @@ nav a {
 
 #breadcrumbs li {
     display: inline-block;
-    color: #868685;
-}
-
-#breadcrumbs li a {
-    color: #868685;
-}
-
-#breadcrumbs li a:hover {
-    color: #19769c;
 }
 
 /**********************************
@@ -158,7 +170,6 @@ PAGE: INDEX
   width: 95%;
   margin: 2.5% 2.5% 2.5% 2.5%;
   background-color: #ffffff;
-  color: #bdc3c7;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
 }
 
@@ -174,7 +185,6 @@ PAGE: INDEX
 
 .cardClient {
     font-size: 0.85em;
-    color: #bdc3c7;
 }
 
 /**********************************
@@ -190,12 +200,7 @@ PAGE: WORK EX
   width: 100%;
   margin: 3% 0% 3% 0%;
   background-color: #ffffff;
-  color: #bdc3c7;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
-}
-
-#research-steps h5 {
-    color: #fff;
 }
 
 .methodology {
@@ -225,13 +230,11 @@ PAGE: WORK EX
 }
 
 .steps-details {
-    color: #667578;
     padding: 1% 5% 1% 5%;
     margin: 0;
 }
 
 .client {
-    color: #868685;
     font-weight: lighter;
     font-size: 1em;
     margin: -1em 0 1em 0;
@@ -283,7 +286,6 @@ figcaption {
     margin: auto;
     padding: 0.5em 0 1em 0;
     display: block;
-    color: #868685;
   }
 
 /**********************************
@@ -340,11 +342,6 @@ footer {
     text-align: center;
     clear: both;
     padding-top: 50px;
-    color: #868685;
-}
-
-footer a {
-    color: #868685;
 }
 
 footer p {
