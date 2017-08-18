@@ -68,6 +68,26 @@ PAGE: WORK EX
     min-height: 248px;
   }
 
+  /**********************************
+PAGE: WORK EX added
+***********************************/
+
+  /*.stepDesc {
+    float: left;
+    width: 40%;
+    max-height: 250px;
+  }
+
+  .stepImg, .illustration-s {
+    max-width: 60%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .stepDetails {
+    display: block;
+  }*/
+
 }
 
 @media screen and (min-width: 738px) {
@@ -121,7 +141,6 @@ PAGE: WORK EX
   #gallery li {
     min-height: 230px;
   }
-
 
 }
 

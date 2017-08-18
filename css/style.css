@@ -28,7 +28,7 @@ img {
 TEXT COLOURS
 ***********************************/
 
-body, .steps-details {
+body, .stepDetails {
     color: #667578;
 }
 
@@ -44,7 +44,7 @@ a:hover {
     color: #92044C;
 }
 
-.selected, h2, h3, h4, h5 {
+.selected, h2, h3, h4 {
     color: #384142;
 }
 
@@ -53,7 +53,7 @@ a:hover {
 }
 
 #research-steps h5 {
-    color: #fff;
+    color: #92044C;
 }
 
 .cardClient {
@@ -76,7 +76,7 @@ header {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-weight: lighter;
 }
 
@@ -113,6 +113,10 @@ h4 {
 
 h5 {
     font-size: 1em;
+    font-weight: 400;
+    border-bottom: 3px solid #92044C;
+    padding: 8px 0 12px 0;
+    margin: 2em 0 1em 0;
 }
 
 /**********************************
@@ -196,28 +200,29 @@ PAGE: WORK EX
     padding: 0;
 }
 
-#research-steps .steps {
+#research-steps .step {
   width: 100%;
   margin: 3% 0% 3% 0%;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+  /*background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);*/
 }
 
-.methodology {
+/*.methodology {
     background-color: #92044C;
     height: 60px;
-}
+}*/
 
-.methodology h5 {
+/*.methodology h5 {
     display: block;
     padding: 20px 0 20px 0;
-}
+}*/
 
 .i-methodology {
     height: 40px;
-    display: block;
+    display: inline-block;
     float: left;
-    margin: 10px 2% 10px 5%;
+    /*margin: 10px 2% 10px 5%;*/
+    margin: 0 6px 0 0;
 }
 
 #research-steps p {
@@ -225,12 +230,9 @@ PAGE: WORK EX
     padding: 0;
 }
 
-#research-steps h5 {
-    text-align: left;
-}
-
-.steps-details {
-    padding: 1% 5% 1% 5%;
+.stepDetails {
+    /*padding: 1% 5% 1% 5%;*/
+    padding: 1% 0 1% 0;
     margin: 0;
 }
 
