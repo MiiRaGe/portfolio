@@ -36,11 +36,11 @@ a, h1 {
     color: #29a4d7;
 }
 
-a:visited {
+a:hover {
     color: #2085b1;
 }
 
-a:hover, #breadcrumbs li a:hover {
+#breadcrumbs li a:hover {
     color: #92044C;
 }
 
