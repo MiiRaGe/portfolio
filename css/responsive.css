@@ -15,6 +15,10 @@
 
 @media screen and (min-width: 480px) {
 
+  #wrapper {
+    width: 70%;
+    max-width: 1000px;
+  }
 
   /**********************************
   PAGE: INDEX
@@ -30,23 +34,6 @@
   }
 
   /**********************************
-PAGE: WORK EX
-***********************************/
-
-  .Illustration {
-    float: right;
-    padding: 0 0 0 8%;
-    margin: 2em 0 2em 0;
-    max-width: 62%;
-    max-height: 250px;
-  }
-
-  #challenge {
-    max-width: 30%;
-    display: inline;
-  }
-
-  /**********************************
   PAGE: ABOUT
   ***********************************/
 
@@ -58,7 +45,6 @@ PAGE: WORK EX
 }
 
 @media screen and (min-width: 660px) {
-
 
   /**********************************
   PAGE: INDEX
@@ -87,6 +73,55 @@ PAGE: WORK EX added
   .stepDetails {
     display: block;
   }*/
+
+   /**********************************
+PAGE: WORK EX
+***********************************/
+
+  /*.Illustration {
+    float: right;
+    padding: 0 0 0 8%;
+    margin: 2em 0 2em 0;
+    max-width: 62%;
+    max-height: 250px;
+  }
+
+
+
+  #challenge {
+    max-width: 30%;
+    display: inline;
+  }*/
+
+  /*************test floats
+  .stepDesc, .stepImg {
+    width: 44.5%;
+  }
+
+  .stepImg {
+    float: left;
+  }
+
+  .stepDesc {
+    float: right;
+  }
+
+  /*.stepDetails,  #projectOverview {
+    overflow: auto;
+  }
+
+  .stepDetails:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  */
+
+  #projectOverview:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 }
 
@@ -143,6 +178,7 @@ PAGE: WORK EX added
   }
 
 }
+
 
 
 

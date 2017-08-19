@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sophie Durand, UX Researcher | Airline Accessibility</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/sd.png">
@@ -30,12 +31,14 @@
             <li><a href="index.html">Portfolio</a></li>
             <li>> Project: Airline Accessibility</li>
         </ol>
-          <section>
+          <section class="central">
             <h3>Improving the accessibility of airline websites</h3>
-              <p class="client">Amadeus and various airlines</p>
+              <p class="client">Amadeus and various airlines - 2013/2016</p>
 
               <div id="projectOverview">
-              <h4>The challenge</h4>
+              <div id="challenge">
+                  <h4>The challenge</h4>
+               </div>
 
                         <p>The U.S. Department of Transportation (DOT) issued a rule requiring Airlines' websites to comply to level AA of the Web Content Accessibility Guidelines version 2.0 (WCAG v2.0) by the end of 2015.
                             I have worked to achieve this goal with Amadeus on the
@@ -81,10 +84,10 @@
                             <h5>Testing</h5>
                        </div>
                        <div class="stepDetails">
-                            <p>I have conducted accessibility testing with users who have various accessibility needs, to help ensure
+                            <p class="stepDesc">I have conducted accessibility testing with users who have various accessibility needs, to help ensure
                                 the sites were truly accessible.
                             </p>
-                           <figure>
+                           <figure class="stepImg">
                                <img src="img/ax-test.jpg" alt="" class="illustration-s">
                                <figcaption>A participant who needed to zoom and invert colours</figcaption>
                            </figure>
@@ -115,8 +118,9 @@
                     <figcaption>A search panel as it was before the accessibility work began in 2013, and as it is now. The numbers on a red background on the before screenshot indicate table depth: layout tables were used, and there were up to 8 imbricated tables on the page. Today, there are none. </figcaption>
               </figure>
 
-                   <a href="index.html">&lt;&lt; See other examples of work</a>
+                   <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
           </section>
+        </div>
       <footer>
             <ul class="contact-info">
                 <li class="phone"><a href="tel:+447522182857"></a></li>
@@ -125,7 +129,6 @@
             </ul>
         <p>&copy; 2017 Sophie Durand</p>
       </footer>
-    </div>
 
 </body>
 </html>
