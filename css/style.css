@@ -20,7 +20,7 @@ p, ul, ol {
 
 #wrapper {
     margin: 0 auto;
-    padding: 0 1em;
+    padding: 1em;
     min-height: calc(100vh - 170px);
 }
 
@@ -52,7 +52,7 @@ a:hover {
     color: #92044C;
 }
 
-.selected, h2, h3, h4 {
+.selected, h2, h3 {
     color: #384142;
 }
 
@@ -60,7 +60,7 @@ a:hover {
     color: #868685;
 }
 
-#research-steps h5 {
+h4 {
     color: #92044C;
 }
 
@@ -72,23 +72,23 @@ a:hover {
 HEADINGS
 ***********************************/
 
-#logo {
+#logo, .centerp, h2, h3, h4, .separation {
     text-align: center;
 }
 
 header {
     background: #ffffff;
     margin: 0 0 30px 0;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
     width: 100%;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-weight: lighter;
 }
 
-h1, h3, h4, h5 {
+h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
@@ -99,43 +99,29 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
-}
-
-h3 {
     margin: 0 0 1em 0;
     font-size: 2em;
     line-height: 1.2em;
-    text-align: center;
 }
 
 .centerp {
-    text-align: center;
     margin: 0 0 1em 0;
 }
 
-h4 {
+h3 {
     font-size: 1.5em;
 }
 
-h4, .separation {
+h3, .separation {
     border-top: 1px solid rgba(0,0,0,0.08);
-    text-align: center;
     display: block;
     margin: 2em 0 1em 0;
     padding: 1.5em 0 0.5em 0;
 }
 
-#challenge h4 {
-    border: none;
-}
-
-h5 {
+h4 {
     font-size: 1em;
     font-weight: 400;
-    /**border-bottom: 1px dashed #92044C;**/
-    /**padding: 8px 0 12px 0;
-    margin: 2em 0 1em 0;**/
     margin: 5px 0 5px 0;
 }
 
@@ -143,21 +129,22 @@ h5 {
 NAVIGATION
 ***********************************/
 
+/*top nav*/
+
 .icon {
     max-height:0.75em;
     margin-right: 0.25em;
-}
+} /*download icon*/
 
 nav {
     text-align: center;
-    padding: 10px 0;
-    margin: 20px 0 0 0;
+    padding-top: 5px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0 10px;
     padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -166,7 +153,10 @@ nav li {
 
 nav a {
     padding: 0 10px;
+    display: block;
 }
+
+/*breadcrumbs*/
 
 #breadcrumbs {
     list-style: none;
@@ -215,56 +205,29 @@ PAGE: INDEX
 PAGE: WORK EX
 ***********************************/
 
-#research-steps, #overview {
-    margin: 0;
-    padding: 0;
-}
-
-#research-steps .step {
-  width: 100%;
-  margin: 3% 0% 3% 0%;
-  /*background-color: #ffffff;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);*/
-}
-
-/*.methodology {
-    background-color: #92044C;
-    height: 60px;
-}*/
-
-/*.methodology h5 {
-    display: block;
-    padding: 20px 0 20px 0;
-}*/
-
-/*.i-methodology {
-    height: 40px;
-    display: inline-block;
-    float: left;
-    /*margin: 10px 2% 10px 5%;*/
-    /*margin: 0 6px 0 0;
-}*/
-
-.methodology h5 {
-    text-align:center;
-}
+/***Research steps***/
 
 .i-methodology {
     height: 75px;
     display: block;
     margin: auto;
-}
+} /*icons for each step*/
 
-#research-steps p {
-    margin: 1% 0 1% 0;
+#research-steps {
+    margin: 0;
     padding: 0;
 }
 
+#research-steps .step {
+  margin: 3% 0% 3% 0%;
+}
+
 .stepDetails {
-    /*padding: 1% 5% 1% 5%;*/
     padding: 1% 0 1% 0;
     margin: 0;
 }
+
+/*top of the page*/
 
 .client {
     font-weight: lighter;
@@ -273,51 +236,34 @@ PAGE: WORK EX
     text-align: center;
 }
 
+/*images*/
 
-
-#projectOverview {
-    padding: 2% 0 0 0;
-}
-
-.Illustration {
-    max-height: 250px;
-    display: block;
-    padding: 0 1% 0 0;
-    margin: auto;
-}
-
-#challenge ul {
-    overflow: hidden;
-}
-
-.illustration-s {
-    max-height: 250px;
+.illustration, .illustrationMedium, .illustrationLarge, figcaption {
     margin: auto;
     display: block;
+}
+
+.illustration, .illustrationMedium, .illustrationLarge {
     padding: 1% 0 0 0;
 }
 
-.illustration-m {
+.illustration {
+    max-height: 250px;
+}
+
+.illustrationMedium {
     max-width: 50%;
-    margin: auto;
-    display: block;
-    padding: 1% 0 0 0;
   }
 
-.illustration-l {
+.illustrationLarge {
     max-width: 100%;
-    margin: auto;
-    display: block;
-    padding: 1% 0 0 0;
   }
 
 figcaption {
     font-size: 0.8em;
     font-style: italic;
     text-align: center;
-    margin: auto;
     padding: 0.5em 0 1em 0;
-    display: block;
   }
 
 figure {
@@ -360,7 +306,7 @@ PAGE: CONTACT
 PAGE: ABOUT
 ***********************************/
 
-.img-round {
+.imgCircle {
     max-height: 150px;
     border-radius: 100%;
     display: block;

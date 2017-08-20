@@ -1,129 +1,54 @@
 @media screen and (min-width: 330px) {
 
-
   /**********************************
   PAGE: INDEX
   ***********************************/
 
   #gallery li {
   width: 45%;
-  min-height: 230px;
+  min-height: 250px;
   margin: 2.5% 2.5% 2.5% 2.5%;
   }
 
+  #gallery li:nth-child(2n+1) {
+    clear: left;
+  }
+
 }
+
+
+
 
 @media screen and (min-width: 480px) {
 
   #wrapper {
     width: 70%;
     max-width: 1000px;
-  }
-
-  /**********************************
-  PAGE: INDEX
-  ***********************************/
-
-  #gallery li {
-    width: 28.3333%;
-    min-height: 230px;
-  }
-
-  #gallery li:nth-child(4n) {
-    clear: left;
-  }
-
-  /**********************************
-  PAGE: ABOUT
-  ***********************************/
-
-  .profile-photo {
-    float: left;
-    margin: 0 5% 80px 0;
+    padding: 0 0;
+    margin: 0 auto;
   }
 
 }
 
+
+
+
 @media screen and (min-width: 660px) {
-
-  /**********************************
-  PAGE: INDEX
-  ***********************************/
-
-  #gallery li {
-    min-height: 248px;
-  }
-
-  /**********************************
-PAGE: WORK EX added
-***********************************/
-
-  /*.stepDesc {
-    float: left;
-    width: 40%;
-    max-height: 250px;
-  }
-
-  .stepImg, .illustration-s {
-    max-width: 60%;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .stepDetails {
-    display: block;
-  }*/
 
    /**********************************
 PAGE: WORK EX
 ***********************************/
 
-  /*.Illustration {
-    float: right;
-    padding: 0 0 0 8%;
-    margin: 2em 0 2em 0;
-    max-width: 62%;
-    max-height: 250px;
-  }
-
-
-
-  #challenge {
-    max-width: 30%;
-    display: inline;
+/*#projectOverview::after {
+    content: "";
+    display: table;
+    clear: both;
   }*/
 
-  /*************test floats
-  .stepDesc, .stepImg {
-    width: 44.5%;
-  }
-
-  .stepImg {
-    float: left;
-  }
-
-  .stepDesc {
-    float: right;
-  }
-
-  /*.stepDetails,  #projectOverview {
-    overflow: auto;
-  }
-
-  .stepDetails:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  */
-
-  #projectOverview:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 }
+
+
+
 
 @media screen and (min-width: 738px) {
 
@@ -136,16 +61,9 @@ PAGE: WORK EX
     float: right;
     font-size: 1.125em;
     margin-right: 5%;
+    padding-top: 25px;
     text-align: right;
     width: 45%;
-  }
-
-  nav a {
-    padding: 0 0 0 20px;
-  }
-
-  nav ul {
-    margin: 0;
   }
 
   #logo {
@@ -164,17 +82,21 @@ PAGE: WORK EX
     line-height: 1em;
   }
 
-  h2 {
-    font-size: 1em;
-    margin-bottom: 20px;
-  }
-
-    /**********************************
+  /**********************************
   PAGE: INDEX
   ***********************************/
 
   #gallery li {
-    min-height: 230px;
+    width: 28.3333%;
+    min-height: 251px;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+
+  #gallery li:nth-child(2n+1) {
+    clear: none;
   }
 
 }

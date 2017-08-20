@@ -13,7 +13,6 @@
     <header>
         <a href="index.html" id="logo">
             <h1>Sophie Durand</h1>
-            <h2>UX Researcher</h2>
         </a>
         <nav>
             <ul>
@@ -33,50 +32,69 @@
         </ol>
           <section class="central">
 
-            <h3>Re-organising the content of the product page</h3>
+            <h2>Re-organising the content of the product page</h2>
               <p class="client">Thomas Cook - 2017</p>
 
               <div id="projectOverview">
-                  <img src="img/tc-accom.png" alt="Seven collapsed section on the product page" class="Illustration">
-                  <h4>The challenge</h4>
+                  <img src="img/tc-accom.png" alt="Seven collapsed section on the product page" class="illustration">
+                  <h3>The challenge</h3>
                   <div id="challenge">
-                        <p>Make it easier for users to find what they are looking for on the product pages of the <a href="https://www.thomascook.com/">Thomas Cook website</a> which contain a lot of details.</p>
+                        <p>Make it easier for users to find what they are looking for on the product pages of the <a href="https://www.thomascook.com/">Thomas Cook website</a>, which contain detailed information about the hotel, possible flights and board basis options.</p>
                   </div>
               </div>
 
-              <div id="role">
-              <h4>My role</h4>
+              <!--<div id="role">
+              <h3>My role</h3>
                      <p>As a Senior UX Researcher at Thomas Cook, I conducted:</p>
                     <ul>
                         <li>User testing to understand why users cannot find information,</li>
                         <li>Card sorting to find out how users group the content and name the sections, and then used the findings to facilitate discussions around the re-organisation of the content,</li>
                         <li>Tree Testing to evaluate the new content organisation.</li>
                     </ul>
-              </div>
+              </div>-->
 
-              <h4>The research</h4>
+              <h3>The research</h3>
 
                 <div id="research-steps">
 
                     <div class="step">
                         <div class="methodology">
-                            <img src="img/i-usertesting.png" alt="" class="i-methodology">
-                            <h5>User testing</h5>
+                            <img src="img/i-quant.png" alt="" class="i-methodology">
+                            <h4>Review quantitative data</h4>
                        </div>
                         <div class="stepDetails">
-                            <p>I ran some user testing with tasks pushing participants to look for specific pieces of content that I identified as problematic (based on data from the call centers).</p>
-                            <p>Some of that content clearly wasn't where users expected it to be, and some things caused confusion:</p>
-                                <ul>
-                                    <li>The structure was very deep.</li>
-                                    <li>Several section names contained the same keywords.</li>
-                                </ul>
+                            <p>I worked with the Analytics team to build a good picture of which pieces of information seemed to cause the most issues, based on data from the customer support teams and interactions recorded in <a href="https://www.hotjar.com/">Hotjar</a>.
+                                The quantitative data allowed to identify a number of issues, but in some cases further testing was needed to clarify why there were issues.
+                            </p>
+                            <figure>
+                                <img src="img/tc-acom-tableau.jpg" alt="Graph showing that facilities is what customers enquire about the most" class="illustrationMedium">
+                                <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms, food (screenshot from <a href="https://www.tableau.com/">Tableau</a>).</figcaption>
+                            </figure>
                         </div>
                      </div>
+
+                     <div class="step">
+                        <div class="methodology">
+                            <img src="img/i-usertesting.png" alt="" class="i-methodology">
+                            <h4>User testing</h4>
+                       </div>
+                        <div class="stepDetails">
+                            <p>I conducted remote unmoderated user testing which showed that: <p>
+                            <ul>
+                                <li>some content wasn't where users expected it to be.</li>
+                                <li>several section names sounded similar, which made it difficult to know what content to expect in each section.</li>
+                                <li>the structure was very deep, so after expanding a few subsections users just gave up.</li>
+                            </ul>
+                            <p>I presented the results to my colleagues in the multi-disciplinary squad in charge of the re-design of the product page,
+                            and we agreed that we needed to change the way the content of the page was organised.</p>
+                        </div>
+                     </div>
+
 
                     <div class="step">
                         <div class="methodology">
                             <img src="img/i-cardsort.png" alt="" class="i-methodology">
-                            <h5>Card Sorting</h5>
+                            <h4>Card Sorting</h4>
                         </div>
                         <div class="stepDetails">
                             <p>I organised an online card sorting exercise to find out how users naturally group the content and name the sections.</p>
@@ -85,7 +103,7 @@
                                 <li>A couple of sections of the page weren't actually groups users naturally thought of. </li>
                                 <li>Users chose section names that are more descriptive and shorter than the current names.</li>
                             </ul>
-                            <p>I presented these results to the team in charge of the content. There were some surprises, but we still managed to agree on a new way to organise
+                            <p>I presented these results to the squad. There were some surprises, but we still managed to agree on a new way to organise
                           the content that we believed would work better.</p>
                         </div>
                       </div>
@@ -93,7 +111,7 @@
                      <div class="step">
                         <div class="methodology">
                             <img src="img/i-treetest.png" alt="" class="i-methodology">
-                            <h5>Tree Testing</h5>
+                            <h4>Tree Testing</h4>
                         </div>
                        <div class="stepDetails">
                             <p>We needed to validate our proposition before changing thousands of product pages. To do that, I organised 2 tree tests: the first one for the proposed organisation, and the second one for the current organisation.</p>
@@ -101,11 +119,11 @@
                             to validate the changes by showing that with the new tree, users can find the information that was difficult to find before, and it takes them less time to get there.
                             </p>
                             <figure>
-                                <img src="img/tc-accom-OldTree.png" alt="shows that there are lots of sub-sections" class="illustration-m">
+                                <img src="img/tc-accom-OldTree.png" alt="shows that there are lots of sub-sections" class="illustrationMedium">
                                 <figcaption>How information is currently organised (current tree)</figcaption>
                             </figure>
                             <figure>
-                                <img src="img/tc-accom-NewTree.png" alt="shows that the structure is more flat than before" class="illustration-l">
+                                <img src="img/tc-accom-NewTree.png" alt="shows that the structure is more flat than before" class="illustrationLarge">
                                 <figcaption>The tree after Tree Testing</figcaption>
                             </figure>
                         </div>
@@ -113,10 +131,10 @@
 
               </div>
 
-              <h4>Key achievements</h4>
+              <h3>Key achievements</h3>
                 <p>We just finished the tree testing. Once the changes are implemented, all product pages will have:</p>
                     <ul>
-                        <li>Content that is organised logically, in a way that mirrors what our users are looking for.</li>
+                        <li>Content that is organised logically, in sections that reflect what our users are looking for.</li>
                         <li>Section names which are short and describe exactly what each section contains, in our users' own words.</li>
                         <li>A structure which is more flat: only 2 levels of headings.</li>
                     </ul>
