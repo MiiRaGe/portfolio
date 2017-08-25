@@ -6,7 +6,7 @@
 
   #gallery li {
   width: 45%;
-  min-height: 250px;
+  height: 230px;
   margin: 2.5% 2.5% 2.5% 2.5%;
   }
 
@@ -15,8 +15,6 @@
   }
 
 }
-
-
 
 
 @media screen and (min-width: 480px) {
@@ -30,24 +28,13 @@
 
 }
 
+@media screen and (min-width: 640px) {
 
-
-
-@media screen and (min-width: 660px) {
-
-   /**********************************
-PAGE: WORK EX
-***********************************/
-
-/*#projectOverview::after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
+  #gallery li {
+    height: 240px;
+  }
 
 }
-
-
 
 
 @media screen and (min-width: 738px) {
@@ -73,8 +60,15 @@ PAGE: WORK EX
     width: 45%;
   }
 
+  #wrapper {
+    padding-top: 110px;
+  }
+
   header {
     float: left;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
   h1 {
@@ -88,7 +82,7 @@ PAGE: WORK EX
 
   #gallery li {
     width: 28.3333%;
-    min-height: 251px;
+    height: 230px;
   }
 
   #gallery li:nth-child(4n) {
@@ -97,6 +91,43 @@ PAGE: WORK EX
 
   #gallery li:nth-child(2n+1) {
     clear: none;
+  }
+
+  /**********************************
+  PAGE: ABOUT
+  ***********************************/
+
+  .imgCircle {
+    display: block;
+    float: left;
+    margin: 0 2em 0 0;
+    padding: 1%;
+
+}
+
+}
+
+@media screen and (min-width: 900px) {
+
+  #gallery li {
+    height: 236px;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  #gallery li {
+    height: 250px;
+  }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  #gallery li {
+    height: 260px;
   }
 
 }
