@@ -85,9 +85,9 @@
     height: 230px;
   }
 
-  #gallery li:nth-child(4n) {
+  /**#gallery li:nth-child(4n) {
     clear: left;
-  }
+  }**/
 
   #gallery li:nth-child(2n+1) {
     clear: none;
