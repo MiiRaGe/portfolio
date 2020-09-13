@@ -7,7 +7,7 @@ GENERAL
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     font-weight: lighter;
@@ -36,11 +36,11 @@ img {
 TEXT COLOURS
 ***********************************/
 
-body, .stepDetails {
+body, .stepDetails, .cardLongDesc, .cardDescription {
     color: #667578;
 }
 
-a, h1 {
+a, h1, .cardClient {
     color: #29a4d7;
 }
 
@@ -64,9 +64,7 @@ h4 {
     color: #92044C;
 }
 
-.cardClient {
-    color: #bdc3c7;
-}
+
 
 /**********************************
 HEADINGS
@@ -85,7 +83,7 @@ header {
 }
 
 h1, h2, h3 {
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4 {
@@ -196,16 +194,21 @@ PAGE: INDEX
 }
 
 .cardDescription {
+    font-family: Lora, Serif;
+    font-weight: bold;
     font-size: 1em;
-    line-height: 1.6em;
+    line-height: 1.4em;
 }
 
 .cardClient {
     font-size: 0.85em;
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    line-height: 1.2em;
+    line-height: 1em;
+}
+
+.cardLongDesc {
+    font-size: .82353rem;
+    font-weight: 300;
+    line-height: 1.6
 }
 
 /*tags for the type of work*/
