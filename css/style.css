@@ -13,15 +13,12 @@ body {
     font-weight: lighter;
     line-height: 160%;
 }
+main {
+    margin-top: 100px;
+}
 
 p, ul, ol {
     line-height: 180%;
-}
-
-#wrapper {
-    margin: 0 auto;
-    padding: 1em;
-    min-height: calc(100vh - 170px);
 }
 
 a {
@@ -65,7 +62,6 @@ h4 {
 }
 
 
-
 /**********************************
 HEADINGS
 ***********************************/
@@ -76,10 +72,9 @@ HEADINGS
 
 header {
     background: #ffffff;
-    margin: 0 0 30px 0;
     padding: 10px 0 10px 0;
     width: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
 }
 
 h1, h2, h3 {
@@ -111,7 +106,7 @@ h3 {
 }
 
 h3, .separation {
-    border-top: 1px solid rgba(0,0,0,0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
     display: block;
     margin: 2em 0 1em 0;
     padding: 1.5em 0 0.5em 0;
@@ -130,9 +125,11 @@ NAVIGATION
 /*top nav*/
 
 .icon {
-    max-height:0.75em;
+    max-height: 0.75em;
     margin-right: 0.25em;
-} /*download icon*/
+}
+
+/*download icon*/
 
 nav {
     text-align: center;
@@ -170,30 +167,30 @@ nav a {
 /**********************************
 PAGE: INDEX
 ***********************************/
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+}
 
 #gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: -36px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#gallery li {
-  float: left;
-  width: 95%;
-  margin: 2.5% 2.5% 2.5% 2.5%;
-  background-color: #ffffff;
-    height: 260px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
-    position: relative;
-}
+.portfolioCard {
+    flex: 0 0 360px;
+    height: 330px;
+    width: 360px;
+    border: red 1px solid;
+    margin: 36px;
 
-#gallery li a div {
-    margin: 0;
-    padding: 1% 3.5% 2% 3.5%;
-    text-align: center;
 }
 
 .cardDescription {
+    border: 1px solid yellow;
     font-family: Lora, Serif;
     font-weight: bold;
     font-size: 1em;
@@ -203,12 +200,32 @@ PAGE: INDEX
 .cardClient {
     font-size: 0.85em;
     line-height: 1em;
+    border: 1px solid pink;
 }
 
 .cardLongDesc {
     font-size: .82353rem;
     font-weight: 300;
-    line-height: 1.6
+    line-height: 1.6;
+    border: 1px solid green;
+}
+
+.cardImage {
+    width: 360px;
+    height: 240px;
+    z-index: 1;
+}
+
+.raisedCard {
+    text-align: center;
+    z-index: 2;
+    border: 1px solid gray;
+    height: 144px;
+    width: 260px;
+    position: relative;
+    bottom: 61px;
+    left: 50px;
+    background: white;
 }
 
 /*tags for the type of work*/
@@ -254,9 +271,11 @@ PAGE: WORK EX
     height: 75px;
     display: block;
     margin: auto;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
     border-radius: 50%;
-} /*icons for each step*/
+}
+
+/*icons for each step*/
 
 #research-steps {
     margin: 0;
@@ -264,7 +283,7 @@ PAGE: WORK EX
 }
 
 #research-steps .step {
-  margin: 3% 0% 3% 0%;
+    margin: 3% 0% 3% 0%;
 }
 
 .stepDetails {
@@ -298,18 +317,18 @@ PAGE: WORK EX
 
 .illustrationMedium {
     max-width: 50%;
-  }
+}
 
 .illustrationLarge {
     max-width: 100%;
-  }
+}
 
 figcaption {
     font-size: 0.8em;
     font-style: italic;
     text-align: center;
     padding: 0.5em 0 1em 0;
-  }
+}
 
 figure {
     margin: 0 0;
@@ -320,31 +339,31 @@ PAGE: CONTACT
 ***********************************/
 
 .contact-info {
-  list-style: none;
-  padding: 0;
-  margin: auto;
-  font-size: 0.9em;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    font-size: 0.9em;
 }
 
 .contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
+    display: block;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
 }
 
 .contact-info li.phone a {
-  background-image: url('../img/i-phone.png');
+    background-image: url('../img/i-phone.png');
 }
 
 .contact-info li.mail a {
-  background-image: url('../img/i-mail.png');
+    background-image: url('../img/i-mail.png');
 }
 
 .contact-info li.linkedin a {
-  background-image: url('../img/i-linkedin.png');
+    background-image: url('../img/i-linkedin.png');
 }
 
 /**********************************
@@ -386,10 +405,10 @@ footer li {
 }
 
 footer .contact-info a {
-  display: block;
-  min-height: 40px;
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  padding: 0 0 0 50px;
-  margin: 0 0 10px;
+    display: block;
+    min-height: 40px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    padding: 0 0 0 50px;
+    margin: 0 0 10px;
 }
