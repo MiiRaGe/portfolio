@@ -1,45 +1,4 @@
-@media screen and (min-width: 330px) {
-
-  /**********************************
-  PAGE: INDEX
-  ***********************************/
-
-  #gallery li {
-  width: 45%;
-  height: 230px;
-  margin: 2.5% 2.5% 2.5% 2.5%;
-  }
-
-  #gallery li:nth-child(2n+1) {
-    clear: left;
-  }
-
-}
-
-
-@media screen and (min-width: 480px) {
-
-  #wrapper {
-    width: 70%;
-    max-width: 1000px;
-    padding: 0 0;
-    margin: 0 auto;
-  }
-
-}
-
-@media screen and (min-width: 640px) {
-
-  #gallery li {
-    height: 240px;
-  }
-
-}
-
-
 @media screen and (min-width: 738px) {
-
-
   /**********************************
   HEADER
   *********************************/
@@ -60,10 +19,6 @@
     width: 45%;
   }
 
-  #wrapper {
-    padding-top: 110px;
-  }
-
   header {
     float: left;
     position: fixed;
@@ -80,19 +35,6 @@
   PAGE: INDEX
   ***********************************/
 
-  #gallery li {
-    width: 28.3333%;
-    height: 230px;
-  }
-
-  /**#gallery li:nth-child(4n) {
-    clear: left;
-  }**/
-
-  #gallery li:nth-child(2n+1) {
-    clear: none;
-  }
-
   /**********************************
   PAGE: ABOUT
   ***********************************/
@@ -107,31 +49,16 @@
 
 }
 
-@media screen and (min-width: 900px) {
-
-  #gallery li {
-    height: 236px;
+@media screen and (max-width: 737px) {
+  main {
+    margin-top: 10px;
   }
-
 }
 
-@media screen and (min-width: 1100px) {
-
-  #gallery li {
-    height: 250px;
+@media screen and (min-width: 738px) and (max-width: 740px) {
+  main {
+    /* Ugly but it works */
+    margin-top: 140px;
   }
-
 }
-
-
-@media screen and (min-width: 1200px) {
-
-  #gallery li {
-    height: 260px;
-  }
-
-}
-
-
-
 
