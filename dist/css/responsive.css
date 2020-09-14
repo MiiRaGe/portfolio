@@ -1,0 +1,64 @@
+@media screen and (min-width: 738px) {
+  /**********************************
+  HEADER
+  *********************************/
+
+  nav {
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    padding-top: 25px;
+    text-align: right;
+    width: 45%;
+  }
+
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+
+  header {
+    float: left;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  /**********************************
+  PAGE: INDEX
+  ***********************************/
+
+  /**********************************
+  PAGE: ABOUT
+  ***********************************/
+
+  .imgCircle {
+    display: block;
+    float: left;
+    margin: 0 2em 0 0;
+    padding: 1%;
+
+}
+
+}
+
+@media screen and (max-width: 737px) {
+  main {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 738px) and (max-width: 740px) {
+  main {
+    /* Ugly but it works */
+    margin-top: 140px;
+  }
+}
+
