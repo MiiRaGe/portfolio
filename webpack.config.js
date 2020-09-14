@@ -1,6 +1,8 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
- 
+
 module.exports = {
   entry: path.join(process.cwd(), "src"),
   output: {
@@ -13,7 +15,14 @@ module.exports = {
     port: 9000
   },
   plugins: [
- 
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {from: 'src/img/', to: 'img/'},
+        {from: 'src/css/', to: 'css/'},
+        {from: 'src/files/', to: 'files/'},
+      ],
+    }),
     new HandlebarsPlugin({
       // path to hbs entry file(s). Also supports nested directories if write path.join(process.cwd(), "app", "src", "**", "*.hbs"),
       entry: path.join(process.cwd(), "src", "*.hbs"),
