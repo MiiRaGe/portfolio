@@ -174,19 +174,26 @@ PAGE: INDEX
 }
 
 #gallery {
-    margin: -36px;
+    margin: 0 -36px -36px -36px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.selectedWork {
+    text-align: center;
+}
+
 .portfolioCard {
     flex: 0 0 360px;
     height: 330px;
     width: 360px;
-    margin: 36px;
+    margin: 0px 36px 62px 36px;
+}
 
+.portfolioCard:hover {
+    margin-top: -5px;
 }
 
 .cardClient {
