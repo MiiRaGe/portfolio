@@ -6,11 +6,11 @@ const HandlebarsPlugin = require("handlebars-webpack-plugin");
 module.exports = {
   entry: path.join(process.cwd(), "src"),
   output: {
-    path: path.join(process.cwd(), "dist"),
+    path: path.join(process.cwd(), "docs"),
   },
   mode: 'development',
   devServer: {
-    contentBase: path.join(process.cwd(), 'dist'),
+    contentBase: path.join(process.cwd(), 'docs'),
     compress: true,
     port: 9000
   },
@@ -28,7 +28,7 @@ module.exports = {
       entry: path.join(process.cwd(), "src", "*.hbs"),
       // output path and filename(s). This should lie within the webpacks output-folder
       // if ommited, the input filepath stripped of its extension will be used
-      output: path.join(process.cwd(), "dist", "[name].html"),
+      output: path.join(process.cwd(), "docs", "[name].html"),
       // you can als add a [path] variable, which will emit the files with their relative path, like
       // output: path.join(process.cwd(), "build", [path], "[name].html"),
       
