@@ -4,9 +4,9 @@
     </a>
     <nav>
         <ul>
-            <li><a href="index.html" class="selected">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" {{#if (isWork selected)}}class="selected"{{/if}}>Work</a></li>
+            <li><a href="about.html" {{#if (isAbout selected)}}class="selected"{{/if}}>About</a></li>
+            <li><a href="contact.html" {{#if (isContact selected)}}class="selected"{{/if}}>Contact</a></li>
             <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
                 <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
         </ul>
