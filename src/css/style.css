@@ -215,8 +215,9 @@ PAGE: INDEX
 }
 
 .cardLongDesc {
-    font-size: .82353rem;
     font-family: Roboto;
+    color: #5f6368;
+    font-size: .941rem;
     font-weight: 300;
     line-height: 1.6;
     padding-left: 10px;
