@@ -12,11 +12,12 @@
 </head>
 
 <body>
-{{> base/header selected=selected }}
-
-<main>
-    {{> @partial-block }}
-</main>
-{{> base/footer }}
+<div class="rootLayout">
+    {{> base/header selected=selected }}
+    <main class="mainContent">
+        {{> @partial-block }}
+    </main>
+    {{> base/footer }}
+</div>
 </body>
 </html>

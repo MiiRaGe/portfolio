@@ -13,9 +13,6 @@ body {
     font-weight: lighter;
     line-height: 160%;
 }
-main {
-    margin-top: 100px;
-}
 
 p, ul, ol {
     line-height: 180%;
@@ -66,8 +63,14 @@ h4 {
 HEADINGS
 ***********************************/
 
-#logo, .centerp, h2, h3, h4, .separation {
+.centerp, h2, h3, h4, .separation {
     text-align: center;
+}
+
+.rootLayout {
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -75,7 +78,17 @@ header {
     color: #384142;
     padding: 10px 0 10px 0;
     width: 100%;
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.headerLeft {
+    grid-column: 1 / 2;
+}
+
+.headerRight {
+    grid-column: 3 / 4;
 }
 
 h1, h2, h3 {

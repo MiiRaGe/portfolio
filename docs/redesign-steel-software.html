@@ -12,135 +12,140 @@
 </head>
 
 <body>
-<header>
-    <a href="index.html" id="logo">
-        <h1>Sophie Durand</h1>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html" >Work</a></li>
-            <li><a href="about.html" >About</a></li>
-            <li><a href="contact.html" >Contact</a></li>
-            <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
-                <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-        <div id="wrapper">
-            <ol id="breadcrumbs">
-                <li><a href="index.html">Portfolio</a></li>
-                <li>> Project: Re-designing software</li>
-            </ol>
-            <section class="central">
-                <h2>Re-designing a steel inspection software</h2>
-                <p class="client">A technology provider for the steel industry - 2015</p>
-    
-                <div id="projectOverview">
-                    <img src="img/steel-inspection.png" alt="" class="illustration"/>
-                    <div id="challenge">
-                        <h3>The challenge</h3>
-                        <p>Improve the usability and aesthetics of a software used to inspect steel rolls.</p>
-                    </div>
-                </div>
-    
-                <h3>What I did</h3>
-    
-                <div id="research-steps">
-                    <p>I worked with two other consultants who were respectively in charge of the research and visual
-                        design, while
-                        I was in charge of UX design and interaction design.</p>
-    
-                    <div class="step">
-                        <div class="methodology">
-                            <img src="img/i-usertesting.png" alt="" class="i-methodology">
-                            <h4>In-context research and competitor review</h4>
-                        </div>
-                        <div class="stepDetails">
-                            <p>The first step was to familiarise myself with the technical documentation and meet with the
-                                key stakeholders,
-                                while my colleague went on site to observe users of the product we were re-designing and
-                                users of its competitor.
-                                This allowed us to:</p>
-                            <ul>
-                                <li>gauge which elements were the most important to allow operators to make decisions.</li>
-                                <li>understand what kind of challenges users faced due to the environment in which they
-                                    work.
-                                </li>
-                                <li>identify strengths and weaknesses in the market to prioritise changes.</li>
-                            </ul>
-                            <figure>
-                                <img src="img/steel-research.jpg" alt="" class="illustration">
-                                <figcaption>Operators never took off their gloves and could not press the buttons without
-                                    using an object
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-    
-                    <div class="step">
-                        <div class="methodology">
-                            <img src="img/i-workshop.png" alt="" class="i-methodology">
-                            <h4>Ideation workshop</h4>
-                        </div>
-                        <div class="stepDetails">
-                            <p>I conducted an ideation workshop with the key stakeholders. This allowed us to make sure
-                                everyone felt involved in the design process (and excited about it!). By the end, we had
-                                collaboratively outlined the key journeys, agreed on how information should be prioritised,
-                                and produced paper sketches illustrating
-                                concurrent ideas.</p>
-                        </div>
-                    </div>
-    
-                    <div class="step">
-                        <div class="methodology">
-                            <img src="img/i-wireframe.png" alt="" class="i-methodology">
-                            <h4>Wireframes</h4>
-                        </div>
-                        <div class="stepDetails">
-                            <p>I created a series of wireframes that allowed to visualise the new flow and layout of the
-                                pages,
-                                then iterated a couple of times to address
-                                any concerns that stakeholder might have had regarding technical limitations.</p>
-                            <figure>
-                                <img src="img/steel-wireframe-S.jpg" alt="" class="illustration">
-                                <figcaption>A wireframe created in balsamiq</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-    
-                    <div class="step">
-                        <div class="methodology">
-                            <img src="img/i-wireframe.png" alt="" class="i-methodology">
-                            <h4>High fidelity mockups and style guide</h4>
-                        </div>
-                        <div class="stepDetails">
-                            <p>Our visual designer created high-fidelity visualisations
-                                based on the wireframes, as well as a new set of icons for the interface.</p>
-                            <p>We then worked together on a document summing up how to implement the
-                                new layout and explaining the interactions.</p>
-                        </div>
-                    </div>
-    
-                </div>
-    
-                <h3>Results</h3>
-                <ul>
-                    <li>The number of steps required to complete a roll inspection have been reduced by focusing
-                        on what operators really need to make decisions.
-                    </li>
-                    <li>Actionnable elements are bigger so they can be activated even when wearing gloves.</li>
-                </ul>
-                <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
-            </section>
+<div class="rootLayout">
+    <header>
+        <div class="headerLeft">
+            <a href="index.html" class="sophieDurand">
+                <h1>Sophie Durand</h1>
+            </a>
         </div>
-</main>
-<footer>
-    <ul class="contact-info">
-        <li class="phone"><a href="tel:+447522182857"></a></li>
-        <li class="mail"><a href="mailto:sophie.durand.b@gmail.com"></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/sophie-durand/"></a></li>
-    </ul>
-    <p>&copy; 2017 Sophie Durand</p>
-</footer></body>
+        <div class="headerRight">
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Work</a></li>
+                    <li><a href="about.html" >About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                    <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
+                        <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    <main class="mainContent">
+            <div id="wrapper">
+                <ol id="breadcrumbs">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li>> Project: Re-designing software</li>
+                </ol>
+                <section class="central">
+                    <h2>Re-designing a steel inspection software</h2>
+                    <p class="client">A technology provider for the steel industry - 2015</p>
+        
+                    <div id="projectOverview">
+                        <img src="img/steel-inspection.png" alt="" class="illustration"/>
+                        <div id="challenge">
+                            <h3>The challenge</h3>
+                            <p>Improve the usability and aesthetics of a software used to inspect steel rolls.</p>
+                        </div>
+                    </div>
+        
+                    <h3>What I did</h3>
+        
+                    <div id="research-steps">
+                        <p>I worked with two other consultants who were respectively in charge of the research and visual
+                            design, while
+                            I was in charge of UX design and interaction design.</p>
+        
+                        <div class="step">
+                            <div class="methodology">
+                                <img src="img/i-usertesting.png" alt="" class="i-methodology">
+                                <h4>In-context research and competitor review</h4>
+                            </div>
+                            <div class="stepDetails">
+                                <p>The first step was to familiarise myself with the technical documentation and meet with the
+                                    key stakeholders,
+                                    while my colleague went on site to observe users of the product we were re-designing and
+                                    users of its competitor.
+                                    This allowed us to:</p>
+                                <ul>
+                                    <li>gauge which elements were the most important to allow operators to make decisions.</li>
+                                    <li>understand what kind of challenges users faced due to the environment in which they
+                                        work.
+                                    </li>
+                                    <li>identify strengths and weaknesses in the market to prioritise changes.</li>
+                                </ul>
+                                <figure>
+                                    <img src="img/steel-research.jpg" alt="" class="illustration">
+                                    <figcaption>Operators never took off their gloves and could not press the buttons without
+                                        using an object
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+        
+                        <div class="step">
+                            <div class="methodology">
+                                <img src="img/i-workshop.png" alt="" class="i-methodology">
+                                <h4>Ideation workshop</h4>
+                            </div>
+                            <div class="stepDetails">
+                                <p>I conducted an ideation workshop with the key stakeholders. This allowed us to make sure
+                                    everyone felt involved in the design process (and excited about it!). By the end, we had
+                                    collaboratively outlined the key journeys, agreed on how information should be prioritised,
+                                    and produced paper sketches illustrating
+                                    concurrent ideas.</p>
+                            </div>
+                        </div>
+        
+                        <div class="step">
+                            <div class="methodology">
+                                <img src="img/i-wireframe.png" alt="" class="i-methodology">
+                                <h4>Wireframes</h4>
+                            </div>
+                            <div class="stepDetails">
+                                <p>I created a series of wireframes that allowed to visualise the new flow and layout of the
+                                    pages,
+                                    then iterated a couple of times to address
+                                    any concerns that stakeholder might have had regarding technical limitations.</p>
+                                <figure>
+                                    <img src="img/steel-wireframe-S.jpg" alt="" class="illustration">
+                                    <figcaption>A wireframe created in balsamiq</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+        
+                        <div class="step">
+                            <div class="methodology">
+                                <img src="img/i-wireframe.png" alt="" class="i-methodology">
+                                <h4>High fidelity mockups and style guide</h4>
+                            </div>
+                            <div class="stepDetails">
+                                <p>Our visual designer created high-fidelity visualisations
+                                    based on the wireframes, as well as a new set of icons for the interface.</p>
+                                <p>We then worked together on a document summing up how to implement the
+                                    new layout and explaining the interactions.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <h3>Results</h3>
+                    <ul>
+                        <li>The number of steps required to complete a roll inspection have been reduced by focusing
+                            on what operators really need to make decisions.
+                        </li>
+                        <li>Actionnable elements are bigger so they can be activated even when wearing gloves.</li>
+                    </ul>
+                    <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
+                </section>
+            </div>
+    </main>
+    <footer>
+        <ul class="contact-info">
+            <li class="phone"><a href="tel:+447522182857"></a></li>
+            <li class="mail"><a href="mailto:sophie.durand.b@gmail.com"></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/sophie-durand/"></a></li>
+        </ul>
+        <p>&copy; 2017 Sophie Durand</p>
+    </footer></div>
+</body>
 </html>
