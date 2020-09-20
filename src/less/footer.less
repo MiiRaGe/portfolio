@@ -1,0 +1,29 @@
+@import "theme.less";
+
+footer {
+  height: 238px;
+  background-color: @footer-background-color;
+  text-align: center;
+
+  >.footer {
+    &MainContent {
+      .heading-text();
+      font-size: @footer-font-size;
+      margin-bottom: 14px;
+      margin-top: 28px
+    }
+
+    &Email {
+      >a {
+        .email-text();
+      }
+
+      margin-bottom: 20px;
+    }
+
+    &LinkedInLogo {
+      .square(26px);
+      margin: auto;
+    }
+  }
+}

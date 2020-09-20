@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Sophie Durand | UX Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/sd.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="main.js"></script>
 </head>
 
 <body>
-<div class="rootLayout">
-    <header>
-        <div class="headerLeft">
-            <a href="index.html" class="sophieDurand">
-                <h1>Sophie Durand</h1>
-            </a>
-        </div>
-        <div class="headerRight">
-            <nav>
-                <ul>
-                    <li><a href="index.html" >Work</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
-                    <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
-                        <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>    <main class="mainContent">
+<header>
+    <div class="headerLeft">
+        <a href="index.html">
+            <h1 class="sophieDurand">Sophie Durand</h1>
+        </a>
+    </div>
+    <div class="headerRight">
+        <nav>
+            <span><a href="index.html" >Work</a></span>
+            <span><a href="about.html" >About</a></span>
+            <span><a href="contact.html" >Contact</a></span>
+            <span><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">CV</a></span>
+        </nav>
+    </div>
+</header><div class="rootLayout">
+    <main class="mainContent">
             <div id="wrapper">
                 <ol id="breadcrumbs">
                     <li><a href="index.html">Portfolio</a></li>
@@ -140,12 +136,15 @@
             </div>
     </main>
     <footer>
-        <ul class="contact-info">
-            <li class="phone"><a href="tel:+447522182857"></a></li>
-            <li class="mail"><a href="mailto:sophie.durand.b@gmail.com"></a></li>
-            <li class="linkedin"><a href="https://www.linkedin.com/in/sophie-durand/"></a></li>
-        </ul>
-        <p>&copy; 2017 Sophie Durand</p>
+        <div class="footerMainContent">
+            Let's connect
+        </div>
+        <div class="footerEmail">
+            <a href="mailto:sophie.durand.b@gmail.com">sophie.durand.b@gmail.com</a>
+        </div>
+        <div class="footerLinkedInLogo">
+            <a href="https://www.linkedin.com/in/sophie-durand/"><img src="img/LI-In-Bug.png"></a>
+        </div>
     </footer></div>
 </body>
 </html>
