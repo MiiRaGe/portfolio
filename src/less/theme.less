@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:100,300,400,500,600,700");
+
+@primary-text-color: #384142;
+@secondary-text-color: #707070;
+@email-text-color: #0D6A90;
+@footer-background-color: #fafaf5;
+
+@primary-font-family: 'Roboto';
+@secondary-font-family: 'Lora';
+
+@footer-font-size: 33px;
+@email-font-size: 20px;
+
+.primary-text() {
+  color: @primary-text-color;
+  font-family: @primary-font-family;
+}
+
+.heading-text() {
+  color: @primary-text-color;
+  font-family: @secondary-font-family;
+  font-weight: 500;
+}
+
+.email-text() {
+  color: @email-text-color;
+  font-family: @primary-font-family;
+  font-size: @email-font-size;
+}
+
+.underlined() {
+  text-decoration: underline;
+}
+
+.square(@size: 10px) {
+  height: @size;
+  width: @size;
+}

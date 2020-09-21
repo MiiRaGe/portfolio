@@ -3,119 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Sophie Durand | UX Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/sd.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="main.js"></script>
 </head>
 
 <body>
 <header>
-    <a href="index.html" id="logo">
-        <h1>Sophie Durand</h1>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html" >Work</a></li>
-            <li><a href="about.html" >About</a></li>
-            <li><a href="contact.html" >Contact</a></li>
-            <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
-                <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-        <div id="wrapper">
-            <ol id="breadcrumbs">
-                <li><a href="index.html">Portfolio</a></li>
-                <li>> Project: Improving a digital quality management tool</li>
-            </ol>
-            <section class="central">
-                <h2>Improving a digital quality management tool</h2>
-                  <p class="client">Crownpeak - 2015</p>
-    
-                <div id="projectOverview">
-                      <img src="img/crownpeak-laptop.png" alt="" class="illustration"/>
-                    <div id="challenge">
-                        <h3>The challenge</h3>
-                        <p>Help make the quality management tool provided by <a href="https://www.crownpeak.com/">Crownpeak</a> more user-friendly for both:</p>
-                        <ul>
-                            <li>senior managers who want high level information about website optimization and compliance to standards.</li>
-                            <li>web managers who want more details to identify and resolve issues.</li>
-                        </ul>
-                    </div>
-                </div>
-    
-                    <h3>What I did</h3>
-    
-                        <p>For this project, I worked with another UX Consultant.</p>
-    
-                        <div id="research-steps">
-    
-                                <div class="step">
-                                    <div class="methodology">
-                                        <img src="img/i-usertesting.png" alt="" class="i-methodology">
-                                        <h4>User Testing</h4>
-                                </div>
-                                <div class="stepDetails">
-                                        <p>The first step was to run remote user testing with participants from all around the world,
-                                            who were employees of companies who use Crownpeak's tool.</p>
-                                        <p>The goal was to understand how different user types were using the tool and identify usability issues.
-                                        We then lead discussion with the product team to decide what should be prioritised.</p>
-                                        </div>
-                                </div>
-    
-                                <div class="step">
-                                    <div class="methodology">
-                                        <img src="img/i-workshop.png" alt="" class="i-methodology">
-                                        <h4>Participative Design Workshops</h4>
-                                   </div>
-                                    <div class="stepDetails">
-                                        <p>Based on this, a UX Designer produced a prototype, and I set up some unmorederated remote tests on <a href="https://www.usertesting.com/">usertesting.com</a> to validate it.</p>
-                                        <ul>
-                                            <li>The first test focused on the layout:
-                                                <ul>
-                                                    <li>Participants were asked to find specific information either on the current page or on the prototype.</li>
-                                                    <li>This helped to validate that finding information was easier with the new layout.</li>
-                                                </ul>
-                                            </li>
-                                            <li>Later tests focused on the amount of information:
-                                                <ul>
-                                                    <li>Participants were asked to find a holiday they liked.
-                                                    One group was shown a prototype with the same amount of information as on the current page, while another saw a prototype with only the information that we felt was essential.</li>
-                                                    <li>Based on the result of these tests, we re-introduced some of the
-                                            information we had initially planned to delete.</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <figure>
-                                            <img src="img/tc-srp.png" alt="" class="illustrationLarge">
-                                            <figcaption>A Result Card on Desktop, before and after the re-design</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
+    <div class="headerLeft">
+        <a href="index.html">
+            <h1 class="sophieDurand">Sophie Durand</h1>
+        </a>
+    </div>
+    <div class="headerRight">
+        <nav>
+            <span><a href="index.html" >Work</a></span>
+            <span><a href="about.html" >About</a></span>
+            <span><a href="contact.html" >Contact</a></span>
+            <span><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">CV</a></span>
+        </nav>
+    </div>
+</header><div class="rootLayout">
+    <main class="mainContent">
+            <div id="wrapper">
+                <ol id="breadcrumbs">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li>> Project: Improving a digital quality management tool</li>
+                </ol>
+                <section class="central">
+                    <h2>Improving a digital quality management tool</h2>
+                      <p class="client">Crownpeak - 2015</p>
+        
+                    <div id="projectOverview">
+                          <img src="img/crownpeak-laptop.png" alt="" class="illustration"/>
+                        <div id="challenge">
+                            <h3>The challenge</h3>
+                            <p>Help make the quality management tool provided by <a href="https://www.crownpeak.com/">Crownpeak</a> more user-friendly for both:</p>
+                            <ul>
+                                <li>senior managers who want high level information about website optimization and compliance to standards.</li>
+                                <li>web managers who want more details to identify and resolve issues.</li>
+                            </ul>
                         </div>
-    
-                    <h3>Results</h3>
-                    <p>This is an on-going project. The Result Cards have been fully re-designed, and we are now working on the filters.</p>
-                    <p>The most important changes so far are that:</p>
-                                <ul>
-                                    <li>The amount of content on each card has been reduced. This was a controversial change, so being able to back up the decisions with research data was very important.</li>
-                                    <li>The design of the cards is cleaner, with one column, more white space, and icons. It makes it easier to scan the information.</li>
-                                </ul>
-                        <p>The new cards have been a success. When they were A/B tested, we've measured a decrease in the number of product pages users have to visit before making a decision and booking.</p>
-                <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
-              </section>
-            </div>
-</main>
-<footer>
-    <ul class="contact-info">
-        <li class="phone"><a href="tel:+447522182857"></a></li>
-        <li class="mail"><a href="mailto:sophie.durand.b@gmail.com"></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/sophie-durand/"></a></li>
-    </ul>
-    <p>&copy; 2017 Sophie Durand</p>
-</footer></body>
+                    </div>
+        
+                        <h3>What I did</h3>
+        
+                            <p>For this project, I worked with another UX Consultant.</p>
+        
+                            <div id="research-steps">
+        
+                                    <div class="step">
+                                        <div class="methodology">
+                                            <img src="img/i-usertesting.png" alt="" class="i-methodology">
+                                            <h4>User Testing</h4>
+                                    </div>
+                                    <div class="stepDetails">
+                                            <p>The first step was to run remote user testing with participants from all around the world,
+                                                who were employees of companies who use Crownpeak's tool.</p>
+                                            <p>The goal was to understand how different user types were using the tool and identify usability issues.
+                                            We then lead discussion with the product team to decide what should be prioritised.</p>
+                                            </div>
+                                    </div>
+        
+                                    <div class="step">
+                                        <div class="methodology">
+                                            <img src="img/i-workshop.png" alt="" class="i-methodology">
+                                            <h4>Participative Design Workshops</h4>
+                                       </div>
+                                        <div class="stepDetails">
+                                            <p>Based on this, a UX Designer produced a prototype, and I set up some unmorederated remote tests on <a href="https://www.usertesting.com/">usertesting.com</a> to validate it.</p>
+                                            <ul>
+                                                <li>The first test focused on the layout:
+                                                    <ul>
+                                                        <li>Participants were asked to find specific information either on the current page or on the prototype.</li>
+                                                        <li>This helped to validate that finding information was easier with the new layout.</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Later tests focused on the amount of information:
+                                                    <ul>
+                                                        <li>Participants were asked to find a holiday they liked.
+                                                        One group was shown a prototype with the same amount of information as on the current page, while another saw a prototype with only the information that we felt was essential.</li>
+                                                        <li>Based on the result of these tests, we re-introduced some of the
+                                                information we had initially planned to delete.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <figure>
+                                                <img src="img/tc-srp.png" alt="" class="illustrationLarge">
+                                                <figcaption>A Result Card on Desktop, before and after the re-design</figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                            </div>
+        
+                        <h3>Results</h3>
+                        <p>This is an on-going project. The Result Cards have been fully re-designed, and we are now working on the filters.</p>
+                        <p>The most important changes so far are that:</p>
+                                    <ul>
+                                        <li>The amount of content on each card has been reduced. This was a controversial change, so being able to back up the decisions with research data was very important.</li>
+                                        <li>The design of the cards is cleaner, with one column, more white space, and icons. It makes it easier to scan the information.</li>
+                                    </ul>
+                            <p>The new cards have been a success. When they were A/B tested, we've measured a decrease in the number of product pages users have to visit before making a decision and booking.</p>
+                    <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
+                  </section>
+                </div>
+    </main>
+    <footer>
+        <div class="footerMainContent">
+            Let's connect
+        </div>
+        <div class="footerEmail">
+            <a href="mailto:sophie.durand.b@gmail.com">sophie.durand.b@gmail.com</a>
+        </div>
+        <div class="footerLinkedInLogo">
+            <a href="https://www.linkedin.com/in/sophie-durand/"><img src="img/LI-In-Bug.png"></a>
+        </div>
+    </footer></div>
+</body>
+</body>
 </html>

@@ -1,0 +1,99 @@
+/**********************************
+PAGE: INDEX
+***********************************/
+
+.introIndex {
+    text-align: center;
+    margin-bottom: 128px;
+}
+
+.gradientBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(186deg #eaf9ff 61%, #ffffff 24%);
+    background: linear-gradient(186deg, #eaf9ff 61%, #ffffff 24%);
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 36px;
+}
+
+#gallery {
+    margin: 0 -36px -36px -36px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caseStudies {
+    text-align: center;
+}
+
+.portfolioCard {
+    flex: 0 0 360px;
+    height: 330px;
+    width: 360px;
+    margin: 0px 36px 62px 36px;
+}
+
+.portfolioCard:hover {
+    margin-top: -5px;
+}
+
+.cardClient {
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 1em;
+    color: darkred;
+}
+
+.cardDescription {
+    font-family: Lora, Serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.cardLongDesc {
+    font-family: Roboto;
+    color: #5f6368;
+    font-size: .941rem;
+    font-weight: 300;
+    line-height: 1.6;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cardImage {
+    width: 360px;
+    height: 240px;
+    z-index: 1;
+}
+
+.raisedCard {
+    text-align: center;
+    z-index: 2;
+    height: 144px;
+    width: 260px;
+    position: relative;
+    bottom: 61px;
+    left: 50px;
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.08);
+}

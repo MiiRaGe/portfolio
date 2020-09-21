@@ -1,14 +1,15 @@
 <header>
-    <a href="index.html" id="logo">
-        <h1>Sophie Durand</h1>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html" {{#if (isWork selected)}}class="selected"{{/if}}>Work</a></li>
-            <li><a href="about.html" {{#if (isAbout selected)}}class="selected"{{/if}}>About</a></li>
-            <li><a href="contact.html" {{#if (isContact selected)}}class="selected"{{/if}}>Contact</a></li>
-            <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
-                <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
-        </ul>
-    </nav>
+    <div class="headerLeft">
+        <a href="index.html">
+            <h1 class="sophieDurand">Sophie Durand</h1>
+        </a>
+    </div>
+    <div class="headerRight">
+        <nav>
+            <span><a href="index.html" {{#if (isWork selected)}}class="selected"{{/if}}>Work</a></span>
+            <span><a href="about.html" {{#if (isAbout selected)}}class="selected"{{/if}}>About</a></span>
+            <span><a href="contact.html" {{#if (isContact selected)}}class="selected"{{/if}}>Contact</a></span>
+            <span><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">CV</a></span>
+        </nav>
+    </div>
 </header>

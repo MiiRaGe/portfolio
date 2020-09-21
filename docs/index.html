@@ -3,98 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Sophie Durand | UX Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="img/sd.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="main.js"></script>
 </head>
 
 <body>
 <header>
-    <a href="index.html" id="logo">
-        <h1>Sophie Durand</h1>
-    </a>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="selected">Work</a></li>
-            <li><a href="about.html" >About</a></li>
-            <li><a href="contact.html" >Contact</a></li>
-            <li><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">
-                <img src="img/i-download.png" alt="Download CV (pdf)" class="icon">CV</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-        <section>
-            <p class="selectedWork">Selected works:</p>
-            <div class="wrapper">
-                <div id="gallery">
-                        <div class="portfolioCard">
-                            <a href="increase-signup.html">
-                                <img src="img/hm1_signup_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">H&amp;M</div>
-                                    <div class="cardDescription">Sign up</div>
-                                    <div class="cardLongDesc">Increase the part of customers who sign up</div>
-                                </div>
-                            </a>
-                        </div>                    <div class="portfolioCard">
-                            <a href="index.html">
-                                <img src="img/hm2_club_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">H&amp;M</div>
-                                    <div class="cardDescription">Loyalty program</div>
-                                    <div class="cardLongDesc">Increase engagement with the rewards and benefits</div>
-                                </div>
-                            </a>
-                        </div>                    <div class="portfolioCard">
-                            <a href="organise-content.html">
-                                <img src="img/tc_accom_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">Thomas Cook</div>
-                                    <div class="cardDescription">Hotel detail page</div>
-                                    <div class="cardLongDesc">Help users find the information they need</div>
-                                </div>
-                            </a>
-                        </div>                    <div class="portfolioCard">
-                            <a href="design-finance-tool.html">
-                                <img src="img/mas_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">Money Advice Service</div>
-                                    <div class="cardDescription">Support website</div>
-                                    <div class="cardLongDesc">Help claimants to navigate the new UK benefits system</div>
-                                </div>
-                            </a>
-                        </div>                    <div class="portfolioCard">
-                            <a href="redesign-steel-software.html">
-                                <img src="img/steel_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">Sarclad</div>
-                                    <div class="cardDescription">Inspection software</div>
-                                    <div class="cardLongDesc">Make a tool to inspect steel rolls easier to use</div>
-                                </div>
-                            </a>
-                        </div>                    <div class="portfolioCard">
-                            <a href="accessibility-airline.html">
-                                <img src="img/ax_card@2x.jpg" alt="" class="cardImage">
-                                <div class="raisedCard">
-                                    <div class="cardClient">Amadeus</div>
-                                    <div class="cardDescription">Airlines&#x27; websites</div>
-                                    <div class="cardLongDesc">Make the booking interface used by major airlines more accessible</div>
-                                </div>
-                            </a>
-                        </div>            </div>
-            </div>
-        </section>
-</main>
-<footer>
-    <ul class="contact-info">
-        <li class="phone"><a href="tel:+447522182857"></a></li>
-        <li class="mail"><a href="mailto:sophie.durand.b@gmail.com"></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/sophie-durand/"></a></li>
-    </ul>
-    <p>&copy; 2017 Sophie Durand</p>
-</footer></body>
+    <div class="headerLeft">
+        <a href="index.html">
+            <h1 class="sophieDurand">Sophie Durand</h1>
+        </a>
+    </div>
+    <div class="headerRight">
+        <nav>
+            <span><a href="index.html" class="selected">Work</a></span>
+            <span><a href="about.html" >About</a></span>
+            <span><a href="contact.html" >Contact</a></span>
+            <span><a href="files/cv_SophieDurand.pdf" download="" title="Download CV (pdf)">CV</a></span>
+        </nav>
+    </div>
+</header><div class="rootLayout">
+    <main class="mainContent">
+            <div class="gradientBackground"></div>
+            <section>
+                <div class="introIndex">
+                    <h1>Hey! I'm Sophie Durand,</h1>
+                    <p>a <b>Product Designer</b> based in Stockholm, Sweden.</p>
+                    <p>Welcome to my portfolio.</p>
+                </div>
+                <h1 class="caseStudies">Case studies</h1>
+                <div class="wrapper">
+                    <div id="gallery">
+                            <div class="portfolioCard">
+                                <a href="increase-signup.html">
+                                    <img src="img/hm1_signup_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">H&amp;M</div>
+                                        <div class="cardDescription">Sign up</div>
+                                        <div class="cardLongDesc">Increase the part of customers who sign up</div>
+                                    </div>
+                                </a>
+                            </div>                    <div class="portfolioCard">
+                                <a href="index.html">
+                                    <img src="img/hm2_club_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">H&amp;M</div>
+                                        <div class="cardDescription">Loyalty program</div>
+                                        <div class="cardLongDesc">Increase engagement with the rewards and benefits</div>
+                                    </div>
+                                </a>
+                            </div>                    <div class="portfolioCard">
+                                <a href="organise-content.html">
+                                    <img src="img/tc_accom_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">Thomas Cook</div>
+                                        <div class="cardDescription">Hotel detail page</div>
+                                        <div class="cardLongDesc">Help users find the information they need</div>
+                                    </div>
+                                </a>
+                            </div>                    <div class="portfolioCard">
+                                <a href="design-finance-tool.html">
+                                    <img src="img/mas_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">Money Advice Service</div>
+                                        <div class="cardDescription">Support website</div>
+                                        <div class="cardLongDesc">Help claimants to navigate the new UK benefits system</div>
+                                    </div>
+                                </a>
+                            </div>                    <div class="portfolioCard">
+                                <a href="redesign-steel-software.html">
+                                    <img src="img/steel_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">Sarclad</div>
+                                        <div class="cardDescription">Inspection software</div>
+                                        <div class="cardLongDesc">Make a tool to inspect steel rolls easier to use</div>
+                                    </div>
+                                </a>
+                            </div>                    <div class="portfolioCard">
+                                <a href="accessibility-airline.html">
+                                    <img src="img/ax_card@2x.jpg" alt="" class="cardImage">
+                                    <div class="raisedCard">
+                                        <div class="cardClient">Amadeus</div>
+                                        <div class="cardDescription">Airlines&#x27; websites</div>
+                                        <div class="cardLongDesc">Make the booking interface used by major airlines more accessible</div>
+                                    </div>
+                                </a>
+                            </div>            </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="footerMainContent">
+            Let's connect
+        </div>
+        <div class="footerEmail">
+            <a href="mailto:sophie.durand.b@gmail.com">sophie.durand.b@gmail.com</a>
+        </div>
+        <div class="footerLinkedInLogo">
+            <a href="https://www.linkedin.com/in/sophie-durand/"><img src="img/LI-In-Bug.png"></a>
+        </div>
+    </footer></div>
+</body>
+</body>
 </html>
