@@ -5,7 +5,7 @@ HEADINGS
 ***********************************/
 
 .rootLayout {
-  margin-top: 76px;
+  padding-top: 76px;
   display: grid;
   width: 100%;
   grid-template-rows: auto 1fr auto;
@@ -19,6 +19,7 @@ header {
   height: 76px;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
   background: white;
 
@@ -35,12 +36,16 @@ header {
   }
 
   > .headerRight {
-    margin: auto 0 auto 0;
+    margin: auto 64px auto 0;
 
     > nav {
-      margin-right: 54px;
+      //margin-right: 564px;
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+
       > span {
-        margin-right: 20px;
+        //margin-right: 20px;
         text-transform: uppercase;
 
         > a {
