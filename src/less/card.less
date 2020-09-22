@@ -1,0 +1,55 @@
+@import "theme.less";
+
+.portfolioCard {
+  flex: 0 0 360px;
+  height: 330px;
+  width: 360px;
+  margin: 0px 36px 62px 36px;
+}
+
+.portfolioCard:hover {
+  margin-top: -5px;
+}
+
+.cardClient {
+  .client-text();
+  margin-top: 8px;
+}
+
+.cardDescription {
+  .heading-text();
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.cardLongDesc {
+  .secondary-text();
+  line-height: 21px;
+}
+
+.cardImage {
+  width: 360px;
+  height: 240px;
+  z-index: 1;
+}
+
+.raisedCard {
+  text-align: center;
+  z-index: 2;
+  height: 144px;
+  width: 260px;
+  position: relative;
+  bottom: 61px;
+  left: 50px;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  padding: 8px 10px 8px 10px
+}
