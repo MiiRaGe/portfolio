@@ -28,3 +28,45 @@
 
   }
 }
+
+.case {
+  &TwoColumn {
+    width: 85%;
+    max-width: 1000px;
+    display: grid;
+    grid-column-gap: 88px;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    margin: 54px auto auto auto;
+  }
+  &LeftColumn {
+    display: grid;
+    grid-template-rows: 150px auto;
+
+    &Title {
+      height: 150px;
+      margin: 40px 0 auto 0;
+      border-top: solid 1px @primary-text-color;
+      border-bottom: solid 1px @primary-text-color;
+      display: grid;
+      place-items: center;
+      .primary-text();
+      letter-spacing: 7px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+    }
+    &Desc {
+      margin: auto 0 auto 0;
+    }
+  }
+
+  &RightColumn {
+    background-color: @case-background-color;
+    padding: 32px 32px 32px 32px;
+
+    :first-child {
+      margin-top: 0;
+      margin-block-start: 0;
+    }
+  }
+}
