@@ -7,80 +7,113 @@
     }}
 
     {{#> case/paragraphe title="The challenge" }}
-    15% of H&M online customers are not members of the loyalty program. They are missing out on cheaper,
-                    more personalised shopping... And members have a higher life time value for H&M.
-                So, how do we encourage more customers to sign up?
+    <p>15% of H&M online customers are not members of the loyalty program.
+    How do we encourage more customers to sign up?</p>
      {{/case/paragraphe}}
 
     {{#> case/paragraphe title="The process" }}
-        I was the Product Designer in a new Product Team in charge of increasing the number of sign ups.
+    <p>For 4 months, I was the Product Designer in a Product Team in charge of increasing the number of sign ups. The team had been created just a few months beforehand
+    and had not had an assigned Product Designer before.</p>
+    <p>We were bombarded with lots of requests to add more features, or put the sign up button
+                in more places. But there was little data to back up those requests. So, I started by gathering data
+                to help the team make informed decisions about where our efforts should go next.</p>
+
     {{/case/paragraphe}}
 
         {{#> case/twoColumn }}
         {{#> case/leftColumn title="Research" }}
-            <img src="img/steel-inspection.png">
-            <div>An operator doing things with his/her pen. NSFW.</div>
+            <img src="img/hm1_signup_Clicktale.png" alt="21% drop out at the date of birth. Drop out is much lower for other fields (3 to 4%)">
+            <div>Most users who stop filling in the form do so because of the date of birth field (screenshot from Clicktale).</div>
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
-            <div>The team was bombarded with lots of requests to add more features, or put the sign up button
-                in more places. But there was little data to back up those requests</div>
-                        <p>So, I started by gathering insights:</p>
-                        <ul>
-                            <li>conducting user testing (both in-person and remotely), that I invited the team to
-                                watch.
-                            </li>
-                            <li>asking feedback from market experts and store staff (who see people struggling to sign
-                                up at the till).
-                            </li>
-                            <li>looking at Clicktale and Google Analytics.</li>
-                            <li>checking results from previous A/B tests</li>
-                        </ul>
-                        <p>With this information, the product owner and I established our priority for the upcoming
-                            sprints, based on effort and impact:</p>
-                        <ul>
-                            <li>fix the basics in the sign up form (technical flaws and usability issues)</li>
-                            <li>promote sign up more, but in the right context (for instance, at checkout)</li>
-                            <li>adapt to specific markets</li>
-                        </ul>
-                        <p>I built a quick showcase of our research for our Sprint Demo. This helped stakeholders to
-                            understand our strategy and accept that we would not be focusing on some of the features
-                            they were keen on.</p>
+             <h4>Click test</h4>
+             <p>A common hypothesis was that it was too difficult to find where to sign up. To look
+             into that, I used click tests on <a href="https://www.userzoom.com/">Userzoom</a>,
+             which disproved the hypothesis.</p>
+
+             <h4>User testing</h4>
+            <p>I conducted user testing, that I invited the team to watch. The sessions highlighted
+             many severe usability issues on mobile, and some smaller problems on desktop.</p>
+
+             <h4>Store experience and international perspective</h4>
+             <p>I was able to use
+              insights from a project around the wider loyalty program experience in stores around the world.
+             The key takeaways were that signing up takes too long, and the ways to sign up are not adapted to all markets.</p>
+
+            <h4>Quantitative data</h4>
+            <p>To understand the true scale of the issues identified so far, I gathered data from <a href="https://analytics.google.com/analytics/">Google Analytics</a> and <a href="https://www.clicktale.com/">Clicktale.</a>
+            The figures for mobile (which accounts for about 70% of our traffic globally) were not good:
+                <ul>
+                    <li>Signing up took 40 seconds more than on desktop, on average.</li>
+                    <li>The drop out rate was 30% higher.</li>
+                </ul>
+            </p>
+
+            <h4>What next?</h4>
+            <p>I presented the results to the team. We established our priority for the upcoming sprints, based on effort and impact.</p>
+    <p>Then, I built a quick showcase for our Sprint Demo. This helped stakeholders to understand our strategy and accept that we would not be focusing on some of the new features they were keen on.</p>
+
+
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
+
+    {{#> case/paragraphe title="" }}
+     <p>Below, I will detail the main things I was involved with before leaving the team.</p>
+     {{/case/paragraphe}}
+
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Reduce friction" }}
+            <img src="img/hm1_signup_android_test.png" alt="Fingers hovering over a calendar to select date of birth">
+            <div>A participant in user test, unsure how to change the year in the date picker</div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+
+
+               <h4>The problem</h4>
+               <p>The date of birth was by far the biggest drop off point in the form.
+               <ul>
+                <li>on Android, most users could not select a date of birth at all: they coudln't figure out how to change the year.</li>
+                <li>on iOS, selecting the date of birth took longer than necessary.</li>
+                </ul></p>
+                <h4>How might we solve it?</h4>
+                <ul>
+                    <li>Stop to require the date of birth: this decision wasn't in the team's hands.
+                    The Product Owner and I started discussions with our stakeholders:
+                    Why do we need the date of birth? How else can we collect it? I prototyped
+                    a few ideas to help kickstart things.
+                   </li>
+                   <li>Change the input method: with a precise date so far back in the past, date pickers are not
+                   the most appropriate input method. I reviewed existing research and guidelines (like
+                   <a href="https://design-system.service.gov.uk/patterns/dates/#asking-for-memorable-dates">Research
+                   by gov.uk</a> and  <a href="https://material.io/components/date-pickers#mobile-pickers">Material Design
+                   Date pickers</a>) and sketched out 2 solutions.
+                   </li>
+                </ul>
+                <h4>Design review</h4>
+                <p>I got feedback on the solutions from other Designers at our daily Design Review.
+                To stick to existing components in our Design System,
+                I decided to move forward first with A/B testing the most simple solution first: simple input, split in 3 fields (day, month, year), with only
+                   one visible label.</p>
+                <h4>A/B Test</h4>
+                <p>The new input method resulted in 10% less drop outs, and the time taken to fill in the form decreased by 25s, to 50s.
+                The rate of errors when filling in the form did not significantly change like we could have feared.   </p>
+                <h4>Next?</h4>
+                <p>Address the next big drop off points: clearer password rules, and error messages.</p>
 
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
     {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Fix the basics" }}
+        {{#> case/leftColumn title="Promote in the right context" }}
             <img src="img/steel-inspection.png">
             <div>An operator doing things with his/her pen. NSFW.</div>
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
-               <p class="stepDesc">Different sign up forms were used at different point of the journey, which
-                            was hard to maintain. I provided consistent design for all of them, aligned with our new
-                            Design System.
-
-                        </p>
-
-                        <p>Another small fix to make was around the the date of birth (a mandatory field) that was
-                            difficult to input on mobile (especially on Android). This is a common issue, so I based my
-                            solution on existing research
-                            (for instance: <a
-                                    href="https://design-system.service.gov.uk/patterns/dates/#asking-for-memorable-dates">Research
-                                by gov.uk</a>) and guidelines (for instance: <a
-                                    href="https://material.io/components/date-pickers#mobile-pickers">Material Design
-                                Date pickers</a>)</p>
-        {{/case/rightColumn}}
-    {{/case/twoColumn}}
-
-    {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Ideation workshop" }}
-            <img src="img/steel-inspection.png">
-            <div>An operator doing things with his/her pen. NSFW.</div>
-        {{/case/leftColumn}}
-        {{#> case/rightColumn}}
+        <h4>Opportunity</h4>
               <p>A key opportunity we identified was to promote joining in the checkout. It is where it makes
                             the most sense to users: they get immediate benefits from it (like free shipping and
                             discounts).</p>
+        <h4>Ideation workshop</h4>
                         <p>The checkout is an area many teams have a stake in. So, I invited business experts,
                             designers, product owners and analysts to a workshop to generate ideas together.</p>
                         <p>The workshop was very appreciated, as it brought together people who were not often in the
@@ -88,6 +121,10 @@
                             little bit too tight to make the most out of that positive energy. I had added more time due
                             to the workshop being fully remote (we had just started working from home due to Covid-19).
                             But that was not enough: a good learning for me!</p>
+
+        <h4>Outcomes</h4>
+        <p>We had a prioritised list of ideas to A/B test. The first one, which performed well, was to
+        change the labels on the CTAs.</p>
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
