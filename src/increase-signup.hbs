@@ -1,35 +1,29 @@
-{{#>base/base}}
-    <div id="wrapper">
-        <section class="central">
-            <h2>Increasing sign ups</h2>
-            <p class="client">H&M - 2020</p>
+{{#> base/base selected="work"}}
+    {{> case/intro
+        client="H&M, 2020"
+        description="Increase sign ups"
+        image="img/hm1_signup_card@2x.jpg"
 
-            <div id="projectOverview">
-                <img src="img/hm1_signup.png" alt="" class="illustration"/>
-                <div id="challenge">
-                    <h3>The challenge</h3>
-                </div>
+    }}
 
-                <p>15% of H&M online customers are not members of the loyalty program. They are missing out on cheaper,
-                    more personalised shopping... And members have a higher life time value for H&M.</p>
-                <p>So, how do we encourage more customers to sign up?</p>
-            </div>
+    {{#> case/paragraphe title="The challenge" }}
+    15% of H&M online customers are not members of the loyalty program. They are missing out on cheaper,
+                    more personalised shopping... And members have a higher life time value for H&M.
+                So, how do we encourage more customers to sign up?
+     {{/case/paragraphe}}
 
-            <h3>What I did</h3>
+    {{#> case/paragraphe title="The process" }}
+        I was the Product Designer in a new Product Team in charge of increasing the number of sign ups.
+    {{/case/paragraphe}}
 
-            <p>I was the Product Designer in a new Product Team in charge of increasing the number of sign ups.</p>
-
-
-            <div id="research-steps">
-
-                <div class="step">
-                    <div class="methodology">
-                        <!--<img src="img/i-workshop.png" alt="" class="i-methodology">-->
-                        <h4>Initial Research</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>The team was bombarded with lots of requests to add more features, or put the sign up button
-                            in more places. But there was little data to back up those requests.</p>
+        {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Research" }}
+            <img src="img/steel-inspection.png">
+            <div>An operator doing things with his/her pen. NSFW.</div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+            <div>The team was bombarded with lots of requests to add more features, or put the sign up button
+                in more places. But there was little data to back up those requests</div>
                         <p>So, I started by gathering insights:</p>
                         <ul>
                             <li>conducting user testing (both in-person and remotely), that I invited the team to
@@ -51,28 +45,22 @@
                         <p>I built a quick showcase of our research for our Sprint Demo. This helped stakeholders to
                             understand our strategy and accept that we would not be focusing on some of the features
                             they were keen on.</p>
-                        <!--<figure>
-                            <img src="img/ax-report.jpg" alt="">
-                            <figcaption>Extract of an audit report.</figcaption>
-                        </figure>--->
-                    </div>
-                </div>
 
-                <div class="step">
-                    <div class="methodology">
-                        <!--<img src="img/i-workshop.png" alt="" class="i-methodology">-->
-                        <h4>Design - Fix the basics</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p class="stepDesc">Different sign up forms were used at different point of the journey, which
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
+
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Fix the basics" }}
+            <img src="img/steel-inspection.png">
+            <div>An operator doing things with his/her pen. NSFW.</div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+               <p class="stepDesc">Different sign up forms were used at different point of the journey, which
                             was hard to maintain. I provided consistent design for all of them, aligned with our new
                             Design System.
 
                         </p>
-                        <!--<figure class="stepImg">
-                            <img src="img/ax-test.jpg" alt="" class="illustration">
-                            <figcaption>A participant who needed to zoom and invert colours</figcaption>
-                        </figure>-->
+
                         <p>Another small fix to make was around the the date of birth (a mandatory field) that was
                             difficult to input on mobile (especially on Android). This is a common issue, so I based my
                             solution on existing research
@@ -81,16 +69,16 @@
                                 by gov.uk</a>) and guidelines (for instance: <a
                                     href="https://material.io/components/date-pickers#mobile-pickers">Material Design
                                 Date pickers</a>)</p>
-                    </div>
-                </div>
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
 
-                <div class="step">
-                    <div class="methodology">
-                        <!--<img src="img/i-workshop.png" alt="" class="i-methodology">-->
-                        <h4>Ideation workshop</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>A key opportunity we identified was to promote joining in the checkout. It is where it makes
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Ideation workshop" }}
+            <img src="img/steel-inspection.png">
+            <div>An operator doing things with his/her pen. NSFW.</div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+              <p>A key opportunity we identified was to promote joining in the checkout. It is where it makes
                             the most sense to users: they get immediate benefits from it (like free shipping and
                             discounts).</p>
                         <p>The checkout is an area many teams have a stake in. So, I invited business experts,
@@ -100,24 +88,22 @@
                             little bit too tight to make the most out of that positive energy. I had added more time due
                             to the workshop being fully remote (we had just started working from home due to Covid-19).
                             But that was not enough: a good learning for me!</p>
-                    </div>
-                </div>
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
 
-                <div class="step">
-                    <div class="methodology">
-                        <!--<img src="img/i-workshop.png" alt="" class="i-methodology">-->
-                        <h4>Design & test: Support international growth</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>We set out to provide different, locally-adapted ways to sign up. This has not been launched
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Design & test" }}
+            <img src="img/steel-inspection.png">
+            <div>An operator doing things with his/her pen. NSFW.</div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+               <p>We set out to provide different, locally-adapted ways to sign up. This has not been launched
                             yet so I will show some of the process, but details are obscured.</p>
-                    </div>
-                </div>
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
 
-            </div>
-
-            <h3>Results</h3>
-            <p>As a direct result of the changes implemented on mobile:</p>
+    {{#> case/paragraphe title="Results" }}
+        <p>As a direct result of the changes implemented on mobile:</p>
             <ul>
                 <li>The average time it takes to join the loyalty program was reduced by 25s.</li>
                 <li>Drop outs in the sign up form decreased by 10%.</li>
@@ -125,6 +111,10 @@
             <p>The first A/B tests around promoting sign up in the checkout resulted in increased sign ups. Some other
                 ideas are still being tested.</p>
             <p>The local sign up has not launched yet.</p>
+    {{/case/paragraphe}}
+
+
+
 
 
             <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
