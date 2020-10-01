@@ -1,105 +1,122 @@
-{{#>base/base}}
-    <div id="wrapper">
-        <section class="central">
-            <h2>Re-designing a steel inspection software</h2>
-            <p class="client">A technology provider for the steel industry - 2015</p>
+{{#> base/base selected="work"}}
+    {{> case/intro
+            client="Sarclad (Software for the steel industry), 2015"
+            description="Redesign a software to inspect steel rolls"
+            image="img/steel-inspection.png"
 
-            <div id="projectOverview">
-                <img src="img/steel-inspection.png" alt="" class="illustration"/>
-                <div id="challenge">
-                    <h3>The challenge</h3>
-                    <p>Improve the usability and aesthetics of a software used to inspect steel rolls.</p>
-                </div>
+    }}
+    {{#> case/paragraphe title="The challenge" }}
+        <p>Improve the usability and aesthetics of a software to inspect steel rolls, to avoid losing
+            ground compared to competitors.</p>
+        <p>Most of the material is confidential. I will only show what is publicly available
+            online, or early concepts that do not closely match the final product.</p>
+    {{/case/paragraphe}}
+    {{#> case/paragraphe title="The process" }}
+        <p>To lead this re-design, we were 3 consultants from System Concepts: I was in charge of
+            the UX, and worked with a Researcher (Steve) and a UI Designer (Rebecca).
+
+            We started by meeting with the key stakeholders to understand their expectations. Then, we worked on
+            building our understanding of the software and its users.</p>
+    {{/case/paragraphe}}
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="research" }}
+            <img src="img/steel-research.jpg">
+            <div>An operator using a pen to press buttons, which are too difficult to activate with safety gloves on.
             </div>
 
-            <h3>What I did</h3>
-
-            <div id="research-steps">
-                <p>I worked with two other consultants who were respectively in charge of the research and visual
-                    design, while
-                    I was in charge of UX design and interaction design.</p>
-
-                <div class="step">
-                    <div class="methodology">
-                        <img src="img/i-usertesting.png" alt="" class="i-methodology">
-                        <h4>In-context research and competitor review</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>The first step was to familiarise myself with the technical documentation and meet with the
-                            key stakeholders,
-                            while my colleague went on site to observe users of the product we were re-designing and
-                            users of its competitor.
-                            This allowed us to:</p>
-                        <ul>
-                            <li>gauge which elements were the most important to allow operators to make decisions.</li>
-                            <li>understand what kind of challenges users faced due to the environment in which they
-                                work.
-                            </li>
-                            <li>identify strengths and weaknesses in the market to prioritise changes.</li>
-                        </ul>
-                        <figure>
-                            <img src="img/steel-research.jpg" alt="" class="illustration">
-                            <figcaption>Operators never took off their gloves and could not press the buttons without
-                                using an object
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="methodology">
-                        <img src="img/i-workshop.png" alt="" class="i-methodology">
-                        <h4>Ideation workshop</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>I conducted an ideation workshop with the key stakeholders. This allowed us to make sure
-                            everyone felt involved in the design process (and excited about it!). By the end, we had
-                            collaboratively outlined the key journeys, agreed on how information should be prioritised,
-                            and produced paper sketches illustrating
-                            concurrent ideas.</p>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="methodology">
-                        <img src="img/i-wireframe.png" alt="" class="i-methodology">
-                        <h4>Wireframes</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>I created a series of wireframes that allowed to visualise the new flow and layout of the
-                            pages,
-                            then iterated a couple of times to address
-                            any concerns that stakeholder might have had regarding technical limitations.</p>
-                        <figure>
-                            <img src="img/steel-wireframe-S.jpg" alt="" class="illustration">
-                            <figcaption>A wireframe created in balsamiq</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="step">
-                    <div class="methodology">
-                        <img src="img/i-wireframe.png" alt="" class="i-methodology">
-                        <h4>High fidelity mockups and style guide</h4>
-                    </div>
-                    <div class="stepDetails">
-                        <p>Our visual designer created high-fidelity visualisations
-                            based on the wireframes, as well as a new set of icons for the interface.</p>
-                        <p>We then worked together on a document summing up how to implement the
-                            new layout and explaining the interactions.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <h3>Results</h3>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+            <h4>Understand how it works</h4>
+            <p>I read through technical documentation to get a better grasp of what inspecting a steel roll means and
+                how the software works.</p>
+            <h4>In-context research</h4>
+            <p>Steve (Researcher) went to several factories to observe and interview users of the product, users of its
+                competitor, and their supervisors. This helped us to understand:
             <ul>
-                <li>The number of steps required to complete a roll inspection have been reduced by focusing
-                    on what operators really need to make decisions.
-                </li>
-                <li>Actionnable elements are bigger so they can be activated even when wearing gloves.</li>
-            </ul>
-            <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
-        </section>
-    </div>
+                <li>Challenges in the work environment</li>
+                <li>How users make decisions</li>
+                <li>How Sarclad compares to competitors</li>
+                <li>How long it takes to master the software</li>
+            </ul></p>
+            <p>One limitation of the research was that it was conducted in the UK only. We later discovered that some
+                findings did not apply to other markets (for instance, wearing gloves at work was not a thing in the
+                US).
+
+                But more importantly, it meant stakeholders in the US did not feel as heard as their colleagues in the
+                UK, which caused delays with the project later on.
+            </p>     {{/case/rightColumn}}
+    {{/case/twoColumn}}
+
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Ideation workshop" }}
+            <img src="img/steel_sketches.png">
+            <div>Sketches from the workshop, with different takes on how to visualise the data that matters to decide if
+                a roll needs to be rejected.
+            </div>
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+            <p>We prepared a 1-day workshop with our client to try to think things through together and get everyone on
+                board with the re-design project.
+                The workshop was attended by Software Engineers, Product Owners and representatives from the Sales and
+                Marketing teams.</p>
+            <h4>Review the data and our goals</h4>
+            <p>Steve presented insights from the research to get everyone on the same page.</p>
+            <h4>Map out needs and pain points in the journey</h4>
+            <p>We split into two groups with a mix of competences, with my colleagues Steve and Rebecca each in charge
+                of one group.
+                Our goal? Outline what the main journeys are for operators, depending on the task they are trying to
+                accomplish.
+
+                I jumped from group to group, encouraging them to think of what operators need at each point of the
+                journey, and what their pain points are.</p>
+            <h4>Prioritise information</h4>
+            <p>The next exercise was to mark with red and green pens what was essential to operators in the interface,
+                and what was not.
+
+                This is when we had the most difficult discussions. Steve had observed how operators consistently
+                skimmed through entire steps of the process that were unnecessary to them, and we knew some things had
+                to go. But this isn’t easy to see for someone who is used to the product as is. So, I used the 5 whys
+                method. This opened up discussions, and led to some surprising discoveries: for instance, one of the
+                steps in the process existed only to facilitate QA testing.
+
+                By the end of that stage, our stakeholders agreed to remove some things completely. And my colleagues
+                and I understood how some others things could not be changed much, but might be improved to be less
+                disruptive.
+            </p>
+            <h4>Sketch ideas</h4>
+            <p>To end our day, we sketched out different ideas and voted on the ones we believed had the most potential.
+            </p>
+        {{/case/rightColumn}}
+    {{/case/twoColumn}}
+
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="Design" }}
+            <!--<img src="img/steel-research.jpg">
+            <div>An operator using a pen to press buttons, which are too difficult to activate with safety gloves on.
+            </div>-->
+
+        {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+            To be completed     {{/case/rightColumn}}
+    {{/case/twoColumn}}
+
+    {{#> case/paragraphe title="Results" }}
+        <ul>
+            <li>The time and effort required by operators to perform inspections has been reduced by focusing on what is really needed to make decisions.</li>
+            <li>Human errors have been reduced by visually emphasising defects more in the interface, giving more context to understand problems, and making choices clearer (accept or reject roll)</li>
+            <li>Training times for new operators has been reduced: it’s easier to understand how the software works and to master it.</li>
+            <li>Ease of use is now a key selling point of the software.</li>
+    {{/case/paragraphe}}
+
+    <figure>
+        <img src="img/steel_result.png" alt="Brochure presenting the new design as easier to use. Screenshot from the application show looks colourful and modern."/>
+        <figcaption>Promotional materials from Sarclad about the new design.
+        </figcaption>
+    </figure>
 {{/base/base}}
+
+
+
+
+
+
