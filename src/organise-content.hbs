@@ -7,13 +7,13 @@
     }}
     {{#> case/paragraphe title="The challenge" }}
         <p>Improve the Accommodation pages of the <a href="https://www.thomascook.com/">Thomas Cook</a>
-            website, which contain detailed information about the hotel, possible flights and board basis options.
-        The goal? Increase progression to the next step of the booking journey and decrease contacts to
-        Customer Service.</p>
+            website, which contain detailed information about the hotel, possible flights and board options.</p>
+        <p>The goal? Increase progression to the next step of the booking journey and decrease contacts to
+            Customer Service.</p>
     {{/case/paragraphe}}
 
     {{#> case/paragraphe title="My role" }}
-        <p>UX Researcher, working within a product team in charge of the Accommodation page.</p>
+        <p>UX Researcher, working within a Product team in charge of the Accommodation page.</p>
     {{/case/paragraphe}}
     {{#> case/paragraphe title="The process" }}
 
@@ -33,12 +33,13 @@
             <h4>User testing</h4>
 
             <p>I conducted remote unmoderated user
-                testing on <a href="https://www.usertesting.com/">Usertesting.com</a> to quickly dig deeper into why some issues occurred. The main takeaways were that:
+                testing on <a href="https://www.usertesting.com/">Usertesting.com</a> to dig deeper into why some issues
+                occurred. The main takeaways were that:
             <p>
             <ul>
-                <li>some buttons were hard to discover</li>
+                <li>some buttons were hard to discover.</li>
                 <li>some content wasn't where users expected it to be.</li>
-                <li>several section names sounded similar, which made it difficult to know what content to
+                <li>several section names sounded similar, so it was hard to know what content to
                     expect in each section.
                 </li>
                 <li>the structure was too deep: after expanding a few subsections without finding what they
@@ -48,17 +49,17 @@
 
             <h4>Workshop</h4>
             <p>A workshop was led by the Product Owner and Design Lead. I presented an overview of
-            all the issues encountered on the Accommodation page.</p>
+                all the issues encountered on the Accommodation page.</p>
             <p>At the end of the workshop, we had a prioritised list of opportunities to act on. High up the list
-            was re-organising the content on the page, and increasing affordance for key features.</p>
+                was re-organising the content on the page, and increasing affordance for key features.</p>
         {{/case/rightColumn}}
     {{/case/twoColumn}}
-<figure>
+    <figure>
         <img src="img/tc-acom-tableau.jpg"
              alt="Graph showing that facilities is what customers enquire about the most"
              class="illustrationMedium">
         <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms,
-            food (screenshot from <a href="https://www.tableau.com/">Tableau</a>).
+            food (data from customer service contacts, collected in <a href="https://www.tableau.com/">Tableau</a>).
         </figcaption>
     </figure>
 
@@ -69,36 +70,45 @@
 
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
-               <h4>Card Sorting</h4>
+            <h4>Card Sorting</h4>
 
-               <p>I organised a card sorting exercise on <a href="https://www.optimalworkshop.com/">Optimal Workshop</a> to find out how users naturally group the content
+            <p>I organised a card sorting exercise on <a href="https://www.optimalworkshop.com/">Optimal Workshop</a> to
+                find out how users naturally group the content
                 and name the sections.</p>
-            <p>The results?</p>
+            <p>The results? A couple of sections of the page weren't groups users naturally thought of, and users chose
+                section names that are more descriptive and shorter than the existing ones.</p>
+            <p>I presented these results to the team. There were surprises, but we managed to
+                agree on a new structure to test. Here are some examples of changes:</p>
             <ul>
-                <li>A couple of sections of the page weren't groups users naturally thought of.
+                <li>A lot of content about
+                    activities and food existed as collapsed subsections under a "Your Hotel" section, which we removed.
                 </li>
-                <li>Users chose section names that are more descriptive and shorter than existing ones.
+                <li>Some sections got merged, like "More Flights Options" and "Your Flight Details" that became "Flights
+                    & Transfers", or "Just for Kids", "Sports and Relaxation" and "Everything else" that became
+                    "Activities".
+                </li>
+                <li>Some sections got different names (e.g. "Swim & Sun" became "Pool & Beach", "What's included in the
+                    packages?" became "Packages", etc.)
                 </li>
             </ul>
-            <p>I presented these results to the team. There were some surprises, but we still managed to
-                agree on a new way to organise
-                the content that we believed would work better.</p>
 
             <h4>Tree Testing</h4>
 
-            <p>We needed to validate our proposition before changing thousands of product pages. There
+            <p>We needed to validate our proposition before changing thousands of product pages. The tasks in the test
+                were set up using the most frequently asked questions to customer service. There
                 wasn't much buy-in in sister companies in Germany, Belgium and the Netherlands: they felt some things
-                would work only in English. So
+                would only work in English. So
                 I got help from colleagues there to set up similar tests in German, French and Dutch.</p>
-            <p>The results helped
-                to validate the changes by showing that with the new tree, users can find the information
-                that was difficult to find before, and it takes them less time to get there.
+            <p>The results? In most cases, increased success rate, less hesitation and lower completion times. But there
+                were a few things to fine tune. For instance, a section about the location of the hotel was added
+                (instead of having that information in the general blurb about the hotel). I organised a new test to
+                validate this new proposition.
             </p>
-                <h4>Re-design and validate</h4>
-               <p>In some cases, we had to change the design along with moving content to a different location on the page. This
-                   was for instance the case with the videos of hotels. In those case, I proposed solutions,
-                   discussed them with the designer and developers, then ran usability test to validate our ideas.
-               </p>
+            <h4>Re-design and validate</h4>
+            <p>In some cases, design changes were needed in order to fit the new structure. This
+                was for instance the case with the videos of hotels. In those cathat the designe rprototyped and I
+                tested with users.
+            </p>
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
@@ -109,16 +119,24 @@
 
 
     {{#> case/paragraphe title="Results" }}
-           <ul>
-            <li>Content got organised in sections that reflect what our users are looking for.</li>
+        <p>With the new structure:</p>
+        <ul>
+            <li>Content is organised in sections that reflect what users are looking for.</li>
             <li>Section names are short and describe exactly what each section contains, in users' own
                 words.
             </li>
             <li>The structure is more flat: 2 levels of headings instead of 4.</li>
         </ul>
 
-           <p>Changes gradually rolled out. Good results. For instance, room and board type led to conversion up by 3.5%</p>
-           <p>349% icrease in users engaging with vidios (good as associated conversion rate is the highest of all clickable elements on the page)</p>
+        <p>Changes were gradually rolled out to measure effects. For instance:
+            <ul>
+            <li>Changes around Room Details and Board Type led to an increase of 3.5% in conversions.</li>
+            <li>The new location and design for videos led to an increase of 349% in users engaging with that content
+            (and interacting with the video has the highest associated conversion rate of all
+            clickable elements on the page).</li>
+            </ul>
+
+
     {{/case/paragraphe}}
 
 
