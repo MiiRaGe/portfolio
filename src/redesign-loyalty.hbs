@@ -5,14 +5,15 @@
             image="img/hm2_club_card@2x.jpg"
 
     }}
+
     {{#> case/paragraphe title="The challenge" }}
         <p>When I joined H&M in 2018, a big overhaul of the H&M loyalty program had been decided. The main goals?</p>
         <ul>
             <li>increase engagement, with a vision to increase member satisfaction and decrease rewards debt.</li>
             <li>decrease calls to customer service, to reduce costs.</li>
         </ul>
-
     {{/case/paragraphe}}
+
     {{#> case/paragraphe title="My role" }}
         <p>UX Designer, working on several "cases" with different teams (Business Solution Analysts, IT Architects, UI
             Designers, etc.).
@@ -20,97 +21,105 @@
             project.
         </p>
     {{/case/paragraphe}}
+
     {{#> case/paragraphe title="The process" }}
         <p>We were working in a waterfall environment, with development outsourced, meaning that
             throughout discussions during the Design phase and impeccable design deliverables were keys.</p>
 
         <p>When I arrived, the general direction had already been decided, based on previous work from the UX and
             Service Design team. I was assigned to work
-            on several different "cases". I will outline a couple of them below:</p>
+            on several different "cases". I will outline two of them below:</p>
     {{/case/paragraphe}}
 
-    {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Account page" }}
-            <img src="img/steel-inspection.png" alt="">
-            <div>....</div>
-        {{/case/leftColumn}}
-        {{#> case/rightColumn}}
-            <h3>Understand stuff</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in neque sollicitudin, tempus tellus
-                nec, sagittis arcu. Nulla at lacus nec massa ultricies sollicitudin non a turpis. Nulla et pellentesque
-                velit. Nulla facilisi. Fusce vehicula ornare bibendum. Sed at molestie enim, id tempor sem. Maecenas sed
-                sapien mauris.
-            </div>
 
-        {{/case/rightColumn}}
-    {{/case/twoColumn}}
-
-    {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Rewards" }}
-            <img src="img/hm2_testtill.jpg" alt="Participant seems unsure how to scan their membership QR code">
-            <div>User test in a store</div>
-        {{/case/leftColumn}}
-        {{#> case/rightColumn}}
-            <h3>Understand stuff</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in neque sollicitudin, tempus tellus
-                nec, sagittis arcu. Nulla at lacus nec massa ultricies sollicitudin non a turpis. Nulla et pellentesque
-                velit. Nulla facilisi. Fusce vehicula ornare bibendum. Sed at molestie enim, id tempor sem. Maecenas sed
-                sapien mauris.
-            </div>
-
-        {{/case/rightColumn}}
-    {{/case/twoColumn}}
-
-    {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Monthly invoices" }}
-            <img src="img/hm1_testflyers.JPG" alt="Participant points to a flyer">
-            <div>Testing copy around H&MxKlarna, in a store</div>
-        {{/case/leftColumn}}
-        {{#> case/rightColumn}}
-            <h3>Understand stuff</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in neque sollicitudin, tempus tellus
-                nec, sagittis arcu. Nulla at lacus nec massa ultricies sollicitudin non a turpis. Nulla et pellentesque
-                velit. Nulla facilisi. Fusce vehicula ornare bibendum. Sed at molestie enim, id tempor sem. Maecenas sed
-                sapien mauris.
-            </div>
-
-        {{/case/rightColumn}}
-    {{/case/twoColumn}}
-
-    {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Earn points" }}
-            <img src="img/hm2_testbenefits.jpg" alt="Participant shows a set of cards with various benefits">
-            <div>Interviewing users about different benefits of the loyalty program</div>
-        {{/case/leftColumn}}
-        {{#> case/rightColumn}}
-            <h3>Understand stuff</h3>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in neque sollicitudin, tempus tellus
-                nec, sagittis arcu. Nulla at lacus nec massa ultricies sollicitudin non a turpis. Nulla et pellentesque
-                velit. Nulla facilisi. Fusce vehicula ornare bibendum. Sed at molestie enim, id tempor sem. Maecenas sed
-                sapien mauris.
-            </div>
-
-        {{/case/rightColumn}}
-    {{/case/twoColumn}}
-
-    {{#> case/paragraphe title="Results" }}
-        <p>The re-design, along with heavy marketing campaigns and gradual launch in new countries led to:</p>
-        <ul>
-            <li>1 million new members in the first month after launch, and a member base that had doubled after 9
-                months.
-            </li>
-            <li>a reduction in the number of conversation with customers service. In the first month after launch,
-                membership-related queries accounted for about 7% of contacts, down from 9%.
-            </li>
-            <li>an increase of 14% in the part of members using rewards every time they shop.</li>
+{{#> case/twoColumn }}
+    {{#> case/leftColumn title="Rewards" }}
+        <img src="img/hm2_testtill.jpg" alt="Participant seems unsure how to scan their membership QR code">
+        <div>User test in a store</div>
+    {{/case/leftColumn}}
+    {{#> case/rightColumn}}
+        <h4>The problem</h4>
+        <p>Usage of rewards was low. Previous research had shown that it would be good to explore
+            how we might:
+            <ul>
+            <li>allow to use rewards from the Rewards pages and Shopping bag pages (instead of just from the checkout) on the site.</li>
+            <li>make the process easier to understand in store</li>
         </ul>
-        <p>But some things did not go as well as expected.
-            For instance,
-            we observed no increase in the perceived usefulness or relevance of rewards.
-            A big part of the problem is that the Rewards template is being used in ways I had not forseen: some rewards lack key CTAs, and other "rewards" are actually just
-            communications about H&M.
-            Before launch, I had held a training session with AEM (Adobe Experience Manager) users to explain the
-            new rewards layout and how to use it, but it wasn't enough. A good learning for me.
         </p>
-    {{/case/paragraphe}}
+        <h4>Online experience, from the Rewards page</h4>
+        <p>I prototyped, user tested, and iterated this part of the experience multiple times.
+        The main challenge was to provide a good confirmation that the offer had indeed been added to the bag.
+        </p>
+        <h4>Online experience, from the Shopping bag page</h4>
+        <p>This bit of the experience did not need as much adjustments after user tests. But while I explored
+        all the possible scenarios with Analyst and Architects, we realised that there were more technical limitations and complicated business
+            rules than expected.
+        I had to change my designs, and find a balance between being forgiving and providing precise error messages on one side, and
+        avoiding making too many calls to the myriads of systems powering the rewards, so as to not increase
+        the load times too much.</p>
+        <h4>In store experience</h4>
+        <p>Technical limitations kept piling up when we were exploring how to provide an easier experience in store.
+        At some point, we had to acknowledge that we had scoped out so much of our solution that
+        it was not solving any of users' problems anymore. So we made the decision to leave this out
+        of the release, and continue relying on store staff to help customers for now. But we knew some of the systems
+            behind the rewards would change soon, so that in the near future we could give it another go!</p>
+
+    {{/case/rightColumn}}
+{{/case/twoColumn}}
+
+{{#> case/twoColumn }}
+    {{#> case/leftColumn title="Monthly invoices" }}
+        <img src="img/hm1_testflyers.JPG" alt="Participant points to a flyer">
+        <div>Testing copy around H&MxKlarna, in a store</div>
+    {{/case/leftColumn}}
+    {{#> case/rightColumn}}
+        <h4>The problem</h4>
+        <p>This was a last minute addition to the scope. In some markets, H&M was to start rolling out invoices through
+            Klarna, replacing other invoices methods. My job was to find how to make that fit into the existing
+            H&MxKlarna pages (containing the purchases made with the "Pay in XX days with Klarna" payment method), and to
+            provide helpful reminders when time came to pay the invoices.
+        </p>
+        <h4>Finding and paying invoices</h4>
+        <p>The biggest challenge was that a lot of information and actions had to fit into one page. My first idea was to provide 2 tabs:
+        one for "Pay in XX days", and the other one for Monthly invoices. But after gaining more understanding
+        of how those payment methods work, and conducting some user tests, I settled on another layout: one tab
+        for what was still to pay (all payment methods), and another for what had already been paid.</p>
+        <h4>Notifications</h4>
+        <p>It had been decided on the business side that H&M would send push notifications about invoices.
+        It was an effort to be helpful to customers. But there was also
+            potential to have a negative impact, which I tried to minimize.
+        </p>
+        <p>I proposed to allow customers to choose which type of notifications they would receive from H&M,
+        so they would be more in control. But as complexity increased, that ended up being de-scoped, with a promise to look into
+        it again as part of a wider project to limit communications to customers.</p>
+        <p>Without a way to choose the type of notifications received, data suggested fewer users would turn them on.
+        So I focused on highlighting things to pay within the interface instead, for instance through badges and an inbox for personal
+            communications in the My account pages.</p>
+
+    {{/case/rightColumn}}
+{{/case/twoColumn}}
+
+
+
+{{#> case/paragraphe title="Results" }}
+    <p>The re-design, along with heavy marketing campaigns and gradual launch in new countries led to:</p>
+    <ul>
+        <li>1 million new members in the first month after launch, and a member base that had doubled after 9
+            months.
+        </li>
+        <li>a reduction in the number of conversation with customers service. In the first month after launch,
+            membership-related queries accounted for about 7% of contacts, down from 9%.
+        </li>
+        <li>an increase of 14% in the part of members using rewards every time they shop.</li>
+    </ul>
+    <p>But some things did not go as well as expected.
+        For instance,
+        we observed no increase in the perceived usefulness or relevance of rewards.
+        A big part of the problem is that the Rewards template is being used in ways I had not forseen: some rewards
+        lack key CTAs, and other "rewards" are actually just
+        communications about H&M.
+        Before launch, I had held a training session with AEM (Adobe Experience Manager) users to explain the
+        new rewards layout and how to use it, but it wasn't enough. A good learning for me.
+    </p>
+{{/case/paragraphe}}
 {{/base/base}}
