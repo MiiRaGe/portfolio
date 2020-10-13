@@ -1,6 +1,9 @@
 <div class="caseLeftColumn">
     <h1 class="caseLeftColumnTitle">{{title}}</h1>
     <div class="caseLeftColumnDesc">
-        {{> @partial-block}}
+        <figure>
+            <img src="{{img}}" alt="{{alt}}">
+            <figcaption>{{> @partial-block}}</figcaption>
+        </figure>
     </div>
 </div>

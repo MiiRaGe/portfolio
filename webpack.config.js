@@ -31,7 +31,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({filename: '[name].css'}),
         new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [
