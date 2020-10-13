@@ -1,0 +1,521 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/**********************************
+GENERAL
+***********************************/
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+div,
+span,
+p,
+li,
+u,
+i {
+  color: #384142;
+  font-family: 'Roboto';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #384142;
+  font-family: 'Lora';
+  font-weight: 500;
+  font-weight: bold;
+}
+section {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/**********************************
+PAGE: INDEX
+***********************************/
+.introIndex {
+  text-align: center;
+  margin-bottom: 128px;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  grid-gap: 36px;
+  justify-content: center;
+}
+.caseStudies {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+footer {
+  height: 238px;
+  background-color: #fafaf5;
+  text-align: center;
+  margin-top: 36px;
+}
+footer > .footerMainContent {
+  color: #384142;
+  font-family: 'Lora';
+  font-weight: 500;
+  font-size: 33px;
+  margin-bottom: 14px;
+  margin-top: 28px;
+}
+footer > .footerEmail {
+  margin-bottom: 20px;
+}
+footer > .footerEmail > a {
+  color: #0D6A90;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+footer > .footerLinkedInLogo {
+  height: 26px;
+  width: 26px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+/**********************************
+HEADINGS
+***********************************/
+.rootLayout {
+  padding-top: 76px;
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: white;
+}
+header > .headerLeft {
+  margin: auto 0 auto 64px;
+}
+header > .headerLeft > a > .sophieDurand {
+  color: #384142;
+  font-family: 'Roboto';
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 20px;
+}
+header > .headerRight {
+  margin: auto 64px auto 0;
+}
+header > .headerRight > nav {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+header > .headerRight > nav > span {
+  text-transform: uppercase;
+}
+header > .headerRight > nav > span > a {
+  color: #384142;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+header > .headerRight > nav > span > a.selected {
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+.portfolioCard {
+  flex: 0 0 360px;
+  height: 330px;
+  width: 360px;
+}
+.portfolioCard:hover {
+  margin-top: -5px;
+}
+.cardClient {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19px;
+  color: #036a90;
+  margin-top: 8px;
+}
+.cardDescription {
+  color: #384142;
+  font-family: 'Lora';
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+.cardLongDesc {
+  color: #667578;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.cardImage {
+  width: 360px;
+  height: 240px;
+  z-index: 1;
+}
+.raisedCard {
+  text-align: center;
+  z-index: 2;
+  height: 144px;
+  width: 260px;
+  position: relative;
+  bottom: 61px;
+  left: 50px;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.08);
+  padding: 8px 10px 8px 10px;
+}
+
+.gradientBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 450px;
+  width: 100%;
+  z-index: -1;
+  background: -webkit-linear-gradient(186deg #eaf9ff 61%, #ffffff 24%);
+  background: linear-gradient(186deg, #eaf9ff 61%, #ffffff 24%);
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+.caseStudyIntro {
+  text-align: center;
+}
+.caseStudyIntro > .caseClient {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19px;
+  color: #036a90;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.caseStudyIntro > .caseImage {
+  width: 420px;
+  height: 240px;
+  margin: 80px auto auto auto;
+}
+.caseParagraphe {
+  width: 680px;
+  margin: 64px auto auto auto;
+}
+.caseParagrapheTitle {
+  text-align: center;
+}
+.caseParagrapheContent {
+  color: #667578;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.caseTwoColumn {
+  width: 85%;
+  max-width: 1000px;
+  display: grid;
+  grid-column-gap: 88px;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+  margin: 54px auto auto auto;
+}
+.caseLeftColumn {
+  display: grid;
+  grid-template-rows: 150px auto;
+}
+.caseLeftColumnTitle {
+  height: 150px;
+  margin: 40px 0 auto 0;
+  border-top: solid 1px #384142;
+  border-bottom: solid 1px #384142;
+  display: grid;
+  place-items: center;
+  color: #384142;
+  font-family: 'Roboto';
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+.caseLeftColumnDesc {
+  margin: auto 0 auto 0;
+}
+.caseRightColumn {
+  background-color: #f8f8f8;
+  padding: 32px 32px 32px 32px;
+}
+.caseRightColumn :first-child {
+  margin-top: 0;
+  margin-block-start: 0;
+}
+
