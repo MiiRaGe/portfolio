@@ -9,16 +9,10 @@ PAGE: INDEX
     margin-bottom: 128px;
 }
 
-.wrapper {
-    overflow: hidden;
-    width: 100%;
-}
-
 #gallery {
-    margin: 0 -36px -36px -36px;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 36px;
     justify-content: center;
 }
 

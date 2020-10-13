@@ -6,12 +6,10 @@
             <p>Welcome to my portfolio.</p>
         </div>
         <h1 class="caseStudies">Case studies</h1>
-        <div class="wrapper">
-            <div id="gallery">
-                {{#each index.cards}}
-                    {{> index/card this}}
-                {{/each}}
-            </div>
+        <div id="gallery">
+            {{#each index.cards}}
+                {{> index/card this}}
+            {{/each}}
         </div>
     </section>
 {{/base/base}}

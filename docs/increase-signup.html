@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sophie Durand | UX Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/sd.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="headerLeft">
+        <a href="index.html">
+            <h1 class="sophieDurand">Sophie Durand</h1>
+        </a>
+    </div>
+    <div class="headerRight">
+        <nav>
+            <span><a href="index.html" class="selected">Work</a></span>
+            <span><a href="about.html" >About</a></span>
+            <span><a href="contact.html" >Contact</a></span>
+        </nav>
+    </div>
+</header><div class="rootLayout">
+    <main class="mainContent">
+        <div class="gradientBackground"></div>            <div class="caseStudyIntro">
+                <div class="caseClient">H&amp;M, 2020</div>
+                <h1 class="caseDescription">Increase sign ups</h1>
+                <div class="caseImage">
+                    <img src="img/hm1_signup_card@2x.jpg"/>
+                </div>
+            </div>
+        <div class="caseParagraphe">
+            <h2 class="caseParagrapheTitle">The challenge</h2>
+            <div class="caseParagrapheContent">
+                        <p>15% of H&M online customers are not members of the loyalty program.
+                            How might we encourage them to sign up?</p>
+            </div>
+        </div>
+        <div class="caseParagraphe">
+            <h2 class="caseParagrapheTitle">My role</h2>
+            <div class="caseParagrapheContent">
+                        <p><strong>Product Designer</strong> in a Team in charge of increasing the number of sign ups. The team hadn't
+                            had a Product Designer before.
+                        </p>
+            </div>
+        </div>
+        <div class="caseParagraphe">
+            <h2 class="caseParagrapheTitle">The process</h2>
+            <div class="caseParagrapheContent">
+                        <p>When I joined, the team was bombarded with requests to add more features, or put the sign up button
+                            in more places. But there was little data to back that up! So, I conducted research
+                            to help us decide what to prioritise.</p>
+                
+            </div>
+        </div>
+        <div class="caseTwoColumn">
+            <div class="caseLeftColumn">
+                <h1 class="caseLeftColumnTitle">Research</h1>
+                <div class="caseLeftColumnDesc">
+                    <figure>
+                        <img src="img/hm1_signup_Clicktale.png" alt="21% drop out at the date of birth. Drop out is much lower for other fields (3 to 4%)">
+                        <figcaption>            Lots of users didn't complete the sign up form, mostly because of the date of birth field (screenshot
+                        from
+                        Clicktale).
+            
+            </figcaption>
+                    </figure>
+                </div>
+            </div><div class="caseRightColumn">
+                            <h4>Click test</h4>
+                            <p>A common hypothesis was that it was difficult to find where to sign up. To look
+                                into that, I used click tests on <a href="https://www.userzoom.com/">Userzoom</a>. The results? A
+                                success rate over 90% in all scenarios.</p>
+                
+                            <h4>User testing</h4>
+                            <p>I conducted user testing, that I invited the team to watch. The sessions highlighted
+                                many severe usability issues on mobile, and some smaller problems on desktop.</p>
+                
+                            <h4>Store experience and international perspective</h4>
+                            <p>I reviewed
+                                insights from wider research into the loyalty program in stores around the world.
+                                The key takeaways were that signing up takes too long, and that the ways to sign up are not adapted to
+                                all
+                                markets.</p>
+                
+                            <h4>Quantitative data</h4>
+                            <p>To understand the true scale of the issues identified , I looked at <a
+                                    href="https://analytics.google.com/analytics/">Google Analytics</a> and <a
+                                    href="https://www.clicktale.com/">Clicktale.</a>
+                                The figures for mobile (which accounts for 70% of H&M's visitors globally) were not good:
+                            <ul>
+                                <li>Signing up took 40 seconds more than on desktop, on average.</li>
+                                <li>The drop out rate was 30% higher.</li>
+                            </ul>
+                            </p>
+                
+                            <h4>Prioritise and communicate</h4>
+                            <p>I presented the results to the team. We established our priority for the upcoming sprints, based on
+                                effort and impact.</p>
+                            <p>Then, I built a quick showcase for our Sprint Demo. This helped stakeholders to understand our strategy
+                                and accept that we would not be focusing on some of the new features they were keen on.</p>
+                
+                
+            </div></div>
+            <figure>
+                <img src="img/hm1_impacteffort.jpg"
+                     alt="Impact effort matrix">
+                <figcaption>Our priority:
+                    <ol>
+                        <li>Make it easier to enter date of birth,</li>
+                        <li>Provide social sign up, at least in key markets,</li>
+                        <li>Work on how we promote membership in the checkout</li>
+                    </ol>
+                </figcaption>
+            </figure>
+        
+        <div class="caseTwoColumn">
+            <div class="caseLeftColumn">
+                <h1 class="caseLeftColumnTitle">Reduce friction</h1>
+                <div class="caseLeftColumnDesc">
+                    <figure>
+                        <img src="img/hm1_signup_android_test.png" alt="Fingers hovering over a calendar to select date of birth">
+                        <figcaption>            A participant in user test, unsure how to change her birth year in the date picker (on Android).
+            </figcaption>
+                    </figure>
+                </div>
+            </div><div class="caseRightColumn">
+                
+                
+                            <h4>The problem</h4>
+                            <p>The date of birth was by far the biggest drop off point in the sign up form.</li>
+                            </p>
+                            <h4>How might we solve it?</h4>
+                            <ul>
+                                <li>Stop to require the date of birth:
+                                    The Product Owner and I started discussions with our stakeholders:
+                                    Why do we need the date of birth? How else can we collect it? I prototyped
+                                    a few ideas to help kickstart things.
+                                </li>
+                                <li>Change the input method: with a precise date so far back in the past, a calendar (Android) or a
+                                    scrollable list (iOS) are not the most appropriate. I reviewed existing research and guidelines
+                                    (like
+                                    <a href="https://design-system.service.gov.uk/patterns/dates/#asking-for-memorable-dates">Research
+                                        by gov.uk</a> and <a href="https://material.io/components/date-pickers#mobile-pickers">Material
+                                        Design
+                                        Date pickers</a>) and sketched out two ideas.
+                                </li>
+                            </ul>
+                            <h4>Design review</h4>
+                            <p>I got feedback on the solutions from other Designers at our daily Design Review.
+                                We decided on the solution that allowed to stick to existing components in our Design System: simple
+                                input, split in 3 fields (day, month, year), with only
+                                one visible label.</p>
+                            <h4>A/B Test</h4>
+                            <p>The new input method resulted in 10% less drop outs, and the time taken to fill in the form decreased by
+                                25s, to 50s.
+                                The rate of errors when filling in the form did not significantly change like we could have feared. </p>
+                            <h4>Next?</h4>
+                            <p>Address the next big drop off points: unclear password rules and error messages.</p>
+                
+            </div></div>
+        <div class="caseTwoColumn">
+            <div class="caseLeftColumn">
+                <h1 class="caseLeftColumnTitle">Promote in the right context</h1>
+                <div class="caseLeftColumnDesc">
+                    <figure>
+                        <img src="img/hm1_checkoutoptions.jpg" alt="One button says Create an account, the other says Checkout as guest">
+                        <figcaption>            In user testing, participants were unimpressed with the copy about membership at the checkout...
+            </figcaption>
+                    </figure>
+                </div>
+            </div><div class="caseRightColumn">
+                            <h4>Opportunity</h4>
+                            <p>Promoting joining in the checkout is where it makes more sense from a user point of view: they get
+                                immediate benefits from it (like free shipping and
+                                discounts). And user testing pointed to some easy improvements, like tweaking the copy.</p>
+                            <h4>Ideation Workshop</h4>
+                            <p>I invited business experts,
+                                designers, product owners and analysts from relevant teams to a workshop to generate ideas together.
+                                The workshop was very appreciated, as it brought together people who were not often in the
+                                same room, or didn’t feel involved in design decisions.</p>
+                
+                            <h4>Outcomes</h4>
+                            <p>We generated a prioritised list of ideas to A/B test. The first one, which performed well, was to
+                                change the labels on the CTAs to continue to checkout.</p>
+            </div></div>
+            <figure>
+                <img src="img/hm1_signup_workshop.png"
+                     alt="Working documents from the ideation workshop, showing data about the problem, screenshots from competitors, and sketches">
+                <figcaption>Miro boards from the workshop:
+                    <ol>
+                        <li>Review the data and our goal (1, 2, 3),</li>
+                        <li>Look for inspiration (4),</li>
+                        <li>Crazy eights (5).</li>
+                    </ol>
+                </figcaption>
+            </figure>
+        
+            <figure>
+                <img src="img/hm1_signup_checkoutAB.png" alt="3 variations of the " Continue to checkout" page">
+                <figcaption>Spot the difference: Original "Continue to Checkout" page, Winner of the A/B test around button
+                    labels, and a variation around displaying benefits
+                </figcaption>
+            </figure>
+        
+        <div class="caseTwoColumn">
+            <div class="caseLeftColumn">
+                <h1 class="caseLeftColumnTitle">Locally adapted</h1>
+                <div class="caseLeftColumnDesc">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption>            <img src="img/" alt="">
+                        <div></div>
+            </figcaption>
+                    </figure>
+                </div>
+            </div><div class="caseRightColumn">
+                            <h4>The problem</h4>
+                            <p>In the winter of 2020, the membership will be launched in a country where email usage is very low, and
+                                social sign up is preferred
+                                (I won't reveal details or show designs as the launch is still confidential).</p>
+                            <h4>Understand the market and the platform</h4>
+                            <p>I did some reading to understand the market better, and started to use the app from the social media
+                                platform we were going to work with.
+                                My teamates and I also met with our colleagues in that market to share knowledge and build a closer
+                                relationship.</p>
+                            <h4>Discuss technical limitations and draw up user flows</h4>
+                            <p>I worked closely with our IT Architect and Developers to understand technical limitations
+                                and draw up user flows where all scenarios are accounted for.
+                                I had to make assumptions about
+                                what would be the most user-friendly solutions, but was hoping to be able to test those soon.
+                            </p>
+                            <h4>Sketch, Design Review, Prototype</h4>
+                            <p>I sketched out different ideas for a layout to accommodate extra sign up options. I selected three
+                                thanks to feedback received in Design Review, then prepared prototypes for user test.</p>
+                            <h4>Test and Adjust</h4>
+                            <p>In user testing, I observed that one layout resulted in less errors than the others.</p>
+                
+            </div></div>
+        <div class="caseParagraphe">
+            <h2 class="caseParagrapheTitle">Results</h2>
+            <div class="caseParagrapheContent">
+                        <ul>
+                            <li>Time to join was <strong>reduced by 25s</strong></li>
+                            <li>Drop outs in the sign up form <strong>decreased by 10%</strong></li>
+                            <li>The first A/B tests around promoting sign up in the checkout resulted in increased sign ups. Some other
+                                ideas are still being tested.
+                            </li>
+                            <li>The local sign up has not launched yet.</li>
+                        </ul>
+                        <p>After 4 months in the team, I got assigned elsewhere in the wake of cut hours due to Covid-19. When I left
+                            the team, they thanked me for helping them to become more user-centered, more data-driven, and more
+                            confident in prioritising their backlog and handling stakeholders.</p>
+            </div>
+        </div>
+        
+        
+        
+        
+            <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
+            </section>
+            </div>
+    </main>
+    <footer>
+        <div class="footerMainContent">
+            Let's connect
+        </div>
+        <div class="footerEmail">
+            <a href="mailto:sophie.durand.b@gmail.com">sophie.durand.b@gmail.com</a>
+        </div>
+        <div class="footerLinkedInLogo">
+            <a href="https://www.linkedin.com/in/sophie-durand/"><img src="img/LI-In-Bug.png"></a>
+        </div>
+    </footer></div>
+</body>
+</html>
