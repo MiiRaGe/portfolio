@@ -106,7 +106,7 @@ footer {
   margin-top: 36px;
 }
 footer > .footerMainContent {
-  color: #384142;
+  color: #292929;
   font-family: 'Lora';
   font-weight: 500;
   font-size: 33px;
@@ -194,7 +194,7 @@ header > .headerLeft {
   margin: auto 0 auto 64px;
 }
 header > .headerLeft > a > .sophieDurand {
-  color: #384142;
+  color: #292929;
   font-family: 'Roboto';
   font-size: 18px;
   line-height: 21px;
@@ -215,7 +215,7 @@ header > .headerRight > nav > span {
   text-transform: uppercase;
 }
 header > .headerRight > nav > span > a {
-  color: #384142;
+  color: #292929;
   font-family: 'Roboto';
   font-size: 18px;
   line-height: 21px;
@@ -283,7 +283,7 @@ header > .headerRight > nav > span > a.selected {
   margin-top: 8px;
 }
 .cardDescription {
-  color: #384142;
+  color: #292929;
   font-family: 'Lora';
   font-weight: 500;
   font-weight: bold;
@@ -420,11 +420,11 @@ header > .headerRight > nav > span > a.selected {
 .caseLeftColumnTitle {
   height: 150px;
   margin: 40px 0 auto 0;
-  border-top: solid 1px #384142;
-  border-bottom: solid 1px #384142;
+  border-top: solid 1px #292929;
+  border-bottom: solid 1px #292929;
   display: grid;
   place-items: center;
-  color: #384142;
+  color: #292929;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 300;
@@ -433,6 +433,8 @@ header > .headerRight > nav > span > a.selected {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
+  line-height: 32px;
 }
 .caseLeftColumnDesc {
   margin: auto 0 auto 0;
@@ -506,7 +508,7 @@ p,
 li,
 u,
 i {
-  color: #384142;
+  color: #667578;
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 300;
@@ -518,10 +520,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: #384142;
+  color: #292929;
   font-family: 'Lora';
   font-weight: 500;
   font-weight: bold;
+}
+h2 {
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: 500;
 }
 h4 {
   font-family: 'Roboto';
@@ -536,5 +543,15 @@ section {
 }
 figure {
   margin: 0;
+}
+figure > figcaption {
+  font-style: italic;
+  color: #667578;
+  font-family: 'Roboto';
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
 }
 

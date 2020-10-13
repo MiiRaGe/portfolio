@@ -4,39 +4,53 @@
 GENERAL
 ***********************************/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-div, span, p,li,u,i {
-    .primary-text();
+div, span, p, li, u, i {
+  .secondary-text();
 }
 
-h1,h2,h3,h4,h5,h6 {
-    .heading-text();
-    font-weight: bold;
+h1, h2, h3, h4, h5, h6 {
+  .heading-text();
+  font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 500;
 }
 
 h4 {
-    font-family: @primary-font-family;
-    font-weight: 400;
-    line-height: 24px;
-    font-size: 20px;
+  font-family: @primary-font-family;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 20px;
 }
 
 section {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
+
+  > figcaption {
+    font-style: italic;
+    .secondary-text();
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+  }
 }
