@@ -20,7 +20,8 @@
 
     {{/case/paragraphe}}
     {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Understand the problem" img="img/tc_workshop.jpg" alt="Sophie speaking in front of colleagues" }}
+        {{#> case/leftColumn title="Understand the problem" img="img/tc_workshop.jpg"
+                             alt="Sophie speaking in front of colleagues" }}
             Going through research insights at a workshop
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
@@ -28,13 +29,23 @@
             <p>I worked closely with the Analyst in the team to review data from customer service,
                 and interactions recorded in <a href="https://www.hotjar.com/">Hotjar</a>.
             </p>
+            <figure>
+                <img src="img/tc-acom-tableau.jpg"
+                     alt="Graph showing that facilities is what customers enquire about the most"
+                     class="illustrationMedium">
+                <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms,
+                    food (data from customer service contacts, collected in <a
+                            href="https://www.tableau.com/">Tableau</a>).
+                </figcaption>
+            </figure>
 
             <h4>User testing</h4>
 
             <p>I conducted remote unmoderated user
                 testing on <a href="https://www.usertesting.com/">Usertesting.com</a> to dig deeper into why some issues
-                occurred. The main takeaways were that:
-            <p>
+                occurred. The main findings were that:
+            </p>
+
             <ul>
                 <li>some buttons were hard to discover.</li>
                 <li>some content wasn't where users expected it to be.</li>
@@ -45,6 +56,13 @@
                     were looking for, users just gave up.
                 </li>
             </ul>
+            <figure>
+                <img src="img/tc_researchsummary.jpg"
+                     alt="Screenshot of the hotel page, with colour-coded annotations"
+                     >
+                <figcaption>A poster with a summary of research findings.
+                </figcaption>
+            </figure>
 
             <h4>Workshop</h4>
             <p>A workshop was led by the Product Owner and Design Lead. I presented an overview of
@@ -53,14 +71,7 @@
                 was re-organising the content on the page, and increasing affordance for key features.</p>
         {{/case/rightColumn}}
     {{/case/twoColumn}}
-    <figure>
-        <img src="img/tc-acom-tableau.jpg"
-             alt="Graph showing that facilities is what customers enquire about the most"
-             class="illustrationMedium">
-        <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms,
-            food (data from customer service contacts, collected in <a href="https://www.tableau.com/">Tableau</a>).
-        </figcaption>
-    </figure>
+
 
 
     {{#> case/twoColumn }}
@@ -74,10 +85,14 @@
             <p>I organised a card sorting exercise on <a href="https://www.optimalworkshop.com/">Optimal Workshop</a> to
                 find out how users naturally group the content
                 and name the sections.</p>
-            <p>The results? A couple of sections of the page weren't groups users naturally thought of, and users chose
+
+            <h4>Results</h4>
+            <p>A couple of sections of the page weren't groups users naturally thought of, and users chose
                 section names that are more descriptive and shorter than the existing ones.</p>
-            <p>I presented these results to the team. There were surprises, but we managed to
-                agree on a new structure to test. Here are some examples of changes:</p>
+            I presented these results to the team. There were surprises, but we managed to
+                agree on a new structure to test.
+
+            <p>Some of our proposed changes:</p>
             <ul>
                 <li>A lot of content about
                     activities and food existed as collapsed subsections under a "Your Hotel" section, which we removed.
@@ -98,16 +113,40 @@
                 wasn't much buy-in in sister companies in Germany, Belgium and the Netherlands: they felt some things
                 would only work in English. So
                 I got help from colleagues there to set up similar tests in German, French and Dutch.</p>
-            <p>The results? In most cases, increased success rate, less hesitation and lower completion times. But there
+
+
+            <h4>Results</h4>
+            <p>In most cases, we saw increased success rate, less hesitation and lower completion times. But there
                 were a few things to fine tune. For instance, a section about the location of the hotel was added
-                (instead of having that information in the general blurb about the hotel). I organised a new test to
+                (instead of having that information in the general blurb about the hotel). I organised a test to
                 validate this new proposition.
             </p>
+            <figure>
+                <img src="img/tc-accom-OldTree.png"
+                     alt=""
+                     >
+                <figcaption>Old structure</figcaption>
+            </figure><br>
+            <figure>
+                <img src="img/tc-accom-NewTree.png"
+                     alt=""
+                     >
+                <figcaption>New structure</figcaption>
+            </figure>
             <h4>Re-design and validate</h4>
-            <p>In some cases, design changes were needed in order to fit the new structure. This
-                was for instance the case with the videos of hotels. In those cathat the designe rprototyped and I
-                tested with users.
+            <p>In some cases, design changes were needed in order to fit the new structure, so I discussed possible solutions
+                with the designer and developers, and then
+                tested them with users.
             </p>
+            <figure>
+                <img src="img/tc_video.png"
+                     alt=""
+                     >
+                <figcaption>Originally, the video (a button in hotel highlight) was too hard too find.
+                    Testing showed that users expected the video within the image carousel. But
+                    that would have slowed down loading. So instead, we settled on a vignette below the carousel.
+                </figcaption>
+            </figure>
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
@@ -128,12 +167,13 @@
         </ul>
 
         <p>Changes were gradually rolled out to measure effects. For instance:
-            <ul>
+        <ul>
             <li>Changes around Room Details and Board Type led to an increase of 3.5% in conversions.</li>
             <li>The new location and design for videos led to an increase of 349% in users engaging with that content
-            (and interacting with the video has the highest associated conversion rate of all
-            clickable elements on the page).</li>
-            </ul>
+                (and interacting with the video has the highest associated conversion rate of all
+                clickable elements on the page).
+            </li>
+        </ul>
 
 
     {{/case/paragraphe}}
