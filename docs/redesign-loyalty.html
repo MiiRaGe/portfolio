@@ -27,20 +27,22 @@
 </header><div class="rootLayout">
     <main class="mainContent">
         <div class="gradientBackground"></div>            <div class="caseStudyIntro">
-                <div class="caseClient">H&amp;M, 2018</div>
-                <h1 class="caseDescription">Re-design of the H&amp;M Loyalty Program</h1>
-                <div class="caseImage">
-                    <img src="img/hm2_club_card@2x.jpg"/>
+                <div class="caseImage" style="background-image:url(img/hm2_club_card@2x.jpg)">
+            <!--        <img src="img/hm2_club_card@2x.jpg"/>-->
+                </div>
+                <div class="caseStudyIntroRaisedTitle">
+                    <h1 class="caseDescription">Improve rewards for members</h1>
+                    <div class="caseClient">H&amp;M, 2018</div>
                 </div>
             </div>
         <div class="caseParagraphe">
             <h2 class="caseParagrapheTitle">The challenge</h2>
             <div class="caseParagrapheContent">
-                        <p>When I joined H&M in 2018, a big overhaul of the H&M loyalty program had been decided. The main goals?</p>
+                        <p>When I joined H&M in 2018, a big overhaul of the H&M loyalty program was underway, aiming to:</p>
                         <ul>
-                            <li>increase engagement, increase member satisfaction and decrease rewards debt.</li>
-                            <li>decrease calls to customer service, to reduce costs.</li>
-                            <li>increase sign ups (not a goal I directly worked with).</li>
+                            <li>increase engagement and member satisfaction.</li>
+                            <li>decrease calls to customer service.</li>
+                            <li>grow the membership base.</li>
                         </ul>
             </div>
         </div>
@@ -50,8 +52,7 @@
                         <p><strong>UX Designer</strong>, working on several "cases" with different teams (Business Solution Analysts, IT Architects, UI
                             Designers, etc.).
                         </p>
-                        <p>We were working in a waterfall environment, and when I joined H&M, discovery, requirements and analysis had already been completed. With development outsourced,
-                            throughout discussions during the Design phase and impeccable design deliverables were key.</p>
+                        <p>We were working in a waterfall environment, and when I joined H&M, discovery, requirements and analysis had already been completed.</p>
                 
             </div>
         </div>
@@ -64,9 +65,9 @@
                             <ul>
                             <li>design,</li>
                             <li>discuss with tech and business experts,</li>
-                            <li>tweak</li>
-                            <li>user test</li>
-                            <li>repeat</li>
+                            <li>tweak,</li>
+                            <li>user test,</li>
+                            <li>repeat.</li>
                         </ul></p><p>Below
                         are two examples of cases I worked on.</p>
             </div>
@@ -83,24 +84,26 @@
                     </figure>
                 </div>
             </div><div class="caseRightColumn">
-                        <h4>The problem</h4>
-                        <p>Usage of rewards was low. Previous research suggested to explore
-                            how we might:
+                        <h4>The problem: "Okay... How do I use this?"</h4>
+                        <p>Usage of rewards was low. Previous research had shown that:
                             <ul>
-                            <li>allow to apply offers earlier in the journey, on the Rewards page and the Shopping bag page (instead of just at the last stage of checkout).</li>
-                            <li>make the process easier to understand in store.</li>
+                            <li>users had no idea how to use their offers online,</li>
+                            <li>staff was spending a lot of time helping customers with rewards in stores.</li>
+                        </ul>
+                         So, it had been decided to re-design the Rewards page, and to explore how we might make
+                            the processes of redeeming rewards simpler.
                         </ul>
                         </p>
-                        <h4>Online experience, from the Rewards page</h4>
-                        <p>I prototyped, user tested, and iterated this part of the experience multiple times.
-                        The main challenge was to provide a good confirmation that the offer had indeed been added to the bag.
-                
-                        </p>
+                        <h4>Design, test, iterate</h4>
+                        <p><strong>The Rewards page</strong> was a big source of confusion and frustration for users: it had a clear button to use the offer in store, but only text about how to use it online.</p>
+                        <p>We wanted to explore having a button to use in store. But that potentially meant applying an offer before you start shopping, which is
+                        unusual. In the first rounds of user testing, participants were unsure what to expect when clicking the new button. I had to tweak the copy and the design
+                        of the confirmation message several times.</p>
                         <figure>
                         <img src="img/hm2_rewardspage.png"
                              alt=""
                         >
-                            <figcaption>Changes to the Reward page (from left to right: the initial page, 2 iterations, the final version). The main focus was to:<br>Make it easier to use a reward online (added button).<br>Make it easier to understand what to do (move up CTAs and change copy). <br>Remove unecessary information (club card, breadcrumbs, etc.).
+                            <figcaption>From left to right: the initial Rewards page, 2 iterations, the final version. The main changes were:<br>An added button to use online, moving up the buttons and changing copy, removing unecessary information (club card, breadcrumbs, etc.).
                         </figcaption>
                         </figure>
                         <br>
@@ -108,14 +111,14 @@
                         <img src="img/hm2_rewardsmessages.jpg"
                              alt=""
                         >
-                            <figcaption>Adding a reward to your bag. <br> Top: examples of things that were tested and changed. <br> Bottom: Final state.
+                            <figcaption>Top: examples of messages that were tested. <br> Bottom: Final state.
                         </figcaption>
                         </figure>
-                        <h4>Online experience, from the Shopping bag page</h4>
+                        <h4>Error cases</h4>
                         <p>While I explored
                         all the possible scenarios with Analyst and Architects, we realised that there were more technical limitations and complicated business
                             rules than expected.
-                        I had to change my designs, and find a balance between:
+                        I had to change how I had initially planned to provide feedback to users to balance:
                             <ul>
                             <li>being forgiving and providing precise error messages,</li>
                             <li>avoiding making too many calls to the systems powering the rewards, so as to not increase
@@ -124,7 +127,7 @@
                         <p>Technical limitations kept piling up when we were exploring how to provide an easier experience in store.
                         At some point, we had to acknowledge that we had scoped out so much of our solution that
                         it was not solving any of users' problems anymore. So we made the decision to leave this out
-                        of the release, and continue relying on store staff to help customers for now. But we knew the systems
+                        of the release. But we knew the systems
                             would change soon, so that in the near future we could give it another go!</p>
                 
             </div></div>
@@ -141,8 +144,8 @@
                     </figure>
                 </div>
             </div><div class="caseRightColumn">
-                        <h4>The problem</h4>
-                        <p>This was a last minute addition to the scope. In some markets, H&M was to start rolling out invoices through
+                        <h4>The brief from Business stakeholders</h4>
+                        <p>In some markets, H&M was to start rolling out invoices through
                             Klarna, replacing other invoices methods. My job was to find how to make that fit into the existing
                             H&MxKlarna pages (containing the purchases made with the "Pay in XX days with Klarna" payment method), and to
                             provide helpful reminders when time came to pay the invoices.
@@ -204,15 +207,12 @@
                         </li>
                         <li>an increase of 14% in the part of members using rewards every time they shop.</li>
                     </ul>
-                    <p>But some things did not go as well as expected.
-                        For instance,
+                    <p>One disappointment was that
                         we observed no increase in the perceived usefulness or relevance of rewards.
-                        A big part of the problem is that the Rewards template is being used in ways I had not forseen: some rewards
-                        lack key CTAs, and other "rewards" are actually just
-                        communications about H&M.
-                        Before launch, I had held a training session with AEM (Adobe Experience Manager) users to explain the
-                        new rewards layout and how to use it, but it wasn't enough. A good learning for me.
-                    </p>
+                        Part of the problem is that a lot of "Rewards" are actually news and not offers:
+                        the template is used in ways I had not foreseen. This could have been avoided with better
+                        communication with Loyalty managers and content creators.
+                        </p>
             </div>
         </div>    </main>
     <footer>
