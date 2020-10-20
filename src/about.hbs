@@ -1,14 +1,15 @@
 {{#> base/base selected="work"}}
     {{> case/intro
-            client="Hej :)"
-            description="About me"
+    client="Hej :)"
+    description="About me"
 
 
     }}
-    <img src="img/sophie_durand.jpeg" alt="" height="200">
-    {{#> case/paragraphe title="A bit of history…" }}
-
-        <p>I grew up in a small town in the North East of France, close to <strong>Strasbourg</strong>.
+    {{#> case/twoColumn }}
+        {{#> case/leftColumn title="The basics" img="img/sophie_durand.jpeg" alt="" }}
+             {{/case/leftColumn}}
+        {{#> case/rightColumn}}
+<p>I grew up in a small town in the North East of France, close to <strong>Strasbourg</strong>.
             I studied <strong>Software Engineering</strong> <a href="https://www.telecom-sudparis.eu/">in Paris</a> and
             <strong>Human-Computer-Interaction</strong> <a href="https://www.bth.se/eng/">in Karlkrona</a> (yep, that's
             the start of my story with Sweden!).</p>
@@ -17,8 +18,8 @@
                 href="https://www.thomascook.com/">Thomas Cook</a>, consultancy <a
                 href="https://www.system-concepts.com/">System
             Concepts</a>, and technology provider <a href="https://amadeus.com/en">Amadeus</a>.
-        </p>
-    {{/case/paragraphe}}
+        </p>  {{/case/rightColumn}}
+    {{/case/twoColumn}}
 
 
     {{#> case/paragraphe title="What am I like?" }}
@@ -65,40 +66,97 @@
             <li>I would say I like baking, but that would be a lie: I only bake because I like stuffing myself with
                 delicious home-backed goods!
             </li>
-            <li>Reading! Here are my latest reads (from Goodreads):       <style type="text/css" media="screen">
-        .gr_grid_container {
-          /* customize grid container div here. eg: width: 500px; */
-        }
+            <li>Reading! Here are my latest reads (from Goodreads):
+                <style type="text/css" media="screen">
+                    .gr_grid_container {
+                        /* customize grid container div here. eg: width: 500px; */
+                    }
 
-        .gr_grid_book_container {
-          /* customize book cover container div here */
-          float: left;
-          width: 98px;
-          height: 160px;
-          padding: 0px 0px;
-          overflow: hidden;
-        }
-      </style>
-      <div id="gr_grid_widget_1603114369">
-        <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
-          <div class="gr_grid_container">
-    <div class="gr_grid_book_container"><a title="Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy" rel="nofollow" href="https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction"><img alt="Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1456091964l/28186015._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Les Mandarins: Tome 2" rel="nofollow" href="https://www.goodreads.com/book/show/19531.Les_Mandarins"><img alt="Les Mandarins: Tome 2" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356499466l/19531._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Hooked: How to Build Habit-Forming Products" rel="nofollow" href="https://www.goodreads.com/book/show/22668729-hooked"><img alt="Hooked: How to Build Habit-Forming Products" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407112405l/22668729._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="White Fragility: Why It’s So Hard for White People to Talk About Racism" rel="nofollow" href="https://www.goodreads.com/book/show/43708708-white-fragility"><img alt="White Fragility: Why It’s So Hard for White People to Talk About Racism" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548478235l/43708708._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Les Mandarins: Tome 1" rel="nofollow" href="https://www.goodreads.com/book/show/19530.Les_Mandarins"><img alt="Les Mandarins: Tome 1" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386749315l/19530._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Tout Compte Fait" rel="nofollow" href="https://www.goodreads.com/book/show/152062.Tout_Compte_Fait"><img alt="Tout Compte Fait" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356155706l/152062._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Thinking, Fast and Slow" rel="nofollow" href="https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow"><img alt="Thinking, Fast and Slow" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1317793965l/11468377._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="Axiom's End (Noumena, #1)" rel="nofollow" href="https://www.goodreads.com/book/show/51171377-axiom-s-end"><img alt="Axiom's End" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579072263l/51171377._SX98_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="La Force des choses II" rel="nofollow" href="https://www.goodreads.com/book/show/1364393.La_Force_des_choses_II"><img alt="La Force des choses II" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348719860l/1364393._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="La force de l'âge" rel="nofollow" href="https://www.goodreads.com/book/show/21126.La_force_de_l_ge"><img alt="La force de l'âge" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1425932911l/21126._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="La Force des choses I" rel="nofollow" href="https://www.goodreads.com/book/show/1364391.La_Force_des_choses_I"><img alt="La Force des choses I" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497201988l/1364391._SY160_.jpg" /></a></div>
-    <div class="gr_grid_book_container"><a title="La Femme rompue" rel="nofollow" href="https://www.goodreads.com/book/show/151629.La_Femme_rompue"><img alt="La Femme rompue" border="0" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1277113227l/151629._SY160_.jpg" /></a></div>
-  <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Sophie, and even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.</noscript>
-  </div>
+                    .gr_grid_book_container {
+                        /* customize book cover container div here */
+                        float: left;
+                        width: 98px;
+                        height: 160px;
+                        padding: 0px 0px;
+                        overflow: hidden;
+                    }
+                </style>
+                <div id="gr_grid_widget_1603114369">
+                    <!-- Show static html as a placeholder in case js is not enabled - javascript include will override this if things work -->
+                    <div class="gr_grid_container">
+                        <div class="gr_grid_book_container"><a
+                                title="Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy"
+                                rel="nofollow"
+                                href="https://www.goodreads.com/book/show/28186015-weapons-of-math-destruction"><img
+                                alt="Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy"
+                                border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1456091964l/28186015._SX98_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Les Mandarins: Tome 2" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/19531.Les_Mandarins"><img
+                                alt="Les Mandarins: Tome 2" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356499466l/19531._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Hooked: How to Build Habit-Forming Products"
+                                                               rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/22668729-hooked"><img
+                                alt="Hooked: How to Build Habit-Forming Products" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407112405l/22668729._SX98_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a
+                                title="White Fragility: Why It’s So Hard for White People to Talk About Racism"
+                                rel="nofollow" href="https://www.goodreads.com/book/show/43708708-white-fragility"><img
+                                alt="White Fragility: Why It’s So Hard for White People to Talk About Racism" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548478235l/43708708._SX98_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Les Mandarins: Tome 1" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/19530.Les_Mandarins"><img
+                                alt="Les Mandarins: Tome 1" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386749315l/19530._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Tout Compte Fait" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/152062.Tout_Compte_Fait"><img
+                                alt="Tout Compte Fait" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356155706l/152062._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Thinking, Fast and Slow" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow"><img
+                                alt="Thinking, Fast and Slow" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1317793965l/11468377._SX98_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="Axiom's End (Noumena, #1)" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/51171377-axiom-s-end"><img
+                                alt="Axiom's End" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579072263l/51171377._SX98_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="La Force des choses II" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/1364393.La_Force_des_choses_II"><img
+                                alt="La Force des choses II" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348719860l/1364393._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="La force de l'âge" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/21126.La_force_de_l_ge"><img
+                                alt="La force de l'âge" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1425932911l/21126._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="La Force des choses I" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/1364391.La_Force_des_choses_I"><img
+                                alt="La Force des choses I" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497201988l/1364391._SY160_.jpg"/></a>
+                        </div>
+                        <div class="gr_grid_book_container"><a title="La Femme rompue" rel="nofollow"
+                                                               href="https://www.goodreads.com/book/show/151629.La_Femme_rompue"><img
+                                alt="La Femme rompue" border="0"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1277113227l/151629._SY160_.jpg"/></a>
+                        </div>
+                        <noscript><br/>Share <a rel="nofollow" href="/">book reviews</a> and ratings with Sophie, and
+                            even join a <a rel="nofollow" href="/group">book club</a> on Goodreads.
+                        </noscript>
+                    </div>
 
-      </div>
-      <script src="https://www.goodreads.com/review/grid_widget/22320272.Latest%20reads?cover_size=medium&hide_link=true&hide_title=true&num_books=12&order=d&shelf=read&sort=date_read&widget_id=1603114369" type="text/javascript" charset="utf-8"></script>
+                </div>
+                <script src="https://www.goodreads.com/review/grid_widget/22320272.Latest%20reads?cover_size=medium&hide_link=true&hide_title=true&num_books=12&order=d&shelf=read&sort=date_read&widget_id=1603114369"
+                        type="text/javascript" charset="utf-8"></script>
 
 
             </li>
@@ -109,10 +167,8 @@
             </li>
 
 
-
-
         </ul>
-<iframe src="https://open.spotify.com/embed/playlist/5ZtMir8MPDBgqREeU0mKb1" width="300" height="300"
+        <iframe src="https://open.spotify.com/embed/playlist/5ZtMir8MPDBgqREeU0mKb1" width="300" height="300"
                 frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
     {{/case/paragraphe}}
