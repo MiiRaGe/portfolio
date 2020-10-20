@@ -555,7 +555,7 @@ header > .headerRight > nav > span > a.selected {
   z-index: -1;
   position: absolute;
   top: 76px;
-  background-color: #d2f2f2;
+  background-color: #FAFAF5;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -689,6 +689,7 @@ GENERAL
 }
 a {
   text-decoration: none;
+  color: #0D6A90;
 }
 img {
   max-width: 100%;
