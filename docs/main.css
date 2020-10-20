@@ -254,8 +254,8 @@ HEADINGS
   grid-template-rows: auto 1fr auto;
 }
 header {
-  width: 100%;
   display: flex;
+  background: white;
   justify-content: space-between;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
   height: 76px;
@@ -264,10 +264,30 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: white;
+  padding-left: 64px;
+  padding-right: 64px;
+  flex-wrap: wrap;
+}
+@media (max-width: 730px) {
+  header {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: unset;
+    height: 115px;
+  }
 }
 header > .headerLeft {
-  margin: auto 0 auto 64px;
+  margin: auto 0 auto 0;
+  flex-grow: 1;
+}
+@media (max-width: 730px) {
+  header > .headerLeft {
+    margin: auto;
+    margin-bottom: 16px;
+  }
 }
 header > .headerLeft > a > .sophieDurand {
   color: #292929;
@@ -278,9 +298,16 @@ header > .headerLeft > a > .sophieDurand {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  white-space: nowrap;
+  text-align: left;
 }
 header > .headerRight {
-  margin: auto 64px auto 0;
+  margin: auto 0 auto 0;
+}
+@media (max-width: 730px) {
+  header > .headerRight {
+    margin: 0 auto 16px;
+  }
 }
 header > .headerRight > nav {
   display: flex;
@@ -720,5 +747,8 @@ figure > figcaption {
 }
 body {
   margin: 0;
+}
+html {
+  background: white;
 }
 
