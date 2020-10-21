@@ -527,7 +527,7 @@ header > .headerRight > nav > span > a.selected {
 }
 .caseStudyIntroRaisedTitle {
   z-index: 2;
-  width: 680px;
+  max-width: 680px;
   background: white;
   margin: 150px auto 0 auto;
   padding-top: 10px;
@@ -549,19 +549,19 @@ header > .headerRight > nav > span > a.selected {
   margin-top: 8px;
 }
 .caseStudyIntro > .caseImage {
-  width: 100%;
+  max-width: 100%;
   height: 240px;
   margin: auto auto auto auto;
   z-index: -1;
   position: absolute;
   top: 76px;
-  background-color: #d2f2f2;
+  background-color: #FAFAF5;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .caseParagraphe {
-  width: 680px;
+  max-width: 680px;
   margin: 64px auto auto auto;
 }
 .caseParagrapheTitle {
@@ -577,18 +577,21 @@ header > .headerRight > nav > span > a.selected {
 .caseTwoColumn {
   width: 85%;
   max-width: 1000px;
-  display: grid;
-  grid-column-gap: 88px;
-  grid-template-columns: minmax(150px, 25%) 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 54px auto auto auto;
 }
 .caseLeftColumn {
-  display: grid;
-  grid-template-rows: 150px auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 250px;
 }
 .caseLeftColumnTitle {
   height: 150px;
-  margin: 40px 0 auto 0;
+  margin: 40px 0 0px 0;
   border-top: solid 1px #292929;
   border-bottom: solid 1px #292929;
   display: grid;
@@ -606,9 +609,14 @@ header > .headerRight > nav > span > a.selected {
   line-height: 32px;
 }
 .caseLeftColumnDesc {
-  margin: auto 0 auto 0;
+  margin: 64px 0 auto 0;
 }
 .caseRightColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  min-width: 400px;
   background-color: #f8f8f8;
   padding: 32px 32px 32px 32px;
 }
@@ -689,6 +697,7 @@ GENERAL
 }
 a {
   text-decoration: none;
+  color: #0D6A90;
 }
 img {
   max-width: 100%;
