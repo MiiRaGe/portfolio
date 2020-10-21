@@ -578,20 +578,30 @@ header > .headerRight > nav > span > a.selected {
   width: 85%;
   max-width: 1000px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 54px auto auto auto;
 }
+@media (max-width: 730px) {
+  .caseTwoColumn {
+    margin: 16px auto 16px auto;
+  }
+}
 .caseLeftColumn {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  min-width: 250px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  flex: 1 0 25%;
+  /*  Stretching: */
+  margin: 32px;
+}
+@media (max-width: 730px) {
+  .caseLeftColumn {
+    margin: auto;
+  }
 }
 .caseLeftColumnTitle {
   height: 150px;
-  margin: 40px 0 0px 0;
+  margin: 40px 0 0 0;
   border-top: solid 1px #292929;
   border-bottom: solid 1px #292929;
   display: grid;
@@ -612,11 +622,9 @@ header > .headerRight > nav > span > a.selected {
   margin: 64px 0 auto 0;
 }
 .caseRightColumn {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
-  min-width: 400px;
+  flex: 1 1 67%;
+  /*  Stretching: */
+  margin: 5px;
   background-color: #f8f8f8;
   padding: 32px 32px 32px 32px;
 }

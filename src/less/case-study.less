@@ -58,21 +58,26 @@
     width: 85%;
     max-width: 1000px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 54px auto auto auto;
+    @media (max-width: 730px) {
+      margin: 16px auto 16px auto;
+    }
   }
 
   &LeftColumn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    min-width: 250px;
+    display: grid;
+    grid-template-rows: 150px auto;
+    flex: 1 0 25%; /*  Stretching: */
+    margin: 32px;
+    @media (max-width: 730px) {
+      margin: auto;
+    }
 
     &Title {
       height: 150px;
-      margin: 40px 0 0px 0;
+      margin: 40px 0 0 0;
       border-top: solid 1px @primary-text-color;
       border-bottom: solid 1px @primary-text-color;
       display: grid;
@@ -92,11 +97,8 @@
   }
 
   &RightColumn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 2;
-    min-width: 400px;
+    flex: 1 1 67%; /*  Stretching: */
+    margin: 5px;
     background-color: @case-background-color;
     padding: 32px 32px 32px 32px;
 
