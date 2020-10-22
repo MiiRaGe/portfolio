@@ -555,7 +555,7 @@ header > .headerRight > nav > span > a.selected {
   max-width: 680px;
   background: white;
   margin: 150px auto 0 auto;
-  padding-top: 10px;
+  padding: 16px 0 16px 0;
 }
 .caseStudyIntroRaisedTitle > .caseDescription {
   line-height: 41px;
@@ -571,7 +571,7 @@ header > .headerRight > nav > span > a.selected {
   color: #5F6368;
   font-weight: 200;
   font-size: 18px;
-  margin-top: 8px;
+  margin: 8px 0 16px 0;
 }
 .caseStudyIntro > .caseImage {
   width: 100%;
@@ -587,16 +587,32 @@ header > .headerRight > nav > span > a.selected {
   background-size: contain;
 }
 .caseGallery {
-  max-width: 1032px;
+  max-width: 1016px;
   margin: auto;
 }
 .caseIllustration {
-  float: left;
-  max-width: 50%;
-  padding: 32px 16px 32px 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  padding: 16px 0px 16px 0px;
+}
+.caseIllustrationS {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48%;
+  padding: 16px 0px 16px 0px;
+}
+.caseIllustrationL {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+  padding: 16px 0px 16px 0px;
 }
 figcaption {
-  padding: 16px 0 0 0;
+  padding: 8px 0 0 0;
 }
 .caseParagraphe {
   max-width: 680px;
@@ -785,7 +801,7 @@ h4 {
   font-family: 'Roboto';
   font-weight: 400;
   line-height: 24px;
-  font-size: 20px;
+  font-size: 18px;
   margin-block-end: 1em;
 }
 section {
