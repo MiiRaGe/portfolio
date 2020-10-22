@@ -20,23 +20,14 @@
     {{/case/paragraphe}}
     {{#> case/twoColumn }}
         {{#> case/leftColumn title="Understand the problem" img="img/tc_workshop.jpg"
-                             alt="Sophie speaking in front of colleagues" }}
-            Going through research insights at a workshop
+                             alt="Sophie presenting insights to colleagues during a workshop" }}
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
             <h4>Review quantitative data</h4>
             <p>I worked closely with the Analyst in the team to review data from customer service,
                 and interactions recorded in <a href="https://www.hotjar.com/">Hotjar</a>.
             </p>
-            <figure>
-                <img src="img/tc-acom-tableau.jpg"
-                     alt="Graph showing that facilities is what customers enquire about the most"
-                     class="illustrationMedium">
-                <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms,
-                    food (data from customer service contacts, collected in <a
-                            href="https://www.tableau.com/">Tableau</a>).
-                </figcaption>
-            </figure>
+
 
             <h4>User testing</h4>
 
@@ -55,13 +46,7 @@
                     were looking for, users just gave up.
                 </li>
             </ul>
-            <figure>
-                <img src="img/tc_researchsummary.jpg"
-                     alt="Screenshot of the hotel page, with colour-coded annotations"
-                     >
-                <figcaption>A poster with a summary of research findings.
-                </figcaption>
-            </figure>
+
 
             <h4>Workshop</h4>
             <p>A workshop was led by the Product Owner and Design Lead. I presented an overview of
@@ -71,11 +56,29 @@
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
+    <div class="caseGallery">
+        <figure class="caseIllustrationS">
 
+            <img src="img/tc-acom-tableau.jpg"
+                 alt="Graph showing that facilities is what customers enquire about the most"
+                 class="illustrationMedium">
+            <figcaption>What customers were enquiring about the most: specific hotel facilities, rooms,
+                food (data from customer service contacts, collected in <a
+                        href="https://www.tableau.com/">Tableau</a>).
+            </figcaption>
+        </figure>
+        <figure class="caseIllustration">
+            <img src="img/tc_researchsummary.jpg"
+                 alt="Screenshot of the hotel page, with colour-coded annotations"
+            >
+            <figcaption>A poster with a summary of research findings.
+            </figcaption>
+        </figure>
+    </div>
 
     {{#> case/twoColumn }}
-        {{#> case/leftColumn title="Re-organise the content" }}
-            <img src="img/tc-accom-cardsort.jpg">
+        {{#> case/leftColumn title="Re-organise the content"  img="img/tc-accom-cardsort.jpg" alt="cards with section names layed out on a table"}}
+
 
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
@@ -89,7 +92,7 @@
             <p>A couple of sections of the page weren't groups users naturally thought of, and users chose
                 section names that are more descriptive and shorter than the existing ones.</p>
             I presented these results to the team. There were surprises, but we managed to
-                agree on a new structure to test.
+            agree on a new structure to test.
 
             <p>Some of our proposed changes:</p>
             <ul>
@@ -120,60 +123,55 @@
                 (instead of having that information in the general blurb about the hotel). I organised a test to
                 validate this new proposition.
             </p>
-            <figure>
-                <img src="img/tc-accom-OldTree.png"
-                     alt=""
-                     >
-                <figcaption>Old structure</figcaption>
-            </figure><br>
-            <figure>
-                <img src="img/tc-accom-NewTree.png"
-                     alt=""
-                     >
-                <figcaption>New structure</figcaption>
-            </figure>
+
             <h4>Re-design and validate</h4>
-            <p>In some cases, design changes were needed in order to fit the new structure, so I discussed possible solutions
+            <p>In some cases, design changes were needed in order to fit the new structure, so I discussed possible
+                solutions
                 with the designer and developers, and then
                 tested them with users.
             </p>
-            <figure>
-                <img src="img/tc_video.png"
-                     alt=""
-                     >
-                <figcaption>Originally, the video (a button in hotel highlight) was too hard too find.
-                    Testing showed that users expected the video within the image carousel. But
-                    that would have slowed down loading. So instead, we settled on a vignette below the carousel.
-                </figcaption>
-            </figure>
+
         {{/case/rightColumn}}
     {{/case/twoColumn}}
 
-
+    <div class="caseGallery">
+        <figure class="caseIllustrationS">
+            <img src="img/tc-accom-OldTree.png"
+                 alt=""
+            >
+            <figcaption>Old structure</figcaption>
+        </figure>
+        <figure class="caseIllustration">
+            <img src="img/tc-accom-NewTree.png"
+                 alt=""
+            >
+            <figcaption>New structure</figcaption>
+        </figure>
+        <figure class="caseIllustrationS">
+            <img src="img/tc_video.png"
+                 alt=""
+            >
+            <figcaption>Originally, the video (a button in hotel highlight) was too hard too find.
+                Testing showed that users expected the video within the image carousel. But
+                that would have slowed down loading. So instead, we settled on a vignette below the carousel.
+            </figcaption>
+        </figure>
+    </div>
 
 
 
 
 
     {{#> case/paragraphe title="Results" }}
-        <p>With the new structure:</p>
+        <p>Changes were gradually rolled out to measure effects, for instance:
         <ul>
-            <li>Content is organised in sections that reflect what users are looking for.</li>
-            <li>Section names are short and describe exactly what each section contains, in users' own
-                words.
-            </li>
-            <li>The structure is more flat: 2 levels of headings instead of 4.</li>
-        </ul>
-
-        <p>Changes were gradually rolled out to measure effects. For instance:
-        <ul>
-            <li>Changes around Room Details and Board Type led to an increase of 3.5% in conversions.</li>
-            <li>The new location and design for videos led to an increase of 349% in users engaging with that content
+            <li>Changes around Room Details and Board Type led to an <strong>increase of 3.5% in conversions</strong>.</li>
+            <li>The new location and design for videos led to an <strong>increase of 349% in engagement</strong> with that content
                 (and interacting with the video has the highest associated conversion rate of all
                 clickable elements on the page).
             </li>
         </ul>
-
+    <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
 
     {{/case/paragraphe}}
 
