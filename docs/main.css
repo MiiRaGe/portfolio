@@ -602,7 +602,7 @@ strong {
   position: absolute;
   top: 76px;
   overflow: hidden;
-  background-color: #f8f8f8;
+  background-color: #FAFAF5;
 }
 .caseStudyIntro > .caseImage > img {
   object-fit: cover;
