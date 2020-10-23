@@ -52,6 +52,9 @@
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+strong {
+  font-weight: 500;
+}
 .space-text {
   color: #292929;
   font-family: 'Roboto';
@@ -147,6 +150,9 @@ PAGE: INDEX
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+strong {
+  font-weight: 500;
 }
 .space-text {
   color: #292929;
@@ -245,6 +251,9 @@ footer > .footerLinkedInLogo {
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+strong {
+  font-weight: 500;
 }
 .space-text {
   color: #292929;
@@ -398,6 +407,9 @@ header > .headerRight > nav > span > a.selected {
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+strong {
+  font-weight: 500;
+}
 .space-text {
   color: #292929;
   font-family: 'Roboto';
@@ -533,6 +545,9 @@ header > .headerRight > nav > span > a.selected {
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+strong {
+  font-weight: 500;
+}
 .space-text {
   color: #292929;
   font-family: 'Roboto';
@@ -589,12 +604,11 @@ header > .headerRight > nav > span > a.selected {
 }
 .caseGallery {
   max-width: 1016px;
-  margin: auto;
+  margin: 32px auto 32px auto;
 }
 .caseIllustration {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 32px auto 32px auto;
   max-width: 70%;
   padding: 16px 0px 16px 0px;
 }
@@ -647,7 +661,7 @@ figcaption {
   grid-template-rows: 150px auto;
   flex: 1 0 25%;
   /*  Stretching: */
-  margin: 32px;
+  margin: 32px 32px 32px 32px;
 }
 @media (max-width: 730px) {
   .caseLeftColumn {
@@ -656,7 +670,7 @@ figcaption {
 }
 .caseLeftColumnTitle {
   height: 150px;
-  margin: 40px 0 0 0;
+  margin: 0;
   border-top: solid 1px #292929;
   border-bottom: solid 1px #292929;
   display: grid;
@@ -674,7 +688,7 @@ figcaption {
   line-height: 32px;
 }
 .caseLeftColumnDesc {
-  margin: 64px 0 auto 0;
+  margin: 48px 0 auto 0;
 }
 .caseRightColumn {
   flex: 1 1 67%;
@@ -741,6 +755,9 @@ figcaption {
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+strong {
+  font-weight: 500;
 }
 .space-text {
   color: #292929;
