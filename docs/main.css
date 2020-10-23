@@ -573,6 +573,11 @@ strong {
   margin: 150px auto 0 auto;
   padding: 16px 0 16px 0;
 }
+@media (max-width: 730px) {
+  .caseStudyIntroRaisedTitle {
+    margin: 75px auto 0 auto;
+  }
+}
 .caseStudyIntroRaisedTitle > .caseDescription {
   line-height: 41px;
   font-size: 32px;
@@ -596,11 +601,13 @@ strong {
   z-index: -1;
   position: absolute;
   top: 76px;
-  background-color: #FAFAF5;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
+.caseStudyIntro > .caseImage > img {
+  object-fit: cover;
+  height: 300px;
+  overflow: hidden;
 }
 .caseGallery {
   max-width: 1016px;
@@ -610,21 +617,15 @@ strong {
   display: block;
   margin: 32px auto 32px auto;
   max-width: 70%;
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0 16px 0;
 }
 .caseIllustrationS {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   max-width: 48%;
-  padding: 16px 0px 16px 0px;
 }
 .caseIllustrationL {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   max-width: 95%;
-  padding: 16px 0px 16px 0px;
 }
 figcaption {
   padding: 8px 0 0 0;
@@ -632,6 +633,11 @@ figcaption {
 .caseParagraphe {
   max-width: 680px;
   margin: 64px auto auto auto;
+}
+@media (max-width: 730px) {
+  .caseParagraphe {
+    margin: 64px 24px 0 24px;
+  }
 }
 .caseParagrapheTitle {
   text-align: center;

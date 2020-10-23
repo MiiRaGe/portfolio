@@ -8,6 +8,9 @@
     max-width: 680px;
     background: white;
     margin: 150px auto 0 auto;
+    @media (max-width: 730px) {
+      margin: 75px auto 0 auto;
+    }
     padding: 16px 0 16px 0;
 
     > .caseDescription {
@@ -33,18 +36,19 @@
     z-index: -1;
     position: absolute;
     top: 76px;
-    background-color: @case-intro-background-color;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+    overflow: hidden;
+    background-color: @case-background-color;
+
+    > img {
+      object-fit: cover;
+      height: 300px;
+      overflow: hidden;
+    }
   }
 
 
 
 }
-
-
 
 .caseGallery {
   max-width: 1016px;
@@ -55,23 +59,17 @@
   display: block;
   margin: 32px auto 32px auto;
   max-width: 70%;
-  padding: 16px 0px 16px 0px;
-}
+  padding: 16px 0 16px 0;
 
-.caseIllustrationS {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 48%;
-  padding: 16px 0px 16px 0px;
-}
+  &S {
+    margin:0 auto 0 auto;
+    max-width: 48%;
+  }
 
-.caseIllustrationL {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-  padding: 16px 0px 16px 0px;
+  &L {
+    margin:0 auto 0 auto;
+    max-width: 95%;
+  }
 }
 
 figcaption{
@@ -81,6 +79,10 @@ figcaption{
 .caseParagraphe {
   max-width: 680px;
   margin: 64px auto auto auto;
+
+  @media (max-width: 730px) {
+    margin: 64px 24px 0 24px;
+  }
 
   &Title {
     text-align: center;
