@@ -605,8 +605,7 @@ strong {
   background-color: #FAFAF5;
 }
 .caseStudyIntro > .caseImage > img {
-  object-fit: cover;
-  height: 300px;
+  object-fit: contain;
   overflow: hidden;
 }
 .caseGallery {
