@@ -6,42 +6,42 @@
         "imgLink": "img/hm1_signup_card@2x.jpg",
         "client": "H&M",
         "description": "Sign up",
-        "longDescription": "Increase the part of customers who sign up"
+        "longDescription": "Product Design / Research: Increase sign ups"
       },
       {
         "link": "redesign-loyalty.html",
         "imgLink": "img/hm2_club_card@2x.jpg",
         "client": "H&M",
         "description": "Loyalty program",
-        "longDescription": "Increase engagement with the rewards and benefits"
+        "longDescription": "UX Design / Research: Increase engagement"
       },
       {
         "link": "organise-content.html",
         "imgLink": "img/tc_accom_card@2x.jpg",
         "client": "Thomas Cook",
         "description": "Hotel detail page",
-        "longDescription": "Help users find the information they need"
+        "longDescription": "Research: Help users find the information they need"
       },
       {
         "link": "design-finance-tool.html",
         "imgLink": "img/mas_card@2x.jpg",
         "client": "Money Advice Service",
         "description": "Support website",
-        "longDescription": "Help claimants to navigate the new UK benefits system"
+        "longDescription": "UX Design: Help to navigate the new UK benefits system"
       },
       {
         "link": "redesign-steel-software.html",
         "imgLink": "img/steel_card@2x.jpg",
         "client": "Sarclad",
         "description": "Inspection software",
-        "longDescription": "Make a tool to inspect steel rolls easier to use"
+        "longDescription": "UX Design: Improve the usability of a tool to inspect steel rolls"
       },
       {
         "link": "accessibility-airline.html",
         "imgLink": "img/ax_card@2x.jpg",
         "client": "Amadeus",
         "description": "Airlines' websites",
-        "longDescription": "Make the booking interface used by major airlines more accessible"
+        "longDescription": "Accessibility: Work towards WCAG 2.0 compliance"
       }
     ]
   }
