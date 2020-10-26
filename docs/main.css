@@ -75,8 +75,8 @@ PAGE: INDEX
 ***********************************/
 .introIndex {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 128px;
+  margin-top: 64px;
+  margin-bottom: 88px;
 }
 .introIndexDesc > p {
   color: #292929;
@@ -170,10 +170,10 @@ strong {
   padding: 0 32px 32px 0;
 }
 footer {
-  height: 238px;
+  height: 216px;
   background-color: #fafaf5;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 88px;
   padding: 24px 0 0 0;
 }
 footer > .footerMainContent {
@@ -609,7 +609,7 @@ strong {
   object-position: 50% 0;
   height: 300px;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.1;
   background: #D7E6E5;
   mix-blend-mode: multiply;
 }
