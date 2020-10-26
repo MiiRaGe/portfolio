@@ -602,13 +602,16 @@ strong {
   position: absolute;
   top: 76px;
   overflow: hidden;
-  background-color: #FAFAF5;
+  background-color: #D7E6E5;
 }
 .caseStudyIntro > .caseImage > img {
   object-fit: none;
   object-position: 50% 0;
   height: 300px;
   width: 100%;
+  opacity: 0.2;
+  background: #D7E6E5;
+  mix-blend-mode: multiply;
 }
 .caseGallery {
   max-width: 1016px;
