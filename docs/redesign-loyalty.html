@@ -61,15 +61,7 @@
                         <p>We were working in a waterfall environment, and when I joined H&M, discovery, requirements and analysis had
                             already been completed.</p>
                 
-                        <p>For each case, I started by getting to know
-                            my colleagues and familiarising myself with the work done previously. Then, the process was to:</p>
-                        <ul>
-                            <li>design,</li>
-                            <li>discuss with tech and business experts,</li>
-                            <li>tweak,</li>
-                            <li>user test,</li>
-                            <li>repeat.</li>
-                        </ul><p>Below
+                        <p>Below
                             are two examples of cases I worked on.</p>
             </div>
         </div>
@@ -95,22 +87,22 @@
                             <h4>Design, test, iterate</h4>
                             <ul>
                                 <li><strong>The Rewards page</strong> was a big source of confusion and frustration for users: it had a
-                                    clear
-                                    button to use the offer in store, but only text about how to use it online.
-                                    I tested having a button to use in store. But in the first round of testing, participants were
+                                    button to use the offer in store, but just text about how to use it online.
+                                    I tested having a button to use in store, but participants were
                                     unsure what to expect when clicking the
                                     new button. I had to tweak the copy and the design
                                     of the confirmation message several times.
                                 </li>
                 
-                                <li><strong>Error cases</strong>: While I explored
-                                    all the possible scenarios with Analyst and Architects, we realised that there were more technical
-                                    limitations and complicated business
-                                    rules than expected.
-                                    I had to change how I had planned to provide feedback to users to balance being forgiving and
-                                    providing precise error messages,
-                                    with avoiding to make too many calls to the systems powering the rewards and to increase
-                                    the load times too much.
+                                <li><strong>Error messages</strong>: I mapped out error cases with Analyst and Architects. We realised
+                                    there were more technical
+                                    limitations and complex business
+                                    rules than expected: offers that cannot be combined, maximum discount reached, etc.
+                                    Providing precise error messages, like I had planned,
+                                    would have impacted load times too much in the shopping bag. To balance that out, I made sure
+                                    the process was forgiving (offers can be used again if they did not result in discounts).
+                
+                
                                 </li>
                                 <li><strong>In store experience</strong>:
                                     Technical limitations kept piling up when we were exploring how to provide an easier experience in
@@ -130,7 +122,7 @@
                     >
                     <figcaption>The initial Rewards page, 2 iterations, and the final version. <br>The main
                         changes were: An added button to use the offer online, moving up the buttons and changing copy, removing
-                        unecessary information (club card, breadcrumbs, etc.).
+                        unnecessary information (club card, breadcrumbs, etc.).
                     </figcaption>
                 </figure>
                 <br>
@@ -159,7 +151,7 @@
                             <h4>The brief from business stakeholders</h4>
                             <p>H&M wanted to introduce a new benefit for members: monthly invoices with Klarna. My job was to find how
                                 to make that fit into the existing
-                                <em>Pay later</em> section under <em>My Account</em> and to
+                                <em>Pay later</em> section under <em>My Account</em>, and to
                                 provide helpful reminders when time came to pay the invoices.
                             </p>
                             <h4>Design, test, iterate</h4>
@@ -170,17 +162,18 @@
                                     one for <em>Pay in XX days</em>, and the other one for <em>Monthly invoices</em>. But it became
                                     clear
                                     in user testing that the distinction between the two methods was irrelevant to users.
-                                    What mattered was: what still needs to be paid, and what has already been paid.
+                                    What matters: what still needs to be paid, and what has already been paid.
                                 </li>
                                 <li>
                                     <strong>Notifications</strong>: To encourage customers to pay in time, from the H&M app (not from
                                     the Klarna app), it had been decided that we would send push notifications about due invoices.
                                     The problem? H&M
-                                    already sent a lot of notifications! Research suggested few new users would turn on push
+                                    already sent a lot of notifications! <!--Research suggested few new users would turn on push
                                     notifications unless we allowed them to choose what to opt-in for, and for those who did receive
-                                    notifications, reminders to pay invoices would be lost among marketing messages.
-                                    I tried to push for choice at opt-in and less messages overall. But that was a tough discussion
-                                    and I did not manage to get all stakeholders to agree in time for that release. We did however
+                                    notifications, reminders to pay invoices would be lost among marketing messages.-->
+                                    I tried to push to send less notifications overall, and to allow users to choose what types of
+                                    messages to opt-in for. But
+                                    I did not manage to get all stakeholders to agree in time for that release. We did however
                                     launch
                                     a wider initiative around the quality and quantity of our communications to customers.
                                     And for that release, I focused on highlighting things to pay within the interface instead, for
@@ -196,16 +189,12 @@
                 <figure class="caseIllustration">
                     <img src="img/hm2_monthly_test1.png"
                          alt="">
-                    <figcaption>Screenshots from a prototype for an early round of testing.
+                    <figcaption>Screenshots from a prototype for the first round of testing, with 2 tabs: <em>Individual
+                        invoices</em> and <em>Monthly invoices</em>
                     </figcaption>
                 </figure>
-                <figure class="caseIllustration">
-                    <img src="img/hm2_monthly_final.jpg"
-                         alt="">
-                    <figcaption class="caseIllustration">Final design</figcaption>
-                </figure>
         
-                <figure class="caseIllustrationL">
+                <figure class="caseIllustration">
                     <img src="img/hm2_report.png"
                          alt="">
                     <figcaption>A detailed user testing report, with an overview of the test set up and tasks. Then,
@@ -214,12 +203,21 @@
                     </figcaption>
                 </figure>
         
+                <figure class="caseIllustration">
+                    <img src="img/hm2_monthly_final.jpg"
+                         alt="">
+                    <figcaption class="caseIllustration">Final design, with 2 tabs: <em>To pay</em> and <em>All purchases</em>
+                    </figcaption>
+                </figure>
+        
         
                 <figure class="caseIllustrationL">
                     <img src="img/hm2_deliverable.png"
                          alt=""
                     >
-                    <figcaption>Extract of a final deliverable, with detailed flows and specifications on wireframes.
+                    <figcaption>Extract of a final deliverable, with detailed flows, specifications and wireframes. There were
+                        lots of
+                        different possible states, depending on what users had turned on/off, and market configurations.
                     </figcaption>
                 </figure>
             </div>
@@ -230,22 +228,26 @@
         <div class="caseParagraphe">
             <h2 class="caseParagrapheTitle">Results</h2>
             <div class="caseParagrapheContent">
-                        <p>In the first month after launch, we saw:</p>
+                        <p>In the first month after launch:</p>
                         <ul>
-                            <li><strong>1 million new members</strong> signed up.
+                            <li><strong>+1 million new members</strong>.
                             </li>
-                            <li><strong>a reduction in the number of conversation with customers service</strong>
+                            <li><strong>Less conversations with customers service</strong> about the membership
                                 (7% of all contacts, down from 10%).
                             </li>
-                            <li><strong>increased used of rewards</strong> (+14% in the part of members using rewards every time they shop).</li>
+                            <li><strong>+21% of members regularly use rewards</strong>. But we observed no increase in the perceived
+                                usefulness or relevance of rewards.
+                                Part of the problem is that a lot of "Rewards" are actually news and not offers:
+                                the template is used in ways I had not foreseen. This could have been avoided with better
+                                communication with Loyalty managers and content creators.
+                            </li>
+                            <li><strong>About half of customers use the Klarna payment methods</strong> on mobile. But, this figure does
+                                not differentiate between <em>Monthly invoice</em> and <em>Pay in XX days</em>, and tracking the
+                                impact of <em>Pay Later</em> under <em>My account</em> has not been a priority.
+                            </li>
                         </ul>
-                        <p>One disappointment was that
-                            we observed no increase in the perceived usefulness or relevance of rewards.
-                            Part of the problem is that a lot of "Rewards" are actually news and not offers:
-                            the template is used in ways I had not foreseen. This could have been avoided with better
-                            communication with Loyalty managers and content creators.
-                        </p>
-                            <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
+                
+                        <a href="index.html" class="separation">&lt;&lt; See other examples of work</a>
             </div>
         </div>    </main>
     <footer>
