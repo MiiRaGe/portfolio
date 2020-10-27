@@ -619,15 +619,15 @@ strong {
 }
 .caseIllustration {
   display: block;
-  margin: 16px auto 16px auto;
+  margin: 32px auto 32px auto;
   max-width: 70%;
 }
 .caseIllustrationS {
-  margin: 16px auto 16px auto;
+  margin: 32px auto 32px auto;
   max-width: 48%;
 }
 .caseIllustrationL {
-  margin: 16px auto 16px auto;
+  margin: 32px auto 32px auto;
   max-width: 95%;
 }
 figcaption {
