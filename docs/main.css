@@ -614,21 +614,21 @@ strong {
   mix-blend-mode: multiply;
 }
 .caseGallery {
-  max-width: 1016px;
-  margin: 40px auto 40px auto;
+  max-width: 1032px;
+  margin: 48px auto 48px auto;
 }
 .caseIllustration {
   display: block;
-  margin: 32px auto 32px auto;
+  margin: 40px auto 40px auto;
   max-width: 70%;
 }
 .caseIllustrationS {
-  margin: 32px auto 32px auto;
+  margin: 40px auto 40px auto;
   max-width: 48%;
 }
 .caseIllustrationL {
-  margin: 32px auto 32px auto;
-  max-width: 95%;
+  margin: 40px auto 40px auto;
+  max-width: 90%;
 }
 figcaption {
   padding: 8px 0 0 0;
@@ -658,7 +658,7 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 54px auto auto auto;
+  margin: 60px auto 60px auto;
 }
 @media (max-width: 730px) {
   .caseTwoColumn {
