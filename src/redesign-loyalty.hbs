@@ -7,7 +7,7 @@
 
     {{#> case/paragraphe title="The challenge" }}
         <p>When I joined H&M in 2018, a big overhaul of the H&M loyalty program was underway, aiming to increase
-            engagement and member satisfaction.
+            engagement and member satisfaction,
             decrease calls to customer service,
             and grow the membership base.</p>
     {{/case/paragraphe}}
@@ -50,36 +50,36 @@
                 <li>users had no idea how to use their offers online,</li>
                 <li>staff was spending a lot of time helping customers with rewards in stores.</li>
             </ul>
-            <p>So, it had been decided to re-design the Rewards page, and to explore how we might make
-                the processes of redeeming rewards simpler.
-            </p>
 
             <h4>Design, test, iterate</h4>
-            <p>The Rewards page was a big source of confusion and frustration for users: it had a clear
-                button to use the offer in store, but only text about how to use it online.</p>
-            <p>I tested having a button to use in store. But in the first rounds of user testing, participants were
-                unsure what to expect when clicking the
-                new button. I had to tweak the copy and the design
-                of the confirmation message several times.</p>
-
-            <h4>Error cases</h4>
-            <p>While I explored
-                all the possible scenarios with Analyst and Architects, we realised that there were more technical
-                limitations and complicated business
-                rules than expected.
-                I had to change how I had initially planned to provide feedback to users to balance:</p>
             <ul>
-                <li>being forgiving and providing precise error messages,</li>
-                <li>avoiding making too many calls to the systems powering the rewards, so as to not increase
+                <li><strong>The Rewards page</strong> was a big source of confusion and frustration for users: it had a
+                    clear
+                    button to use the offer in store, but only text about how to use it online.
+                    I tested having a button to use in store. But in the first round of testing, participants were
+                    unsure what to expect when clicking the
+                    new button. I had to tweak the copy and the design
+                    of the confirmation message several times.
+                </li>
+
+                <li><strong>Error cases</strong>: While I explored
+                    all the possible scenarios with Analyst and Architects, we realised that there were more technical
+                    limitations and complicated business
+                    rules than expected.
+                    I had to change how I had planned to provide feedback to users to balance being forgiving and
+                    providing precise error messages,
+                    with avoiding to make too many calls to the systems powering the rewards and to increase
                     the load times too much.
                 </li>
+                <li><strong>In store experience</strong>:
+                    Technical limitations kept piling up when we were exploring how to provide an easier experience in
+                    store.
+                    At some point, we had to acknowledge that we had scoped out so much of our solution that
+                    it was not solving any of users' problems anymore. So we made the decision to leave this out
+                    of the release. But we knew the systems
+                    would change soon, so that in the near future we could give it another go!
+                </li>
             </ul>
-            <h4>In store experience</h4>
-            <p>Technical limitations kept piling up when we were exploring how to provide an easier experience in store.
-                At some point, we had to acknowledge that we had scoped out so much of our solution that
-                it was not solving any of users' problems anymore. So we made the decision to leave this out
-                of the release. But we knew the systems
-                would change soon, so that in the near future we could give it another go!</p>
 
         {{/case/rightColumn}}
     {{/case/twoColumn}}
@@ -87,19 +87,21 @@
     <div class="caseGallery">
         <figure class="caseIllustration">
             <img src="img/hm2_rewardspage.png"
-                 alt=""
+                 alt="4 different versions of the rewards page."
             >
-            <figcaption>From left to right: the initial Rewards page, 2 iterations, the final version. The main
-                changes were:<br>An added button to use online, moving up the buttons and changing copy, removing
+            <figcaption>The initial Rewards page, 2 iterations, and the final version. <br>The main
+                changes were: An added button to use the offer online, moving up the buttons and changing copy, removing
                 unecessary information (club card, breadcrumbs, etc.).
             </figcaption>
         </figure>
         <br>
         <figure class="caseIllustration">
-            <img src="img/hm2_rewardsmessages.jpg"
-                 alt=""
+            <img src="img/hm2_rewardsmessages.png"
+                 alt="Flow: click Add to bag, Receive a confirmation, Receive an information message if your discount does not apply to anything in your bag."
             >
-            <figcaption>Top: examples of messages that were tested. <br> Bottom: Final state.
+            <figcaption>Adding an offer from a Reward page, when the shopping bag is empty. <br> Using the same
+                component as when adding clothes to the bag made it clearer what had happened than other types of
+                messages I tested.
             </figcaption>
         </figure>
 
@@ -111,33 +113,39 @@
         {{/case/leftColumn}}
         {{#> case/rightColumn}}
             <h4>The brief from business stakeholders</h4>
-            <p>In some markets, H&M was to start rolling out invoices through
-                Klarna, replacing other invoices methods. My job was to find how to make that fit into the existing
-                H&MxKlarna pages (containing the purchases made with the "Pay in XX days with Klarna" payment method),
-                and to
+            <p>H&M wanted to introduce a new benefit for members: monthly invoices with Klarna. My job was to find how
+                to make that fit into the existing
+                <em>Pay later</em> section under <em>My Account</em> and to
                 provide helpful reminders when time came to pay the invoices.
             </p>
-            <h4>Finding and paying invoices</h4>
-            <p>The biggest challenge was that a lot of information and actions had to fit into one page. My first idea
-                was to provide 2 tabs:
-                one for "Pay in XX days", and the other one for Monthly invoices. But after gaining more understanding
-                of how those payment methods work, and conducting some user tests, I settled on another layout: one tab
-                for what was still to pay (all payment methods), and another for what had already been paid.</p>
+            <h4>Design, test, iterate</h4>
+            <ul>
+                <li><strong>Finding and paying invoices</strong>: The biggest challenge was to fit everything into one
+                    page. My first idea
+                    was to provide two tabs:
+                    one for <em>Pay in XX days</em>, and the other one for <em>Monthly invoices</em>. But it became
+                    clear
+                    in user testing that the distinction between the two methods was irrelevant to users.
+                    What mattered was: what still needs to be paid, and what has already been paid.
+                </li>
+                <li>
+                    <strong>Notifications</strong>: To encourage customers to pay in time, from the H&M app (not from
+                    the Klarna app), it had been decided that we would send push notifications about due invoices.
+                    The problem? H&M
+                    already sent a lot of notifications! Research suggested few new users would turn on push
+                    notifications unless we allowed them to choose what to opt-in for, and for those who did receive
+                    notifications, reminders to pay invoices would be lost among marketing messages.
+                    I tried to push for choice at opt-in and less messages overall. But that was a tough discussion
+                    and I did not manage to get all stakeholders to agree in time for that release. We did however
+                    launch
+                    a wider initiative around the quality and quantity of our communications to customers.
+                    And for that release, I focused on highlighting things to pay within the interface instead, for
+                    instance through badges and
+                    an inbox for personal
+                    communications in <em>My Account</em>.
+                </li>
+            </ul>
 
-            <h4>Notifications</h4>
-            <p>It had been decided on the business side that H&M would send push notifications about invoices.
-                It was an effort to be helpful to customers. But there was also
-                potential to have a negative impact, which I tried to minimize.
-            </p>
-            <p>I proposed to allow customers to choose which type of notifications they would receive from H&M,
-                so they would be more in control. But as complexity increased, that ended up being de-scoped, with a
-                promise to look into
-                it again as part of a wider project to limit communications to customers.</p>
-            <p>Without a way to choose the type of notifications received, data suggested fewer users would turn on push
-                notifications.
-                So I focused on highlighting things to pay within the interface instead, for instance through badges and
-                an inbox for personal
-                communications in the My account pages.</p>
 
         {{/case/rightColumn}}
     {{/case/twoColumn}}
@@ -149,13 +157,13 @@
             <figcaption>Screenshots from a prototype for an early round of testing.
             </figcaption>
         </figure>
-         <figure class="caseIllustration">
+        <figure class="caseIllustration">
             <img src="img/hm2_monthly_final.jpg"
                  alt="">
             <figcaption class="caseIllustration">Final design</figcaption>
         </figure>
 
-        <figure class="caseIllustration">
+        <figure class="caseIllustrationL">
             <img src="img/hm2_report.png"
                  alt="">
             <figcaption>A detailed user testing report, with an overview of the test set up and tasks. Then,
@@ -165,7 +173,7 @@
         </figure>
 
 
-        <figure class="caseIllustration">
+        <figure class="caseIllustrationL">
             <img src="img/hm2_deliverable.png"
                  alt=""
             >
