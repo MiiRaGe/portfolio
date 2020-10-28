@@ -115,7 +115,7 @@ figcaption{
     display: grid;
     grid-template-rows: 150px auto;
     flex: 1 0 25%; /*  Stretching: */
-    margin: 32px 32px 32px 32px;
+    margin: 32px 64px 32px 32px;
     @media (max-width: 730px) {
       margin: auto;
     }
@@ -137,15 +137,16 @@ figcaption{
     }
 
     &Desc {
-      margin: 48px 0 auto 0;
+      display: block;
+      margin: 48px auto auto auto;
     }
   }
 
   &RightColumn {
-    flex: 1 1 67%; /*  Stretching: */
-    margin: 8px;
+    flex: 1 1 63%; /*  Stretching: */
+    margin: 0;
     background-color: @case-background-color;
-    padding: 48px;
+    padding: 40px;
 
     :first-child {
       margin-top: 0;
