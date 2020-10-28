@@ -791,7 +791,10 @@ GENERAL
 }
 a {
   text-decoration: none;
-  color: #0D6A90;
+  color: #167B8E;
+}
+a:hover {
+  color: #1DA3D9;
 }
 img {
   max-width: 100%;
