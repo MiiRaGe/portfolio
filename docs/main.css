@@ -337,7 +337,7 @@ header > .headerRight {
 header > .headerRight > nav {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 136px;
 }
 header > .headerRight > nav > span {
   text-transform: uppercase;
@@ -858,5 +858,12 @@ body {
 }
 html {
   background: white;
+}
+a[target="_blank"]::after {
+  content: url(img/new-tab-icon.svg);
+  display: inline-block;
+  margin-left: 0.2em;
+  width: 1em;
+  height: 1em;
 }
 
