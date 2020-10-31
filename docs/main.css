@@ -88,7 +88,7 @@ PAGE: INDEX
 }
 #gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 360px));
   grid-gap: 36px;
   justify-content: center;
 }
@@ -430,6 +430,11 @@ strong {
   height: 330px;
   width: 360px;
 }
+@media (max-width: 360px) {
+  .portfolioCard {
+    width: 100%;
+  }
+}
 .portfolioCard:hover {
   margin-top: -5px;
 }
@@ -469,7 +474,8 @@ strong {
   width: 260px;
   position: relative;
   bottom: 61px;
-  left: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   display: flex;
   flex-flow: column nowrap;
@@ -653,8 +659,7 @@ figcaption {
   line-height: 21px;
 }
 .caseTwoColumn {
-  width: 85%;
-  max-width: 1000px;
+  max-width: 680px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -662,15 +667,12 @@ figcaption {
 }
 @media (max-width: 730px) {
   .caseTwoColumn {
-    margin: 16px auto 16px auto;
+    margin: 16px 24px 16px 24px;
   }
 }
 .caseLeftColumn {
   display: grid;
   grid-template-rows: 150px auto;
-  flex: 1 0 25%;
-  /*  Stretching: */
-  margin: 32px 64px 32px 32px;
 }
 @media (max-width: 730px) {
   .caseLeftColumn {
@@ -701,8 +703,6 @@ figcaption {
   margin: 48px auto auto auto;
 }
 .caseRightColumn {
-  flex: 1 1 63%;
-  /*  Stretching: */
   margin: 0;
   background-color: #f8f8f8;
   padding: 40px;

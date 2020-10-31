@@ -4,6 +4,9 @@
   flex: 0 0 360px;
   height: 330px;
   width: 360px;
+  @media (max-width: 360px) {
+    width: 100%;
+  }
 }
 
 .portfolioCard:hover {
@@ -42,7 +45,8 @@
   width: 260px;
   position: relative;
   bottom: 61px;
-  left: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   background: white;
   display: flex;
   flex-flow: column nowrap;
