@@ -620,12 +620,12 @@ strong {
   mix-blend-mode: multiply;
 }
 .caseGallery {
-  max-width: 680px;
+  max-width: 728px;
   margin: 48px auto 48px auto;
 }
 .caseIllustration {
   display: block;
-  margin: 40px auto 40px auto;
+  margin: 40px 24px 40px 24px;
 }
 .caseIllustrationS {
   margin: 40px auto 40px auto;
