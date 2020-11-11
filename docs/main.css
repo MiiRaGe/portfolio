@@ -188,7 +188,7 @@ footer > .footerEmail {
   margin-bottom: 20px;
 }
 footer > .footerEmail > a {
-  color: #0D6A90;
+  color: #167B8E;
   font-family: 'Roboto';
   font-size: 20px;
 }
@@ -352,6 +352,9 @@ header > .headerRight > nav > span > a {
 header > .headerRight > nav > span > a.selected {
   font-weight: 600;
 }
+header > .headerRight > nav > span > a:hover {
+  color: #167B8E;
+}
 
 @font-face {
   font-family: 'Lora';
@@ -442,7 +445,7 @@ strong {
   font-size: 1em;
   font-weight: 400;
   line-height: 19px;
-  color: #036a90;
+  color: #167B8E;
   margin-top: 8px;
 }
 .cardDescription {
@@ -594,7 +597,7 @@ strong {
   font-size: 1em;
   font-weight: 400;
   line-height: 19px;
-  color: #036a90;
+  color: #167B8E;
   color: #5F6368;
   font-weight: 200;
   font-size: 18px;
@@ -636,11 +639,11 @@ figcaption {
 }
 .caseParagraphe {
   max-width: 680px;
-  margin: 64px auto auto auto;
+  margin: 60px auto auto auto;
 }
 @media (max-width: 730px) {
   .caseParagraphe {
-    margin: 64px 24px 0 24px;
+    margin: 60px 24px 0 24px;
   }
 }
 .caseParagrapheTitle {
