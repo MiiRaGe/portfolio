@@ -60,15 +60,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 /**********************************
 PAGE: INDEX
@@ -159,15 +160,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 footer {
   height: 216px;
@@ -260,15 +262,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 /**********************************
 HEADINGS
@@ -319,10 +322,11 @@ header > .headerLeft > a > .sophieDurand {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
   white-space: nowrap;
   text-align: left;
 }
@@ -418,15 +422,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 .portfolioCard {
   flex: 0 0 360px;
@@ -562,15 +567,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 .caseStudyIntro {
   text-align: center;
@@ -775,15 +781,16 @@ strong {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 21px;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 20px;
+  text-align: center;
 }
 .imageWrap {
   max-width: 50%;
   float: left;
-  padding: 0 32px 32px 0;
+  padding: 16px 32px 32px 0;
 }
 /**********************************
 GENERAL
