@@ -76,3 +76,58 @@ a[target="_blank"]::after {
   width: 1em;
   height: 1em;
 }
+
+
+/* Fade in */
+.anim-fade-in {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  &.fast {
+    animation-duration: 300ms;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Fade in and slide up an element */
+.anim-fade-up {
+  opacity: 0;
+  animation-name: fade-up;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0.8;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Increase scale of an element on hover */
+.hover-grow {
+  transition: transform 0.3s;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale(1.025);
+  }
+}
