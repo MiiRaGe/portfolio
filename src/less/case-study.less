@@ -1,150 +1,326 @@
 @import "theme.less";
 
-.caseStudyIntro {
-  text-align: center;
-
-  &RaisedTitle {
-    z-index: 2;
-    max-width: 680px;
-    background: white;
-    margin: 150px auto 0 auto;
-    @media (max-width: 730px) {
-      margin: 75px auto 0 auto;
-    }
-    padding: 16px 0 16px 0;
-
-    > .caseDescription {
-      line-height: 41px;
-      font-size: 32px;
-      margin-top: 15px;
-      margin-bottom: 8px;
-    }
-
-    > .caseClient {
-      .client-text();
-      color: @secondary-text-color;
-      font-weight: 200;
-      font-size: 18px;
-      margin: 8px 0 16px 0;
-    }
-  }
-
-  > .caseImage {
-    width: 100%;
-    height: 240px;
-    margin: auto auto auto auto;
-    z-index: -1;
-    position: absolute;
-    top: 76px;
-    overflow: hidden;
-    background-color: #D7E6E5;
-
-    > img {
-      object-fit: none;
-      object-position: 50% 0;
-      height: 300px;
-      width: 100%;
-      opacity: 0.2;
-      background: #D7E6E5;
-      mix-blend-mode: multiply;
-
-    }
-  }
-
-
-
+// Scroll animations
+.anim-slide-up {
+  animation: slide-up 0.55s ease 0.25s both;
 }
 
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.caseParagraphe,
 .caseGallery {
-  max-width: 728px;
-  margin: 48px auto 48px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.4s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.caseLeftColumn,
+.caseRightColumn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.4s ease;
+}
+
+.caseTwoColumn.is-visible {
+  .caseLeftColumn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .caseRightColumn {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 150ms;
+  }
+}
+
+// Two-column page layout
+.caseLayout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  padding: 80px 64px 0;
+  align-items: start;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: 40px 24px 0;
+    gap: 40px;
+  }
+}
+
+.caseLeft {
+  align-self: start;
+
+  @media (min-width: 901px) {
+    position: sticky;
+    top: 104px;
+  }
+}
+
+.caseTitleLeft {
+  font-family: @font-display;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: @color-fg;
+  margin: 0 0 24px 0;
+}
+
+.caseRule {
+  border: none;
+  border-top: 1px solid @color-border;
+  margin: 0 0 32px 0;
+}
+
+.caseMeta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 16px;
+}
+
+.caseMetaFull {
+  grid-column: 1 / -1;
+}
+
+.caseMetaLabel {
+  font-family: @font-mono;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.caseMetaValue {
+  font-family: @font-sans;
+  font-size: 13px;
+  font-weight: 500;
+  color: @color-fg;
+  display: block;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-family: @font-sans;
+      font-size: 13px;
+      font-weight: 500;
+      color: @color-fg;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+// Right column: hero image
+.caseHeroImage {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 64px;
+}
+
+// Section labels
+.caseParagrapheTitle {
+  font-family: @font-mono;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-accent;
+  margin: 0 0 20px 0;
+}
+
+// Body content
+.caseParagrapheContent {
+  font-family: @font-sans;
+  font-size: 15px;
+  line-height: 1.75;
+  color: @color-fg;
+
+  p { margin: 0 0 16px 0; }
+  h4 {
+    font-family: @font-display;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 28px 0 8px 0;
+    color: @color-fg;
+  }
+  strong { font-weight: 600; }
+  a { color: @color-accent; text-decoration: none; &:hover { text-decoration: underline; } }
+  ul { padding-left: 20px; li { margin-bottom: 8px; } }
+}
+
+.caseParagraphe {
+  margin: 0 0 56px 0;
+  max-width: 720px;
+}
+
+// Two-column process sections — always stacked
+.caseTwoColumn {
+  margin: 0 0 56px 0;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.caseLeftColumn {
+  width: 100%;
+}
+
+.caseLeftColumnTitle {
+  font-family: @font-mono;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
+  border-top: 1px solid @color-border;
+  padding-top: 12px;
+  margin-bottom: 16px;
+}
+
+.caseLeftColumnDesc {
+  font-family: @font-sans;
+  font-size: 13px;
+  color: @color-muted;
+  line-height: 1.6;
+}
+
+.caseRightColumn {
+  flex: 1 1 0;
+  min-width: 0;
+  font-family: @font-sans;
+  font-size: 15px;
+  line-height: 1.75;
+  color: @color-fg;
+
+  h4 {
+    font-family: @font-display;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    color: @color-fg;
+    &:not(:first-child) { margin-top: 28px; }
+  }
+  p { margin: 0 0 16px 0; }
+  ul { padding-left: 20px; li { margin-bottom: 8px; } }
+  strong { font-weight: 600; }
+  a { color: @color-accent; text-decoration: none; &:hover { text-decoration: underline; } }
+}
+
+// Gallery
+.caseGallery {
+  margin: 0 0 56px 0;
+  max-width: 720px;
 }
 
 .caseIllustration {
   display: block;
-  margin: 40px 24px 40px 24px;
+  margin: 0 0 40px 0;
+  overflow: hidden;
 
+  img {
+    width: 100%;
+    display: block;
+    transition: transform 0.45s ease;
+    &:hover { transform: scale(1.02); }
+  }
 
   &S {
-    margin: 40px auto 40px auto;
+    margin: 0 0 40px 0;
     max-width: 48%;
-  }
+    overflow: hidden;
 
-}
-
-figcaption{
-  padding: 8px 0 0 0;
-}
-
-.caseParagraphe {
-  max-width: 680px;
-  margin: 60px auto auto auto;
-
-  @media (max-width: 730px) {
-    margin: 60px 24px 0 24px;
-  }
-
-  &Title {
-    text-align: center;
-  }
-
-  &Content {
-    .secondary-text();
-  }
-}
-
-.case {
-  &TwoColumn {
-    max-width: 680px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 60px auto 60px auto;
-    @media (max-width: 730px) {
-      margin: 60px 0px 16px 0px;
-    }
-  }
-
-  &LeftColumn {
-    display: grid;
-    grid-template-rows: 60px auto;
-    @media (max-width: 730px) {
-      margin: auto;
-    }
-
-    &Title {
-
-      margin: 0;
-      border-top: solid 1px #e6e6e6;
-      display: grid;
-      place-items: center;
-      .primary-text();
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 20px;
-      text-align: center;
-      line-height: 32px;
-      @media (max-width: 730px) {
-        margin: 0 24px 0 24px;
-      }
-    }
-
-    &Desc {
+    img {
+      width: 100%;
       display: block;
-      margin: 24px auto 24px auto;
-      padding: 12px 0 0 0;
+      transition: transform 0.45s ease;
+      &:hover { transform: scale(1.02); }
     }
   }
+}
 
-  &RightColumn {
-    margin: 0;
-    background-color: @case-background-color;
-    padding: 40px;
+figcaption {
+  font-family: @font-sans;
+  font-size: 13px;
+  color: @color-muted;
+  line-height: 1.5;
+  padding: 10px 0 0 0;
+}
 
-    :first-child {
-      margin-top: 0;
-      margin-block-start: 0;
-    }
+.aboutIntro {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
+}
+
+.aboutQuote {
+  margin: 0 0 32px 0;
+  padding-left: 16px;
+  border-left: 2px solid @color-border;
+
+  p {
+    font-family: @font-sans;
+    font-size: 15px;
+    line-height: 1.75;
+    color: @color-fg;
+    margin: 0 0 8px 0;
+    font-style: italic;
+  }
+
+  cite {
+    font-family: @font-mono;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: @color-muted;
+    font-style: normal;
+  }
+}
+
+.aboutPhoto {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+// Coming soon placeholder
+.caseComingSoon {
+  font-family: @font-display;
+  font-style: italic;
+  font-size: 24px;
+  color: @color-muted;
+  margin-top: 40px;
+}
+
+// Back link
+.separation {
+  display: inline-block;
+  font-family: @font-mono;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
+  margin-top: 16px;
+  text-decoration: none;
+  &:hover { color: @color-accent; }
 }

@@ -1,39 +1,89 @@
 @import "theme.less";
 
-/**********************************
-PAGE: INDEX
-***********************************/
-
 .introIndex {
-    text-align: center;
-    margin-top: 64px;
-    margin-bottom: 88px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  padding: 0 64px;
 
-    &Desc > p {
-        .heading-text();
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 48px;
+  @media (max-width: 730px) {
+    padding: 0 24px;
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+
+  &Desc > p {
+    font-family: @font-sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: @color-muted;
+    margin: 0;
+  }
+}
+
+.introLabel {
+  font-family: @font-mono;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.heroHeading {
+  font-family: @font-display;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: @color-fg;
+  text-align: left;
+  margin: 0 0 40px 0;
+
+  .accent {
+    font-style: italic;
+    color: @color-accent;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
+      &::after { display: none; }
     }
+  }
 }
 
-.introLink {
-    color: #292929;
-    text-decoration: underline;
-}
-
-.introLink:hover {
-    color: #167B8E;
+.introRule {
+  border: none;
+  border-top: 1px solid @color-border;
+  width: 32px;
+  margin: 0 0 20px 0;
 }
 
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 360px));
-    grid-gap: 36px;
-    justify-content: center;
-}
+  padding: 0 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
 
-.caseStudies {
-    text-align: center;
-    margin-bottom: 32px;
+  .portfolioCard:nth-child(1),
+  .portfolioCard:nth-child(2) {
+    grid-column: span 2;
+
+    .cardImageWrap { height: 340px; }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    .portfolioCard:nth-child(1),
+    .portfolioCard:nth-child(2) {
+      grid-column: span 2;
+    }
+  }
 }
