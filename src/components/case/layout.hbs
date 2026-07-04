@@ -1,0 +1,36 @@
+<div class="caseLayout">
+    <div class="caseLeft">
+        <h1 class="caseTitleLeft">{{description}}</h1>
+        <hr class="caseRule">
+        <div class="caseMeta">
+            <div class="caseMetaItem">
+                <span class="caseMetaLabel">Company</span>
+                <span class="caseMetaValue">{{client}}</span>
+            </div>
+            {{#if duration}}
+            <div class="caseMetaItem">
+                <span class="caseMetaLabel">Year</span>
+                <span class="caseMetaValue">{{duration}}</span>
+            </div>
+            {{/if}}
+            {{#if role}}
+            <div class="caseMetaItem caseMetaFull">
+                <span class="caseMetaLabel">Role</span>
+                <span class="caseMetaValue">{{role}}</span>
+            </div>
+            {{/if}}
+            {{#if outcome}}
+            <div class="caseMetaItem caseMetaFull">
+                <span class="caseMetaLabel">Outcomes</span>
+                <div class="caseMetaValue">{{{outcome}}}</div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="caseRight">
+        {{#if image}}
+        <img src="{{image}}" alt="{{alt}}" class="caseHeroImage">
+        {{/if}}
+        {{> @partial-block}}
+    </div>
+</div>

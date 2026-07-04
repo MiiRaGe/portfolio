@@ -2,46 +2,49 @@
   "index": {
     "cards": [
       {
+        "number": "01",
+        "link": "acast-ai-media-planning.html",
+        "client": "Acast",
+        "description": "AI-powered media planning",
+        "longDescription": "Coming soon"
+      },
+      {
+        "number": "02",
+        "link": "acast-analytics-dashboard.html",
+        "client": "Acast",
+        "description": "Analytics dashboard for Creators",
+        "longDescription": "Coming soon"
+      },
+      {
+        "number": "03",
+        "link": "acast-seller-tooling.html",
+        "client": "Acast",
+        "description": "Efficiency tooling for sellers",
+        "longDescription": "Coming soon"
+      },
+      {
+        "number": "04",
         "link": "increase-signup.html",
         "imgLink": "img/hm1_signup_card@2x.jpg",
         "client": "H&M",
         "description": "Sign up",
-        "longDescription": "Product Design / Research: Increase sign ups"
+        "longDescription": "Product Design — Research"
       },
       {
-        "link": "redesign-loyalty.html",
-        "imgLink": "img/hm2_club_card@2x.jpg",
-        "client": "H&M",
-        "description": "Loyalty program",
-        "longDescription": "UX Design / Research: Increase engagement"
-      },
-      {
+        "number": "05",
         "link": "organise-content.html",
         "imgLink": "img/tc_accom_card@2x.jpg",
         "client": "Thomas Cook",
         "description": "Hotel detail page",
-        "longDescription": "Research: Help users find the information they need"
+        "longDescription": "UX Research"
       },
       {
+        "number": "06",
         "link": "design-finance-tool.html",
         "imgLink": "img/mas_card@2x.jpg",
         "client": "Money Advice Service",
         "description": "Support website",
-        "longDescription": "UX Design: Help to navigate the new UK benefits system"
-      },
-      {
-        "link": "redesign-steel-software.html",
-        "imgLink": "img/steel_card@2x.jpg",
-        "client": "Sarclad",
-        "description": "Inspection software",
-        "longDescription": "UX Design: Improve the usability of a tool to inspect steel rolls"
-      },
-      {
-        "link": "accessibility-airline.html",
-        "imgLink": "img/ax_card@2x.jpg",
-        "client": "Amadeus",
-        "description": "Airlines' websites",
-        "longDescription": "Accessibility: Work towards WCAG 2.0 compliance"
+        "longDescription": "UX Design"
       }
     ]
   }

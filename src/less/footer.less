@@ -1,33 +1,80 @@
 @import "theme.less";
 
 footer {
-  height: 216px;
-  background-color: @footer-background-color;
-  text-align: center;
-  margin-top: 88px;
-  padding: 24px 0 0 0;
+  border-top: 1px solid @color-border;
+  background: @color-bg;
+  margin-top: 120px;
+  padding: 48px 64px 40px;
+  height: auto;
 
-  > .footer {
-    &MainContent {
-      .heading-text();
-      font-size: @footer-font-size;
-      margin-bottom: 40px;
-      margin-top: 32px
-    }
+  @media (max-width: 730px) {
+    padding: 40px 24px;
+  }
 
-    &Email {
-      >a {
-        .email-text();
-      }
+  .footerTop {
+    margin-bottom: 56px;
+  }
 
-      margin-bottom: 20px;
-    }
+  .footerLabel {
+    display: block;
+    font-family: @font-mono;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: @color-muted;
+    margin-bottom: 16px;
+  }
 
-    &LinkedInLogo {
-      .square(26px);
-      margin: auto;
+  .footerEmailLink {
+    font-family: @font-display;
+    font-style: italic;
+    font-size: 36px;
+    color: @color-fg;
+    display: inline-block;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: @color-accent;
     }
   }
 
+  .footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    @media (max-width: 730px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  }
+
+  .footerCopyright {
+    font-family: @font-mono;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: @color-muted;
+  }
+
+  .footerLinks {
+    display: flex;
+    gap: 32px;
+
+    a {
+      font-family: @font-mono;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: @color-muted;
+
+      &:hover {
+        color: @color-accent;
+      }
+    }
+  }
 }

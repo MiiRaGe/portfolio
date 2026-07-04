@@ -1,10 +1,14 @@
 <div class="portfolioCard">
     <a href="{{link}}">
-        <img src="{{imgLink}}" alt="" class="cardImage">
-        <div class="raisedCard">
-            <div class="cardClient">{{client}}</div>
-            <div class="cardDescription">{{description}}</div>
-            <div class="cardLongDesc">{{longDescription}}</div>
+        <div class="cardImageWrap">
+            {{#if imgLink}}
+                <img src="{{imgLink}}" alt="" class="cardImage">
+            {{/if}}
+        </div>
+        <div class="cardBody">
+            <div class="cardEyebrow">{{number}} / {{client}}</div>
+            <h3 class="cardDescription">{{description}}</h3>
+            <p class="cardLongDesc">{{longDescription}}</p>
         </div>
     </a>
 </div>

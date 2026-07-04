@@ -1,65 +1,87 @@
-@import url("https://fonts.googleapis.com/css?family=Lora:300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
 
-@primary-text-color: #292929;
-@secondary-text-color: #5F6368;
-@email-text-color: #167B8E;
-@client-text-color: #167B8E;
-@footer-background-color: #fafaf5;
+// New design tokens
+@color-bg: #fbf9f6;
+@color-fg: #1a1a1a;
+@color-muted: rgba(26, 26, 26, 0.58);
+@color-accent: #d94126;
+@color-border: rgba(26, 26, 26, 0.08);
+@font-display: 'Cormorant Garamond';
+@font-sans: 'Inter';
+@font-mono: 'JetBrains Mono';
+
+// Legacy variables mapped to new tokens
+@primary-text-color: @color-fg;
+@secondary-text-color: @color-muted;
+@email-text-color: @color-accent;
+@client-text-color: @color-accent;
+@footer-background-color: @color-bg;
 @case-background-color: #f8f8f8;
-@case-intro-background-color: #FAFAF5;
+@case-intro-background-color: #fafaf5;
+@primary-font-family: @font-sans;
+@secondary-font-family: @font-display;
 
-@primary-font-family: 'Roboto';
-@secondary-font-family: 'Lora';
-
-@footer-font-size: 32px;
-@email-font-size: 20px;
+@footer-font-size: 36px;
+@email-font-size: 36px;
 
 .primary-text() {
-  color: @primary-text-color;
-  font-family: @primary-font-family;
+  color: @color-fg;
+  font-family: @font-sans;
   font-size: 16px;
-  font-weight: 300;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .secondary-text() {
-  color: @secondary-text-color;
-  font-family: @primary-font-family;
+  color: @color-muted;
+  font-family: @font-sans;
   font-size: 16px;
-  font-weight: 300;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .special-text() {
-  .primary-text();
-  letter-spacing: 4px;
+  font-family: @font-mono;
+  color: @color-fg;
+  font-size: 11px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 20px;
-  text-align: center;
+  font-weight: 400;
 }
 
 strong {
-    font-weight: 500;
-  }
+  font-weight: 600;
+}
 
 .heading-text() {
-  color: @primary-text-color;
-  font-family: @secondary-font-family;
+  color: @color-fg;
+  font-family: @font-display;
   font-weight: 500;
 }
 
 .client-text() {
-  font-size: 1em;
+  font-family: @font-mono;
+  font-size: 10px;
   font-weight: 400;
-  line-height: 19px;
-  color: @client-text-color;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
 }
 
 .email-text() {
-  color: @email-text-color;
-  font-family: @primary-font-family;
+  color: @color-fg;
+  font-family: @font-display;
+  font-style: italic;
   font-size: @email-font-size;
+}
+
+.metadata-text() {
+  font-family: @font-mono;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: @color-muted;
 }
 
 .underlined() {
@@ -79,6 +101,4 @@ strong {
   max-width: 50%;
   float: left;
   padding: 16px 32px 32px 0;
-
-
 }
